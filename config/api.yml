@@ -1,0 +1,20 @@
+default: &default
+  conoha_object_strage:
+    user_id: 
+    password: 
+    tenant_id: 
+    auth_url: 
+    end_point: 
+    # オープンなオブジェクト
+    container_name: 
+    # プライベート（表に出ない）のオブジェクト
+    private_container_name: 
+
+test:
+  <<: *default
+
+development:
+  <<: *default
+
+production:
+  <<: *default

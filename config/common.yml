@@ -1,0 +1,20 @@
+default: &default
+  images:
+    work_dir: 
+    src_path: 
+    objs_path: 
+    convert:
+      font_path: 
+  nginx:
+    pid_dir: /home/app/run
+  cache:
+    conoha_container_data: 
+
+test:
+  <<: *default
+
+development:
+  <<: *default
+
+production:
+  <<: *default
