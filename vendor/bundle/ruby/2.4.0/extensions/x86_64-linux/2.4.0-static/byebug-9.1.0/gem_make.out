@@ -1,0 +1,19 @@
+current directory: /home/app/test/colors_diary/vendor/bundle/ruby/2.4.0/gems/byebug-9.1.0/ext/byebug
+/home/app/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20171024-4308-1bxfg7o.rb extconf.rb
+creating Makefile
+
+current directory: /home/app/test/colors_diary/vendor/bundle/ruby/2.4.0/gems/byebug-9.1.0/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /home/app/test/colors_diary/vendor/bundle/ruby/2.4.0/gems/byebug-9.1.0/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.so
+
+current directory: /home/app/test/colors_diary/vendor/bundle/ruby/2.4.0/gems/byebug-9.1.0/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.so ./.gem.20171024-4308-nxx8u0/byebug

@@ -1,0 +1,46 @@
+<!-- 概要  -->
+<div id="overview" class="box container">
+  <div class="row">
+    <div class="12u 12u(medium)">
+      <div>
+        <%= link_to '管理画面TOPへ', admin_dashboard_path %>
+      </div>
+      <label><strong>コノハストレージ情報</strong></label>&nbsp;&nbsp;
+      <label id="cache-name">(キャッシュ:&nbsp;<%= @file_stamp.strftime("%Y年%m月%d日 %H:%M:%S") %>)</label>&nbsp;&nbsp;
+      <a id="fetch_recent_list" href="javascript:void(0);" style="font-weight: bold; border-bottom:1px dotted;">最新を取得</a>
+      <div>
+        <span class="strage-info"><label class="info-name">コンテナ名</label>：<label id="con-name"><%= @container_metadata[:name] %></label></span>
+        <span class="strage-info"><label class="info-name">容量</label>：<label id="con-capacity"><%= number_to_human_size(@container_metadata[:bytes]) %></label></span>
+        <span class="strage-info"><label class="info-name">アイテム数</label>：<label id="con-item-num"><%= @container_metadata[:count] %></label></span>
+        <span class="strage-info"><label class="info-name">メタデータ</label>：<label id="con-metadata"><%= @container_metadata[:metadata] %></label></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ツリー -->
+<div class="box container" style="margin-top: 20px;">
+  <div class="row">
+    <div class="12u 12u(medium)">
+      <label><strong>アイテム一覧</strong></label>
+    </div>
+    <div class="12u 12u(medium)">
+      <a class="button icon" id="obj_delete_btn" href="javascript:void(0);">削除</a>
+    </div>
+  </div>
+</div>
+<div id="file-list" class="box container">
+  <div class="row">
+    <div class="12u 12u(medium)">
+      <div id="folder-tree-wrap">
+        <div id="folder-tree"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(function(){
+    modules.admin.init();
+    modules.admin.makeJstree(JSON.parse('<%= raw @js_tree.to_json %>'));
+  });
+</script>

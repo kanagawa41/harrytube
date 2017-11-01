@@ -1,0 +1,95 @@
+# Logfile created on 2017-11-01 10:23:12 +0900 by logger.rb/56815
+I, [2017-11-01T10:23:12.927014 #20810]  INFO -- : Started GET "/" for 192.168.33.1 at 2017-11-01 10:23:12 +0900
+I, [2017-11-01T10:23:12.934895 #20810]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-11-01T10:23:12.952625 #20810]  INFO -- : Processing by DiariesController#test1 as HTML
+I, [2017-11-01T10:23:13.286435 #20810]  INFO -- :   Rendering diaries/test1.html.erb within layouts/to_c
+I, [2017-11-01T10:23:13.288344 #20810]  INFO -- :   Rendered diaries/test1.html.erb within layouts/to_c (1.5ms)
+I, [2017-11-01T10:23:13.824851 #20810]  INFO -- : Completed 500 Internal Server Error in 872ms
+
+
+F, [2017-11-01T10:23:13.826439 #20810] FATAL -- :   
+F, [2017-11-01T10:23:13.826717 #20810] FATAL -- : ActionView::Template::Error (File to import not found or unreadable: admin/admin.
+Load paths:
+  /home/app/test/harrytube/app/assets/config
+  /home/app/test/harrytube/app/assets/fonts
+  /home/app/test/harrytube/app/assets/images
+  /home/app/test/harrytube/app/assets/javascripts
+  /home/app/test/harrytube/app/assets/stylesheets
+  /home/app/test/harrytube/vendor/bundle/ruby/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/app/test/harrytube/vendor/bundle/ruby/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/app/test/harrytube/vendor/bundle/ruby/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /home/app/test/harrytube/vendor/bundle/ruby/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/app/test/harrytube/node_modules):
+F, [2017-11-01T10:23:13.827828 #20810] FATAL -- :      6: 
+     7:     <meta charset="utf-8" />
+     8:     <meta name="viewport" content="width=device-width, initial-scale=1" />
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:     <%= favicon_link_tag('/favicon.ico') %>
+    12:   </head>
+F, [2017-11-01T10:23:13.827901 #20810] FATAL -- :   
+F, [2017-11-01T10:23:13.828019 #20810] FATAL -- : app/assets/stylesheets/application.scss:18
+app/views/layouts/to_c.html.erb:9:in `_app_views_layouts_to_c_html_erb___497285159964914276_70067062177920'
+I, [2017-11-01T10:23:14.036767 #20810]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2017-11-01T10:23:14.044496 #20810]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2017-11-01T10:23:14.052630 #20810]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.8ms)
+I, [2017-11-01T10:23:14.059572 #20810]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-11-01T10:23:14.062395 #20810]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+I, [2017-11-01T10:23:14.070157 #20810]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-11-01T10:23:14.071146 #20810]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+I, [2017-11-01T10:23:14.071278 #20810]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (34.4ms)
+I, [2017-11-01T10:24:44.986391 #20810]  INFO -- : Started GET "/" for 192.168.33.1 at 2017-11-01 10:24:44 +0900
+I, [2017-11-01T10:24:44.988511 #20810]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-11-01T10:24:44.990862 #20810]  INFO -- : Processing by DiariesController#test1 as HTML
+I, [2017-11-01T10:24:44.994063 #20810]  INFO -- :   Rendering diaries/test1.html.erb within layouts/to_c
+I, [2017-11-01T10:24:44.995373 #20810]  INFO -- :   Rendered diaries/test1.html.erb within layouts/to_c (1.0ms)
+I, [2017-11-01T10:24:48.088609 #20810]  INFO -- : Completed 500 Internal Server Error in 3097ms
+
+
+F, [2017-11-01T10:24:48.090321 #20810] FATAL -- :   
+F, [2017-11-01T10:24:48.090417 #20810] FATAL -- : ActionView::Template::Error (couldn't find file 'first' with type 'application/javascript'
+Checked in these paths: 
+  /home/app/test/harrytube/app/assets/config
+  /home/app/test/harrytube/app/assets/fonts
+  /home/app/test/harrytube/app/assets/images
+  /home/app/test/harrytube/app/assets/javascripts
+  /home/app/test/harrytube/app/assets/stylesheets
+  /home/app/test/harrytube/vendor/bundle/ruby/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/app/test/harrytube/vendor/bundle/ruby/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/app/test/harrytube/vendor/bundle/ruby/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /home/app/test/harrytube/vendor/bundle/ruby/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/app/test/harrytube/node_modules):
+F, [2017-11-01T10:24:48.090987 #20810] FATAL -- :      6: 
+     7:     <meta charset="utf-8" />
+     8:     <meta name="viewport" content="width=device-width, initial-scale=1" />
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:     <%= favicon_link_tag('/favicon.ico') %>
+    12:   </head>
+F, [2017-11-01T10:24:48.091116 #20810] FATAL -- :   
+F, [2017-11-01T10:24:48.091183 #20810] FATAL -- : app/assets/javascripts/application.js:15
+app/views/layouts/to_c.html.erb:9:in `_app_views_layouts_to_c_html_erb___497285159964914276_70066733664300'
+I, [2017-11-01T10:24:48.343915 #20810]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2017-11-01T10:24:48.351528 #20810]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2017-11-01T10:24:48.359657 #20810]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.6ms)
+I, [2017-11-01T10:24:48.366449 #20810]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-11-01T10:24:48.370069 #20810]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+I, [2017-11-01T10:24:48.377299 #20810]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-11-01T10:24:48.378428 #20810]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+I, [2017-11-01T10:24:48.378534 #20810]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (34.5ms)
+I, [2017-11-01T10:27:45.481973 #20810]  INFO -- : Started GET "/" for 192.168.33.1 at 2017-11-01 10:27:45 +0900
+I, [2017-11-01T10:27:45.483504 #20810]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-11-01T10:27:45.486900 #20810]  INFO -- : Processing by DiariesController#test1 as HTML
+I, [2017-11-01T10:27:45.491699 #20810]  INFO -- :   Rendering diaries/test1.html.erb within layouts/to_c
+I, [2017-11-01T10:27:45.493098 #20810]  INFO -- :   Rendered diaries/test1.html.erb within layouts/to_c (1.1ms)
+I, [2017-11-01T10:27:46.269852 #20810]  INFO -- : Completed 200 OK in 781ms (Views: 779.6ms)
+
+
+I, [2017-11-01T10:27:46.288125 #20810]  INFO -- : Started GET "/assets/@first/bootstrap.self-b38817c3e3a3049abb1fc08dd6ae448b23330f8453226efdb074710209474f75.js?body=1" for 192.168.33.1 at 2017-11-01 10:27:46 +0900
+I, [2017-11-01T10:27:46.289164 #20810]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-11-01T10:27:46.295656 #20810]  INFO -- : Started GET "/assets/harries/harries.self-098e365834c8b2c4ca9bad9dc7912a1fd636891a7c0843d124426b7924815bb2.js?body=1" for 192.168.33.1 at 2017-11-01 10:27:46 +0900
+I, [2017-11-01T10:27:46.296554 #20810]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-11-01T10:27:46.301898 #20810]  INFO -- : Started GET "/assets/harries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 192.168.33.1 at 2017-11-01 10:27:46 +0900
+I, [2017-11-01T10:27:46.302446 #20810]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-11-01T10:27:46.305822 #20810]  INFO -- : Started GET "/assets/application.self-7f307d5df6b532618446dc05fd48ce3185f2e4be874c377bcf671071840f2241.css?body=1" for 192.168.33.1 at 2017-11-01 10:27:46 +0900
+I, [2017-11-01T10:27:46.306573 #20810]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255

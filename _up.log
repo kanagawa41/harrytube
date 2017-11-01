@@ -1,0 +1,79 @@
+=> Booting Puma
+=> Rails 5.1.4 application starting in development 
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.10.0 (ruby 2.4.1-p111), codename: Russell's Teapot
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://0.0.0.0:3002
+Use Ctrl-C to stop
+I, [2017-11-01T10:23:12.926885 #20810]  INFO -- : Started GET "/" for 192.168.33.1 at 2017-11-01 10:23:12 +0900
+I, [2017-11-01T10:23:12.933620 #20810]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-11-01T10:23:12.952384 #20810]  INFO -- : Processing by DiariesController#test1 as HTML
+I, [2017-11-01T10:23:13.286353 #20810]  INFO -- :   Rendering diaries/test1.html.erb within layouts/to_c
+I, [2017-11-01T10:23:13.288258 #20810]  INFO -- :   Rendered diaries/test1.html.erb within layouts/to_c (1.5ms)
+I, [2017-11-01T10:23:13.824522 #20810]  INFO -- : Completed 500 Internal Server Error in 872ms
+
+
+F, [2017-11-01T10:23:13.826368 #20810] FATAL -- :   
+F, [2017-11-01T10:23:13.826483 #20810] FATAL -- : ActionView::Template::Error (File to import not found or unreadable: admin/admin.
+Load paths:
+  /home/app/test/harrytube/app/assets/config
+  /home/app/test/harrytube/app/assets/fonts
+  /home/app/test/harrytube/app/assets/images
+  /home/app/test/harrytube/app/assets/javascripts
+  /home/app/test/harrytube/app/assets/stylesheets
+  /home/app/test/harrytube/vendor/bundle/ruby/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/app/test/harrytube/vendor/bundle/ruby/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/app/test/harrytube/vendor/bundle/ruby/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /home/app/test/harrytube/vendor/bundle/ruby/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/app/test/harrytube/node_modules):
+F, [2017-11-01T10:23:13.827785 #20810] FATAL -- :      6: 
+     7:     <meta charset="utf-8" />
+     8:     <meta name="viewport" content="width=device-width, initial-scale=1" />
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:     <%= favicon_link_tag('/favicon.ico') %>
+    12:   </head>
+F, [2017-11-01T10:23:13.827880 #20810] FATAL -- :   
+F, [2017-11-01T10:23:13.827957 #20810] FATAL -- : app/assets/stylesheets/application.scss:18
+app/views/layouts/to_c.html.erb:9:in `_app_views_layouts_to_c_html_erb___497285159964914276_70067062177920'
+I, [2017-11-01T10:24:44.985823 #20810]  INFO -- : Started GET "/" for 192.168.33.1 at 2017-11-01 10:24:44 +0900
+I, [2017-11-01T10:24:44.987252 #20810]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-11-01T10:24:44.990771 #20810]  INFO -- : Processing by DiariesController#test1 as HTML
+I, [2017-11-01T10:24:44.993938 #20810]  INFO -- :   Rendering diaries/test1.html.erb within layouts/to_c
+I, [2017-11-01T10:24:44.995174 #20810]  INFO -- :   Rendered diaries/test1.html.erb within layouts/to_c (1.0ms)
+I, [2017-11-01T10:24:48.088478 #20810]  INFO -- : Completed 500 Internal Server Error in 3097ms
+
+
+F, [2017-11-01T10:24:48.090171 #20810] FATAL -- :   
+F, [2017-11-01T10:24:48.090384 #20810] FATAL -- : ActionView::Template::Error (couldn't find file 'first' with type 'application/javascript'
+Checked in these paths: 
+  /home/app/test/harrytube/app/assets/config
+  /home/app/test/harrytube/app/assets/fonts
+  /home/app/test/harrytube/app/assets/images
+  /home/app/test/harrytube/app/assets/javascripts
+  /home/app/test/harrytube/app/assets/stylesheets
+  /home/app/test/harrytube/vendor/bundle/ruby/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/app/test/harrytube/vendor/bundle/ruby/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/app/test/harrytube/vendor/bundle/ruby/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /home/app/test/harrytube/vendor/bundle/ruby/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/app/test/harrytube/node_modules):
+F, [2017-11-01T10:24:48.090935 #20810] FATAL -- :      6: 
+     7:     <meta charset="utf-8" />
+     8:     <meta name="viewport" content="width=device-width, initial-scale=1" />
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:     <%= favicon_link_tag('/favicon.ico') %>
+    12:   </head>
+F, [2017-11-01T10:24:48.091068 #20810] FATAL -- :   
+F, [2017-11-01T10:24:48.091165 #20810] FATAL -- : app/assets/javascripts/application.js:15
+app/views/layouts/to_c.html.erb:9:in `_app_views_layouts_to_c_html_erb___497285159964914276_70066733664300'
+I, [2017-11-01T10:27:45.481573 #20810]  INFO -- : Started GET "/" for 192.168.33.1 at 2017-11-01 10:27:45 +0900
+I, [2017-11-01T10:27:45.483076 #20810]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-11-01T10:27:45.486804 #20810]  INFO -- : Processing by DiariesController#test1 as HTML
+I, [2017-11-01T10:27:45.491560 #20810]  INFO -- :   Rendering diaries/test1.html.erb within layouts/to_c
+I, [2017-11-01T10:27:45.492971 #20810]  INFO -- :   Rendered diaries/test1.html.erb within layouts/to_c (1.1ms)
+I, [2017-11-01T10:27:46.268854 #20810]  INFO -- : Completed 200 OK in 781ms (Views: 779.6ms)
+
+

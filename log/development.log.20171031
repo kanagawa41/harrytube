@@ -1,0 +1,25 @@
+# Logfile created on 2017-10-25 09:53:26 +0900 by logger.rb/56815
+I, [2017-10-25T09:53:26.715830 #6279]  INFO -- : Started GET "/" for 192.168.33.1 at 2017-10-25 09:53:26 +0900
+I, [2017-10-25T09:53:26.719606 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-25T09:53:26.721966 #6279]  INFO -- : Processing by DiariesController#test1 as HTML
+I, [2017-10-25T09:53:26.725330 #6279]  INFO -- :   Rendering diaries/test1.html.erb within layouts/to_c
+I, [2017-10-25T09:53:26.726065 #6279]  INFO -- :   Rendered diaries/test1.html.erb within layouts/to_c (0.5ms)
+I, [2017-10-25T09:53:26.840331 #6279]  INFO -- : Completed 200 OK in 118ms (Views: 116.8ms)
+
+
+I, [2017-10-25T10:53:16.619655 #6279]  INFO -- : Started GET "/" for 192.168.33.1 at 2017-10-25 10:53:16 +0900
+I, [2017-10-25T10:53:16.620703 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-25T10:53:16.622112 #6279]  INFO -- : Processing by DiariesController#test1 as HTML
+I, [2017-10-25T10:53:16.631282 #6279]  INFO -- :   Rendering diaries/test1.html.erb within layouts/to_c
+I, [2017-10-25T10:53:16.632109 #6279]  INFO -- :   Rendered diaries/test1.html.erb within layouts/to_c (0.6ms)
+I, [2017-10-25T10:53:16.963315 #6279]  INFO -- : Completed 200 OK in 339ms (Views: 332.4ms)
+
+
+I, [2017-10-25T10:53:18.880226 #6279]  INFO -- : Started GET "/" for 192.168.33.1 at 2017-10-25 10:53:18 +0900
+I, [2017-10-25T10:53:18.880825 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-25T10:53:18.881637 #6279]  INFO -- : Processing by DiariesController#test1 as HTML
+I, [2017-10-25T10:53:18.886760 #6279]  INFO -- :   Rendering diaries/test1.html.erb within layouts/to_c
+I, [2017-10-25T10:53:18.886957 #6279]  INFO -- :   Rendered diaries/test1.html.erb within layouts/to_c (0.2ms)
+I, [2017-10-25T10:53:19.041834 #6279]  INFO -- : Completed 200 OK in 159ms (Views: 156.1ms)
+
+

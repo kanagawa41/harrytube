@@ -1,0 +1,1621 @@
+# Logfile created on 2017-10-24 10:01:08 +0900 by logger.rb/56815
+I, [2017-10-24T10:01:12.386086 #6279]  INFO -- : Started GET "/" for 192.168.33.1 at 2017-10-24 10:01:12 +0900
+I, [2017-10-24T10:01:12.387760 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T10:01:12.401367 #6279]  INFO -- : Processing by DiariesController#test1 as HTML
+I, [2017-10-24T10:01:12.420858 #6279]  INFO -- :   Rendering diaries/test1.html.erb within layouts/to_c
+I, [2017-10-24T10:01:12.421955 #6279]  INFO -- :   Rendered diaries/test1.html.erb within layouts/to_c (0.9ms)
+I, [2017-10-24T10:01:16.750059 #6279]  INFO -- : Completed 200 OK in 4348ms (Views: 4332.4ms)
+
+
+I, [2017-10-24T10:01:16.772064 #6279]  INFO -- : Started GET "/assets/application.self-81a471c1264a0d55b8b83961dabfc867dfaaf3c66be47d661bd7e4fc8e9a9700.css?body=1" for 192.168.33.1 at 2017-10-24 10:01:16 +0900
+I, [2017-10-24T10:01:16.772744 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T10:01:16.788119 #6279]  INFO -- : Started GET "/assets/diaries/diaries.self-cefb0f11da2f18d500d5b2c13aa7fc4ac50ddc45d9f0238523766f368b2c20a5.js?body=1" for 192.168.33.1 at 2017-10-24 10:01:16 +0900
+I, [2017-10-24T10:01:16.788288 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T10:01:16.791705 #6279]  INFO -- : Started GET "/assets/diaries/simplecalendar.self-a9146916b1db15f5f744a4a6d6052dc183ac0d609f2adb8a5e09eb89c2ce7da9.js?body=1" for 192.168.33.1 at 2017-10-24 10:01:16 +0900
+I, [2017-10-24T10:01:16.792310 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T10:01:16.795035 #6279]  INFO -- : Started GET "/assets/diaries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 192.168.33.1 at 2017-10-24 10:01:16 +0900
+I, [2017-10-24T10:01:16.795392 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T10:01:20.604364 #6279]  INFO -- : Started GET "/test2" for 192.168.33.1 at 2017-10-24 10:01:20 +0900
+I, [2017-10-24T10:01:20.605000 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2017-10-24T10:01:20.605679 #6279] FATAL -- :   
+F, [2017-10-24T10:01:20.605744 #6279] FATAL -- : ActionController::RoutingError (No route matches [GET] "/test2"):
+F, [2017-10-24T10:01:20.605783 #6279] FATAL -- :   
+F, [2017-10-24T10:01:20.605834 #6279] FATAL -- : vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:605:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:437:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:301:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-10-24T10:01:20.623257 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2017-10-24T10:01:20.630931 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-10-24T10:01:20.632435 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+I, [2017-10-24T10:01:20.655566 #6279]  INFO -- :   Rendered collection of vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [47 times] (14.5ms)
+I, [2017-10-24T10:01:20.663467 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+I, [2017-10-24T10:01:20.670372 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-10-24T10:01:20.672103 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+I, [2017-10-24T10:01:20.672258 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (48.8ms)
+I, [2017-10-24T10:01:33.437574 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 10:01:33 +0900
+I, [2017-10-24T10:01:33.438349 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T10:01:33.441172 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T10:01:33.448529 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T10:01:33.449537 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (0.8ms)
+I, [2017-10-24T10:01:33.572526 #6279]  INFO -- : Completed 200 OK in 131ms (Views: 126.3ms)
+
+
+I, [2017-10-24T13:08:10.641978 #6279]  INFO -- : Started GET "/" for 192.168.33.1 at 2017-10-24 13:08:10 +0900
+I, [2017-10-24T13:08:10.644434 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:08:10.645780 #6279]  INFO -- : Processing by DiariesController#test1 as HTML
+I, [2017-10-24T13:08:10.651951 #6279]  INFO -- :   Rendering diaries/test1.html.erb within layouts/to_c
+I, [2017-10-24T13:08:10.652648 #6279]  INFO -- :   Rendered diaries/test1.html.erb within layouts/to_c (0.5ms)
+I, [2017-10-24T13:08:10.773584 #6279]  INFO -- : Completed 200 OK in 127ms (Views: 122.5ms)
+
+
+I, [2017-10-24T13:08:22.559920 #6279]  INFO -- : Started GET "/diary/test2" for 192.168.33.1 at 2017-10-24 13:08:22 +0900
+I, [2017-10-24T13:08:22.560511 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2017-10-24T13:08:22.560952 #6279] FATAL -- :   
+F, [2017-10-24T13:08:22.561031 #6279] FATAL -- : ActionController::RoutingError (No route matches [GET] "/diary/test2"):
+F, [2017-10-24T13:08:22.561103 #6279] FATAL -- :   
+F, [2017-10-24T13:08:22.561842 #6279] FATAL -- : vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:605:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:437:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:301:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-10-24T13:08:22.577334 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2017-10-24T13:08:22.583782 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-10-24T13:08:22.584978 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+I, [2017-10-24T13:08:22.605796 #6279]  INFO -- :   Rendered collection of vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [47 times] (12.5ms)
+I, [2017-10-24T13:08:22.611804 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+I, [2017-10-24T13:08:22.616737 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-10-24T13:08:22.617871 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+I, [2017-10-24T13:08:22.617957 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.4ms)
+I, [2017-10-24T13:08:36.318427 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:08:36 +0900
+I, [2017-10-24T13:08:36.319569 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:08:36.320644 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:08:36.325741 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:08:36.326826 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (0.9ms)
+I, [2017-10-24T13:08:36.460292 #6279]  INFO -- : Completed 200 OK in 139ms (Views: 136.8ms)
+
+
+I, [2017-10-24T13:09:21.272565 #6279]  INFO -- : Started GET "/assets/bootstrap.css.map" for 192.168.33.1 at 2017-10-24 13:09:21 +0900
+I, [2017-10-24T13:09:21.272973 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2017-10-24T13:09:21.276398 #6279] FATAL -- :   
+F, [2017-10-24T13:09:21.276640 #6279] FATAL -- : ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+F, [2017-10-24T13:09:21.276706 #6279] FATAL -- :   
+F, [2017-10-24T13:09:21.276948 #6279] FATAL -- : vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger_silence.rb:20:in `silence'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:605:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:437:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:301:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-10-24T13:09:21.299182 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2017-10-24T13:09:21.309366 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-10-24T13:09:21.312337 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+I, [2017-10-24T13:09:21.357221 #6279]  INFO -- :   Rendered collection of vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [47 times] (31.9ms)
+I, [2017-10-24T13:09:21.367914 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+I, [2017-10-24T13:09:21.379510 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-10-24T13:09:21.381983 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+I, [2017-10-24T13:09:21.382286 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (82.9ms)
+I, [2017-10-24T13:10:03.558255 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:10:03 +0900
+I, [2017-10-24T13:10:03.559485 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:10:03.560488 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:10:03.563622 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:10:03.564606 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (0.6ms)
+I, [2017-10-24T13:10:03.709248 #6279]  INFO -- : Completed 200 OK in 148ms (Views: 145.9ms)
+
+
+I, [2017-10-24T13:10:04.103994 #6279]  INFO -- : Started GET "/assets/bootstrap.css.map" for 192.168.33.1 at 2017-10-24 13:10:04 +0900
+I, [2017-10-24T13:10:04.106457 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2017-10-24T13:10:04.118325 #6279] FATAL -- :   
+F, [2017-10-24T13:10:04.118451 #6279] FATAL -- : ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+F, [2017-10-24T13:10:04.118549 #6279] FATAL -- :   
+F, [2017-10-24T13:10:04.118651 #6279] FATAL -- : vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger_silence.rb:20:in `silence'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:605:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:437:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:301:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-10-24T13:10:04.154311 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2017-10-24T13:10:04.165864 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-10-24T13:10:04.167709 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+I, [2017-10-24T13:10:04.201795 #6279]  INFO -- :   Rendered collection of vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [47 times] (20.3ms)
+I, [2017-10-24T13:10:04.214369 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+I, [2017-10-24T13:10:04.225410 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-10-24T13:10:04.227007 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+I, [2017-10-24T13:10:04.227349 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (72.9ms)
+I, [2017-10-24T13:10:50.717280 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:10:50 +0900
+I, [2017-10-24T13:10:50.717759 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:10:50.718749 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:10:50.723247 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:10:50.723855 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (0.4ms)
+I, [2017-10-24T13:10:50.863742 #6279]  INFO -- : Completed 200 OK in 145ms (Views: 143.3ms)
+
+
+I, [2017-10-24T13:10:51.299579 #6279]  INFO -- : Started GET "/assets/bootstrap.css.map" for 192.168.33.1 at 2017-10-24 13:10:51 +0900
+I, [2017-10-24T13:10:51.300706 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2017-10-24T13:10:51.304459 #6279] FATAL -- :   
+F, [2017-10-24T13:10:51.304620 #6279] FATAL -- : ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+F, [2017-10-24T13:10:51.304684 #6279] FATAL -- :   
+F, [2017-10-24T13:10:51.304770 #6279] FATAL -- : vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger_silence.rb:20:in `silence'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:605:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:437:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:301:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-10-24T13:10:51.337336 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2017-10-24T13:10:51.348591 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-10-24T13:10:51.351244 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+I, [2017-10-24T13:10:51.390045 #6279]  INFO -- :   Rendered collection of vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [47 times] (22.1ms)
+I, [2017-10-24T13:10:51.399457 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+I, [2017-10-24T13:10:51.409456 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-10-24T13:10:51.411676 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+I, [2017-10-24T13:10:51.411864 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (74.4ms)
+I, [2017-10-24T13:15:04.611695 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:15:04 +0900
+I, [2017-10-24T13:15:04.614633 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:15:04.615770 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:15:04.628639 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:15:04.629358 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (0.5ms)
+I, [2017-10-24T13:15:04.994705 #6279]  INFO -- : Completed 200 OK in 378ms (Views: 375.6ms)
+
+
+I, [2017-10-24T13:15:05.013523 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:15:05 +0900
+I, [2017-10-24T13:15:05.013920 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:15:05.014849 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:15:05.017081 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:15:05.018040 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (0.7ms)
+I, [2017-10-24T13:15:05.202679 #6279]  INFO -- : Completed 200 OK in 187ms (Views: 185.9ms)
+
+
+I, [2017-10-24T13:15:05.257935 #6279]  INFO -- : Started GET "/assets/diaries/simplecalendar.self-9cdda9b93be6e49e6750896f4b9e94554ffb669120ffbbcee4884cdfd3d8f446.js?body=1" for 192.168.33.1 at 2017-10-24 13:15:05 +0900
+I, [2017-10-24T13:15:05.258707 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:15:05.580409 #6279]  INFO -- : Started GET "/assets/bootstrap.css.map" for 192.168.33.1 at 2017-10-24 13:15:05 +0900
+I, [2017-10-24T13:15:05.580455 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2017-10-24T13:15:05.585914 #6279] FATAL -- :   
+F, [2017-10-24T13:15:05.586127 #6279] FATAL -- : ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+F, [2017-10-24T13:15:05.586210 #6279] FATAL -- :   
+F, [2017-10-24T13:15:05.586349 #6279] FATAL -- : vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger_silence.rb:20:in `silence'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:605:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:437:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:301:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-10-24T13:15:05.628707 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2017-10-24T13:15:05.640487 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-10-24T13:15:05.643348 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+I, [2017-10-24T13:15:05.674456 #6279]  INFO -- :   Rendered collection of vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [47 times] (18.5ms)
+I, [2017-10-24T13:15:05.683770 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+I, [2017-10-24T13:15:05.696249 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-10-24T13:15:05.700028 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.2ms)
+I, [2017-10-24T13:15:05.700730 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (71.2ms)
+I, [2017-10-24T13:15:07.601115 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:15:07 +0900
+I, [2017-10-24T13:15:07.602167 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:15:07.603458 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:15:07.607327 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:15:07.608030 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (0.3ms)
+I, [2017-10-24T13:15:07.832618 #6279]  INFO -- : Completed 200 OK in 228ms (Views: 225.8ms)
+
+
+I, [2017-10-24T13:15:46.939834 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:15:46 +0900
+I, [2017-10-24T13:15:46.941308 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:15:46.943708 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:15:47.073978 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:15:47.074965 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (0.7ms)
+I, [2017-10-24T13:15:47.284300 #6279]  INFO -- : Completed 200 OK in 339ms (Views: 210.7ms)
+
+
+I, [2017-10-24T13:16:29.020980 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:16:29 +0900
+I, [2017-10-24T13:16:29.021849 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:16:29.024183 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:16:29.027496 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:16:29.028526 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (0.7ms)
+I, [2017-10-24T13:16:29.465837 #6279]  INFO -- : Completed 200 OK in 437ms (Views: 435.0ms)
+
+
+I, [2017-10-24T13:16:29.909911 #6279]  INFO -- : Started GET "/assets/bootstrap.css.map" for 192.168.33.1 at 2017-10-24 13:16:29 +0900
+I, [2017-10-24T13:16:29.922709 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2017-10-24T13:16:29.933243 #6279] FATAL -- :   
+F, [2017-10-24T13:16:29.933444 #6279] FATAL -- : ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+F, [2017-10-24T13:16:29.933698 #6279] FATAL -- :   
+F, [2017-10-24T13:16:29.950289 #6279] FATAL -- : vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger_silence.rb:20:in `silence'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:605:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:437:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:301:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-10-24T13:16:30.004880 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2017-10-24T13:16:30.019756 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-10-24T13:16:30.021860 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+I, [2017-10-24T13:16:30.092296 #6279]  INFO -- :   Rendered collection of vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [47 times] (39.8ms)
+I, [2017-10-24T13:16:30.112828 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+I, [2017-10-24T13:16:30.126549 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-10-24T13:16:30.127629 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+I, [2017-10-24T13:16:30.135075 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (123.1ms)
+I, [2017-10-24T13:22:57.203991 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:22:57 +0900
+I, [2017-10-24T13:22:57.204537 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:22:57.205374 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:22:57.208623 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:22:57.209274 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (0.3ms)
+I, [2017-10-24T13:22:59.171442 #6279]  INFO -- : Completed 200 OK in 1965ms (Views: 1963.7ms)
+
+
+I, [2017-10-24T13:22:59.201870 #6279]  INFO -- : Started GET "/assets/application.self-37f511dc1901004f353fd0734430d89fd7bda87009b2e59140dbe32bfbe3eb92.css?body=1" for 192.168.33.1 at 2017-10-24 13:22:59 +0900
+I, [2017-10-24T13:22:59.210368 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:22:59.214701 #6279]  INFO -- : Started GET "/assets/diaries/color-complement.self-2ddb24c27ced74825b2d239f82c006b2b94c33b365e2f1bb68d121449a8f8454.js?body=1" for 192.168.33.1 at 2017-10-24 13:22:59 +0900
+I, [2017-10-24T13:22:59.217740 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:22:59.586059 #6279]  INFO -- : Started GET "/assets/bootstrap.css.map" for 192.168.33.1 at 2017-10-24 13:22:59 +0900
+I, [2017-10-24T13:22:59.587283 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2017-10-24T13:22:59.590908 #6279] FATAL -- :   
+F, [2017-10-24T13:22:59.590974 #6279] FATAL -- : ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+F, [2017-10-24T13:22:59.591040 #6279] FATAL -- :   
+F, [2017-10-24T13:22:59.591210 #6279] FATAL -- : vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger_silence.rb:20:in `silence'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:605:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:437:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:301:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-10-24T13:22:59.623457 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2017-10-24T13:22:59.635706 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-10-24T13:22:59.638548 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+I, [2017-10-24T13:22:59.673755 #6279]  INFO -- :   Rendered collection of vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [47 times] (21.2ms)
+I, [2017-10-24T13:22:59.686179 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+I, [2017-10-24T13:22:59.696369 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-10-24T13:22:59.698178 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+I, [2017-10-24T13:22:59.698315 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (74.2ms)
+I, [2017-10-24T13:27:54.320771 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:27:54 +0900
+I, [2017-10-24T13:27:54.322082 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:27:54.323067 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:27:54.326775 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:27:54.328418 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (1.1ms)
+I, [2017-10-24T13:27:54.784634 #6279]  INFO -- : Completed 200 OK in 460ms (Views: 458.5ms)
+
+
+I, [2017-10-24T13:27:54.833755 #6279]  INFO -- : Started GET "/assets/diaries/diaries.self-4c27b701f1cdaf79347bb23250adb98c72cd1985a4b8c41606bcc402b2004d44.js?body=1" for 192.168.33.1 at 2017-10-24 13:27:54 +0900
+I, [2017-10-24T13:27:54.835187 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:27:55.213547 #6279]  INFO -- : Started GET "/assets/bootstrap.css.map" for 192.168.33.1 at 2017-10-24 13:27:55 +0900
+I, [2017-10-24T13:27:55.214765 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2017-10-24T13:27:55.219242 #6279] FATAL -- :   
+F, [2017-10-24T13:27:55.219728 #6279] FATAL -- : ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+F, [2017-10-24T13:27:55.219860 #6279] FATAL -- :   
+F, [2017-10-24T13:27:55.220609 #6279] FATAL -- : vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger_silence.rb:20:in `silence'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:605:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:437:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:301:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-10-24T13:27:55.267692 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2017-10-24T13:27:55.286270 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-10-24T13:27:55.288807 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+I, [2017-10-24T13:27:55.333810 #6279]  INFO -- :   Rendered collection of vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [47 times] (31.6ms)
+I, [2017-10-24T13:27:55.345539 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+I, [2017-10-24T13:27:55.355619 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-10-24T13:27:55.357231 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+I, [2017-10-24T13:27:55.357525 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (89.3ms)
+I, [2017-10-24T13:29:12.400630 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:29:12 +0900
+I, [2017-10-24T13:29:12.402040 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:29:12.405638 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:29:12.409406 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:29:12.410371 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (0.7ms)
+I, [2017-10-24T13:29:12.871209 #6279]  INFO -- : Completed 200 OK in 462ms (Views: 460.7ms)
+
+
+I, [2017-10-24T13:29:12.933502 #6279]  INFO -- : Started GET "/assets/diaries/diaries.self-68357667c8fe7e414eee675fcf5c1af4c2760d4e7b85cb0509db0a12ed23753e.js?body=1" for 192.168.33.1 at 2017-10-24 13:29:12 +0900
+I, [2017-10-24T13:29:12.934110 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:29:13.245860 #6279]  INFO -- : Started GET "/assets/bootstrap.css.map" for 192.168.33.1 at 2017-10-24 13:29:13 +0900
+I, [2017-10-24T13:29:13.246462 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2017-10-24T13:29:13.262005 #6279] FATAL -- :   
+F, [2017-10-24T13:29:13.262241 #6279] FATAL -- : ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+F, [2017-10-24T13:29:13.262405 #6279] FATAL -- :   
+F, [2017-10-24T13:29:13.262647 #6279] FATAL -- : vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger_silence.rb:20:in `silence'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:605:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:437:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:301:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-10-24T13:29:13.292329 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2017-10-24T13:29:13.302965 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-10-24T13:29:13.305149 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+I, [2017-10-24T13:29:13.334339 #6279]  INFO -- :   Rendered collection of vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [47 times] (17.6ms)
+I, [2017-10-24T13:29:13.343626 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+I, [2017-10-24T13:29:13.352253 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-10-24T13:29:13.353597 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+I, [2017-10-24T13:29:13.353773 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (61.2ms)
+I, [2017-10-24T13:31:12.881005 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:31:12 +0900
+I, [2017-10-24T13:31:12.882121 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:31:12.883084 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:31:12.886228 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:31:12.887514 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (1.0ms)
+I, [2017-10-24T13:31:13.243251 #6279]  INFO -- : Completed 200 OK in 359ms (Views: 356.9ms)
+
+
+I, [2017-10-24T13:31:13.302036 #6279]  INFO -- : Started GET "/assets/diaries/diaries.self-089366651fac4adae14c80e9a1f58ed598cee22068dd5892c9ce75aa59146f94.js?body=1" for 192.168.33.1 at 2017-10-24 13:31:13 +0900
+I, [2017-10-24T13:31:13.302780 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:31:13.594001 #6279]  INFO -- : Started GET "/assets/bootstrap.css.map" for 192.168.33.1 at 2017-10-24 13:31:13 +0900
+I, [2017-10-24T13:31:13.594455 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2017-10-24T13:31:13.598969 #6279] FATAL -- :   
+F, [2017-10-24T13:31:13.599118 #6279] FATAL -- : ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+F, [2017-10-24T13:31:13.599351 #6279] FATAL -- :   
+F, [2017-10-24T13:31:13.599459 #6279] FATAL -- : vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger_silence.rb:20:in `silence'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:605:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:437:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:301:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-10-24T13:31:13.639914 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2017-10-24T13:31:13.658333 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-10-24T13:31:13.660809 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+I, [2017-10-24T13:31:13.698926 #6279]  INFO -- :   Rendered collection of vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [47 times] (24.3ms)
+I, [2017-10-24T13:31:13.708567 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+I, [2017-10-24T13:31:13.718416 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-10-24T13:31:13.719994 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+I, [2017-10-24T13:31:13.720156 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (79.8ms)
+I, [2017-10-24T13:31:22.791920 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:31:22 +0900
+I, [2017-10-24T13:31:22.793707 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:31:22.795136 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:31:22.798798 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:31:22.799810 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (0.8ms)
+I, [2017-10-24T13:31:23.158862 #6279]  INFO -- : Completed 200 OK in 362ms (Views: 360.3ms)
+
+
+I, [2017-10-24T13:31:23.212612 #6279]  INFO -- : Started GET "/assets/diaries/diaries.self-cfaebfdaba5f56813f22fc91c3d5493238980c70ef8aa1fb7c636de65b2cd7e7.js?body=1" for 192.168.33.1 at 2017-10-24 13:31:23 +0900
+I, [2017-10-24T13:31:23.213717 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:31:23.554405 #6279]  INFO -- : Started GET "/assets/bootstrap.css.map" for 192.168.33.1 at 2017-10-24 13:31:23 +0900
+I, [2017-10-24T13:31:23.555183 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2017-10-24T13:31:23.558706 #6279] FATAL -- :   
+F, [2017-10-24T13:31:23.558902 #6279] FATAL -- : ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+F, [2017-10-24T13:31:23.558983 #6279] FATAL -- :   
+F, [2017-10-24T13:31:23.559084 #6279] FATAL -- : vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger_silence.rb:20:in `silence'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:605:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:437:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:301:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-10-24T13:31:23.584175 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2017-10-24T13:31:23.595800 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-10-24T13:31:23.597624 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+I, [2017-10-24T13:31:23.627889 #6279]  INFO -- :   Rendered collection of vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [47 times] (18.5ms)
+I, [2017-10-24T13:31:23.637124 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+I, [2017-10-24T13:31:23.646549 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-10-24T13:31:23.647916 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+I, [2017-10-24T13:31:23.648009 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (63.7ms)
+I, [2017-10-24T13:32:05.881919 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:32:05 +0900
+I, [2017-10-24T13:32:05.883123 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:32:05.884810 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:32:05.888308 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:32:05.889258 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (0.7ms)
+I, [2017-10-24T13:32:06.296962 #6279]  INFO -- : Completed 200 OK in 412ms (Views: 410.3ms)
+
+
+I, [2017-10-24T13:32:06.344297 #6279]  INFO -- : Started GET "/assets/diaries/diaries.self-a79154315a7cb87dbe89cb629ab863cb14e8f09c1ff0ca09dfd561a7c80d3c18.js?body=1" for 192.168.33.1 at 2017-10-24 13:32:06 +0900
+I, [2017-10-24T13:32:06.345278 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:32:06.650021 #6279]  INFO -- : Started GET "/assets/bootstrap.css.map" for 192.168.33.1 at 2017-10-24 13:32:06 +0900
+I, [2017-10-24T13:32:06.650375 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2017-10-24T13:32:06.653618 #6279] FATAL -- :   
+F, [2017-10-24T13:32:06.653708 #6279] FATAL -- : ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+F, [2017-10-24T13:32:06.653797 #6279] FATAL -- :   
+F, [2017-10-24T13:32:06.653930 #6279] FATAL -- : vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger_silence.rb:20:in `silence'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:605:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:437:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:301:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-10-24T13:32:06.680277 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2017-10-24T13:32:06.692109 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-10-24T13:32:06.694460 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+I, [2017-10-24T13:32:06.725443 #6279]  INFO -- :   Rendered collection of vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [47 times] (19.6ms)
+I, [2017-10-24T13:32:06.733880 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+I, [2017-10-24T13:32:06.743612 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-10-24T13:32:06.745245 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+I, [2017-10-24T13:32:06.745380 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (65.0ms)
+I, [2017-10-24T13:32:47.076042 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:32:47 +0900
+I, [2017-10-24T13:32:47.078274 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:32:47.079758 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:32:47.084967 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:32:47.085969 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (0.8ms)
+I, [2017-10-24T13:32:47.521706 #6279]  INFO -- : Completed 200 OK in 441ms (Views: 437.2ms)
+
+
+I, [2017-10-24T13:32:47.597277 #6279]  INFO -- : Started GET "/assets/diaries/diaries.self-08842f72588de6d38f6f1344cd5c1d944dcf45081fbe4dcc23507af0321caa2e.js?body=1" for 192.168.33.1 at 2017-10-24 13:32:47 +0900
+I, [2017-10-24T13:32:47.598145 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:32:47.883613 #6279]  INFO -- : Started GET "/assets/bootstrap.css.map" for 192.168.33.1 at 2017-10-24 13:32:47 +0900
+I, [2017-10-24T13:32:47.883799 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2017-10-24T13:32:47.890585 #6279] FATAL -- :   
+F, [2017-10-24T13:32:47.890660 #6279] FATAL -- : ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+F, [2017-10-24T13:32:47.890703 #6279] FATAL -- :   
+F, [2017-10-24T13:32:47.892780 #6279] FATAL -- : vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger_silence.rb:20:in `silence'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:605:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:437:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:301:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-10-24T13:32:47.921910 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2017-10-24T13:32:47.933210 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-10-24T13:32:47.936193 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+I, [2017-10-24T13:32:47.975435 #6279]  INFO -- :   Rendered collection of vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [47 times] (24.9ms)
+I, [2017-10-24T13:32:47.986068 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+I, [2017-10-24T13:32:47.997310 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-10-24T13:32:47.999214 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+I, [2017-10-24T13:32:47.999448 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (77.4ms)
+I, [2017-10-24T13:33:00.222555 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:33:00 +0900
+I, [2017-10-24T13:33:00.224049 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:33:00.225734 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:33:00.228890 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:33:00.229955 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (0.7ms)
+I, [2017-10-24T13:33:00.580345 #6279]  INFO -- : Completed 200 OK in 354ms (Views: 352.7ms)
+
+
+I, [2017-10-24T13:33:00.622340 #6279]  INFO -- : Started GET "/assets/diaries/diaries.self-a122021dc4de53412450e80e7bf45da46d39b237b84a29d1fca1c0aca0db7606.js?body=1" for 192.168.33.1 at 2017-10-24 13:33:00 +0900
+I, [2017-10-24T13:33:00.622875 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:33:00.880976 #6279]  INFO -- : Started GET "/assets/bootstrap.css.map" for 192.168.33.1 at 2017-10-24 13:33:00 +0900
+I, [2017-10-24T13:33:00.884369 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2017-10-24T13:33:00.892718 #6279] FATAL -- :   
+F, [2017-10-24T13:33:00.892873 #6279] FATAL -- : ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+F, [2017-10-24T13:33:00.892985 #6279] FATAL -- :   
+F, [2017-10-24T13:33:00.893081 #6279] FATAL -- : vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger_silence.rb:20:in `silence'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:605:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:437:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:301:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-10-24T13:33:00.939785 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2017-10-24T13:33:00.949733 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-10-24T13:33:00.951594 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+I, [2017-10-24T13:33:00.974800 #6279]  INFO -- :   Rendered collection of vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [47 times] (13.6ms)
+I, [2017-10-24T13:33:00.982850 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+I, [2017-10-24T13:33:00.991263 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-10-24T13:33:00.993314 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+I, [2017-10-24T13:33:00.993594 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (53.6ms)
+I, [2017-10-24T13:33:16.982916 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:33:16 +0900
+I, [2017-10-24T13:33:16.984904 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:33:16.986297 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:33:16.992001 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:33:16.993290 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (1.0ms)
+I, [2017-10-24T13:33:17.482631 #6279]  INFO -- : Completed 200 OK in 494ms (Views: 491.2ms)
+
+
+I, [2017-10-24T13:33:17.537671 #6279]  INFO -- : Started GET "/assets/diaries/diaries.self-a0f31713685db1146552e7c9ce517f04629debe513e0400a2fe3f505d262cd7b.js?body=1" for 192.168.33.1 at 2017-10-24 13:33:17 +0900
+I, [2017-10-24T13:33:17.538221 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:33:17.849034 #6279]  INFO -- : Started GET "/assets/bootstrap.css.map" for 192.168.33.1 at 2017-10-24 13:33:17 +0900
+I, [2017-10-24T13:33:17.850316 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2017-10-24T13:33:17.852812 #6279] FATAL -- :   
+F, [2017-10-24T13:33:17.852881 #6279] FATAL -- : ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+F, [2017-10-24T13:33:17.852928 #6279] FATAL -- :   
+F, [2017-10-24T13:33:17.853018 #6279] FATAL -- : vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger_silence.rb:20:in `silence'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:605:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:437:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:301:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-10-24T13:33:17.891600 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2017-10-24T13:33:17.903175 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-10-24T13:33:17.905252 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+I, [2017-10-24T13:33:17.932705 #6279]  INFO -- :   Rendered collection of vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [47 times] (16.5ms)
+I, [2017-10-24T13:33:17.941249 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+I, [2017-10-24T13:33:17.949925 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-10-24T13:33:17.951896 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+I, [2017-10-24T13:33:17.952053 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (60.3ms)
+I, [2017-10-24T13:33:35.645613 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:33:35 +0900
+I, [2017-10-24T13:33:35.647276 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:33:35.649140 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:33:35.654003 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:33:35.654976 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (0.7ms)
+I, [2017-10-24T13:33:36.028659 #6279]  INFO -- : Completed 200 OK in 378ms (Views: 374.9ms)
+
+
+I, [2017-10-24T13:33:36.082154 #6279]  INFO -- : Started GET "/assets/diaries/diaries.self-47c77956fae58c544a62daf50fce497e48942a0b9747db42f816c5b269a2496f.js?body=1" for 192.168.33.1 at 2017-10-24 13:33:36 +0900
+I, [2017-10-24T13:33:36.083036 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:33:36.402214 #6279]  INFO -- : Started GET "/assets/bootstrap.css.map" for 192.168.33.1 at 2017-10-24 13:33:36 +0900
+I, [2017-10-24T13:33:36.403641 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2017-10-24T13:33:36.407317 #6279] FATAL -- :   
+F, [2017-10-24T13:33:36.407790 #6279] FATAL -- : ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+F, [2017-10-24T13:33:36.407884 #6279] FATAL -- :   
+F, [2017-10-24T13:33:36.407988 #6279] FATAL -- : vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger_silence.rb:20:in `silence'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:605:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:437:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:301:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-10-24T13:33:36.433660 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2017-10-24T13:33:36.447840 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-10-24T13:33:36.449707 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+I, [2017-10-24T13:33:36.482158 #6279]  INFO -- :   Rendered collection of vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [47 times] (19.7ms)
+I, [2017-10-24T13:33:36.491638 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+I, [2017-10-24T13:33:36.501866 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-10-24T13:33:36.504024 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+I, [2017-10-24T13:33:36.504204 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (70.3ms)
+I, [2017-10-24T13:33:46.868104 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:33:46 +0900
+I, [2017-10-24T13:33:46.869688 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:33:46.870929 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:33:46.874704 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:33:46.875534 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (0.6ms)
+I, [2017-10-24T13:33:47.366938 #6279]  INFO -- : Completed 200 OK in 496ms (Views: 493.5ms)
+
+
+I, [2017-10-24T13:33:47.411238 #6279]  INFO -- : Started GET "/assets/diaries/diaries.self-7ed09d94a818f5d45bac191df5da703ece7f867e06f388b757311ddbf7ed2ff2.js?body=1" for 192.168.33.1 at 2017-10-24 13:33:47 +0900
+I, [2017-10-24T13:33:47.440726 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:33:47.709438 #6279]  INFO -- : Started GET "/assets/bootstrap.css.map" for 192.168.33.1 at 2017-10-24 13:33:47 +0900
+I, [2017-10-24T13:33:47.710238 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2017-10-24T13:33:47.713158 #6279] FATAL -- :   
+F, [2017-10-24T13:33:47.713271 #6279] FATAL -- : ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+F, [2017-10-24T13:33:47.713332 #6279] FATAL -- :   
+F, [2017-10-24T13:33:47.713426 #6279] FATAL -- : vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger_silence.rb:20:in `silence'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:605:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:437:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:301:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-10-24T13:33:47.736529 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2017-10-24T13:33:47.746705 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-10-24T13:33:47.748792 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+I, [2017-10-24T13:33:47.772799 #6279]  INFO -- :   Rendered collection of vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [47 times] (13.4ms)
+I, [2017-10-24T13:33:47.780113 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+I, [2017-10-24T13:33:47.787862 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-10-24T13:33:47.789049 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+I, [2017-10-24T13:33:47.789230 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (52.5ms)
+I, [2017-10-24T13:35:57.241875 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:35:57 +0900
+I, [2017-10-24T13:35:57.242933 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:35:57.246179 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:35:57.249373 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:35:57.250523 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (0.7ms)
+I, [2017-10-24T13:35:57.611707 #6279]  INFO -- : Completed 200 OK in 364ms (Views: 362.4ms)
+
+
+I, [2017-10-24T13:35:57.664327 #6279]  INFO -- : Started GET "/assets/diaries/diaries.self-48004dd5971c4cd213238732fdd225b63d4ad0f7182f619680d699c1b7c6ccee.js?body=1" for 192.168.33.1 at 2017-10-24 13:35:57 +0900
+I, [2017-10-24T13:35:57.665132 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:35:58.104183 #6279]  INFO -- : Started GET "/assets/bootstrap.css.map" for 192.168.33.1 at 2017-10-24 13:35:58 +0900
+I, [2017-10-24T13:35:58.104456 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2017-10-24T13:35:58.108209 #6279] FATAL -- :   
+F, [2017-10-24T13:35:58.108286 #6279] FATAL -- : ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+F, [2017-10-24T13:35:58.108337 #6279] FATAL -- :   
+F, [2017-10-24T13:35:58.108410 #6279] FATAL -- : vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger_silence.rb:20:in `silence'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:605:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:437:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:301:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-10-24T13:35:58.136442 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2017-10-24T13:35:58.147210 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-10-24T13:35:58.148929 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+I, [2017-10-24T13:35:58.181349 #6279]  INFO -- :   Rendered collection of vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [47 times] (21.0ms)
+I, [2017-10-24T13:35:58.192781 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+I, [2017-10-24T13:35:58.204634 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-10-24T13:35:58.206492 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+I, [2017-10-24T13:35:58.206592 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (70.1ms)
+I, [2017-10-24T13:36:04.157013 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:36:04 +0900
+I, [2017-10-24T13:36:04.158277 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:36:04.159312 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:36:04.164017 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:36:04.165037 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (0.8ms)
+I, [2017-10-24T13:36:04.328302 #6279]  INFO -- : Completed 200 OK in 168ms (Views: 166.3ms)
+
+
+I, [2017-10-24T13:36:04.906768 #6279]  INFO -- : Started GET "/assets/bootstrap.css.map" for 192.168.33.1 at 2017-10-24 13:36:04 +0900
+I, [2017-10-24T13:36:04.907395 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2017-10-24T13:36:04.910682 #6279] FATAL -- :   
+F, [2017-10-24T13:36:04.910766 #6279] FATAL -- : ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+F, [2017-10-24T13:36:04.910834 #6279] FATAL -- :   
+F, [2017-10-24T13:36:04.910989 #6279] FATAL -- : vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger_silence.rb:20:in `silence'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:605:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:437:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:301:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-10-24T13:36:04.934367 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2017-10-24T13:36:04.944585 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-10-24T13:36:04.946621 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+I, [2017-10-24T13:36:04.976758 #6279]  INFO -- :   Rendered collection of vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [47 times] (18.2ms)
+I, [2017-10-24T13:36:04.986863 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+I, [2017-10-24T13:36:04.995849 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-10-24T13:36:04.997272 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+I, [2017-10-24T13:36:04.997420 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (62.9ms)
+I, [2017-10-24T13:36:19.330681 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:36:19 +0900
+I, [2017-10-24T13:36:19.332187 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:36:19.333706 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:36:19.337381 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:36:19.338551 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (0.6ms)
+I, [2017-10-24T13:36:19.817403 #6279]  INFO -- : Completed 200 OK in 483ms (Views: 481.3ms)
+
+
+I, [2017-10-24T13:36:19.868317 #6279]  INFO -- : Started GET "/assets/diaries/diaries.self-e50eb60d694e2a9ac42332128c7391163866bb2835c778b89e6eaed4b91faf90.js?body=1" for 192.168.33.1 at 2017-10-24 13:36:19 +0900
+I, [2017-10-24T13:36:19.868869 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:36:20.176893 #6279]  INFO -- : Started GET "/assets/bootstrap.css.map" for 192.168.33.1 at 2017-10-24 13:36:20 +0900
+I, [2017-10-24T13:36:20.177211 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2017-10-24T13:36:20.181156 #6279] FATAL -- :   
+F, [2017-10-24T13:36:20.181277 #6279] FATAL -- : ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+F, [2017-10-24T13:36:20.181726 #6279] FATAL -- :   
+F, [2017-10-24T13:36:20.181848 #6279] FATAL -- : vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger_silence.rb:20:in `silence'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:605:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:437:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:301:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-10-24T13:36:20.210086 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2017-10-24T13:36:20.224332 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-10-24T13:36:20.225980 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+I, [2017-10-24T13:36:20.262814 #6279]  INFO -- :   Rendered collection of vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [47 times] (24.1ms)
+I, [2017-10-24T13:36:20.272681 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+I, [2017-10-24T13:36:20.282626 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-10-24T13:36:20.283882 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+I, [2017-10-24T13:36:20.284064 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (73.8ms)
+I, [2017-10-24T13:42:05.271361 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:42:05 +0900
+I, [2017-10-24T13:42:05.272751 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:42:05.273713 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:42:05.277561 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:42:05.278517 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (0.6ms)
+I, [2017-10-24T13:42:05.687432 #6279]  INFO -- : Completed 200 OK in 413ms (Views: 410.9ms)
+
+
+I, [2017-10-24T13:42:05.770565 #6279]  INFO -- : Started GET "/assets/diaries/diaries.self-3aaf70b1ecae90dd96b8b007746c4e16fa183f186c1c821712e2aad6dfd8c1b2.js?body=1" for 192.168.33.1 at 2017-10-24 13:42:05 +0900
+I, [2017-10-24T13:42:05.770836 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:42:06.200414 #6279]  INFO -- : Started GET "/assets/bootstrap.css.map" for 192.168.33.1 at 2017-10-24 13:42:06 +0900
+I, [2017-10-24T13:42:06.201357 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2017-10-24T13:42:06.205062 #6279] FATAL -- :   
+F, [2017-10-24T13:42:06.205214 #6279] FATAL -- : ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+F, [2017-10-24T13:42:06.205280 #6279] FATAL -- :   
+F, [2017-10-24T13:42:06.205361 #6279] FATAL -- : vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger_silence.rb:20:in `silence'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:605:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:437:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:301:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-10-24T13:42:06.231906 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2017-10-24T13:42:06.243075 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-10-24T13:42:06.245595 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+I, [2017-10-24T13:42:06.282563 #6279]  INFO -- :   Rendered collection of vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [47 times] (23.4ms)
+I, [2017-10-24T13:42:06.292456 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+I, [2017-10-24T13:42:06.302733 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-10-24T13:42:06.305285 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+I, [2017-10-24T13:42:06.305536 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (73.4ms)
+I, [2017-10-24T13:42:28.892659 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:42:28 +0900
+I, [2017-10-24T13:42:28.893878 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:42:28.894775 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:42:28.897964 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:42:28.899058 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (0.9ms)
+I, [2017-10-24T13:42:29.281810 #6279]  INFO -- : Completed 200 OK in 387ms (Views: 384.9ms)
+
+
+I, [2017-10-24T13:42:29.331069 #6279]  INFO -- : Started GET "/assets/diaries/diaries.self-04fe677aefb70c00232f34d726e49eaf566267ab40f6e89b3f6e60ac9229fcda.js?body=1" for 192.168.33.1 at 2017-10-24 13:42:29 +0900
+I, [2017-10-24T13:42:29.353638 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:42:29.645088 #6279]  INFO -- : Started GET "/assets/bootstrap.css.map" for 192.168.33.1 at 2017-10-24 13:42:29 +0900
+I, [2017-10-24T13:42:29.645673 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2017-10-24T13:42:29.652216 #6279] FATAL -- :   
+F, [2017-10-24T13:42:29.652364 #6279] FATAL -- : ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+F, [2017-10-24T13:42:29.652450 #6279] FATAL -- :   
+F, [2017-10-24T13:42:29.652577 #6279] FATAL -- : vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger_silence.rb:20:in `silence'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:605:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:437:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:301:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-10-24T13:42:29.678137 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2017-10-24T13:42:29.690457 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-10-24T13:42:29.693889 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+I, [2017-10-24T13:42:29.725654 #6279]  INFO -- :   Rendered collection of vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [47 times] (17.9ms)
+I, [2017-10-24T13:42:29.735816 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+I, [2017-10-24T13:42:29.744588 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-10-24T13:42:29.746316 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+I, [2017-10-24T13:42:29.746723 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (68.3ms)
+I, [2017-10-24T13:43:29.111563 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:43:29 +0900
+I, [2017-10-24T13:43:29.112840 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:43:29.113714 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:43:29.117789 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:43:29.119005 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (0.9ms)
+I, [2017-10-24T13:43:29.547938 #6279]  INFO -- : Completed 200 OK in 434ms (Views: 431.6ms)
+
+
+I, [2017-10-24T13:43:29.576331 #6279]  INFO -- : Started GET "/assets/diaries/diaries.self-59462a083072038acbcebf7b6dfcc2529ef944b202489caa5e15c37a55d298da.js?body=1" for 192.168.33.1 at 2017-10-24 13:43:29 +0900
+I, [2017-10-24T13:43:29.576778 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:43:29.957987 #6279]  INFO -- : Started GET "/assets/bootstrap.css.map" for 192.168.33.1 at 2017-10-24 13:43:29 +0900
+I, [2017-10-24T13:43:29.958636 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2017-10-24T13:43:29.964860 #6279] FATAL -- :   
+F, [2017-10-24T13:43:29.965382 #6279] FATAL -- : ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+F, [2017-10-24T13:43:29.965493 #6279] FATAL -- :   
+F, [2017-10-24T13:43:29.965640 #6279] FATAL -- : vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger_silence.rb:20:in `silence'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:605:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:437:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:301:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-10-24T13:43:30.001101 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2017-10-24T13:43:30.012795 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-10-24T13:43:30.016706 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+I, [2017-10-24T13:43:30.064352 #6279]  INFO -- :   Rendered collection of vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [47 times] (28.8ms)
+I, [2017-10-24T13:43:30.075155 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+I, [2017-10-24T13:43:30.086387 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-10-24T13:43:30.088103 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+I, [2017-10-24T13:43:30.088271 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (87.0ms)
+I, [2017-10-24T13:43:43.112538 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:43:43 +0900
+I, [2017-10-24T13:43:43.113995 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:43:43.115266 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:43:43.118608 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:43:43.119455 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (0.6ms)
+I, [2017-10-24T13:43:43.509790 #6279]  INFO -- : Completed 200 OK in 394ms (Views: 392.8ms)
+
+
+I, [2017-10-24T13:43:43.552780 #6279]  INFO -- : Started GET "/assets/diaries/diaries.self-0ccefbb8bb1af99b581da13461211a3ed244e11acf33f488a19c755604ba9be4.js?body=1" for 192.168.33.1 at 2017-10-24 13:43:43 +0900
+I, [2017-10-24T13:43:43.553456 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:43:43.904241 #6279]  INFO -- : Started GET "/assets/bootstrap.css.map" for 192.168.33.1 at 2017-10-24 13:43:43 +0900
+I, [2017-10-24T13:43:43.905315 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2017-10-24T13:43:43.912262 #6279] FATAL -- :   
+F, [2017-10-24T13:43:43.912554 #6279] FATAL -- : ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+F, [2017-10-24T13:43:43.912639 #6279] FATAL -- :   
+F, [2017-10-24T13:43:43.912922 #6279] FATAL -- : vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger_silence.rb:20:in `silence'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:605:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:437:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:301:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-10-24T13:43:43.944199 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2017-10-24T13:43:43.958330 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-10-24T13:43:43.960788 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+I, [2017-10-24T13:43:43.996158 #6279]  INFO -- :   Rendered collection of vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [47 times] (21.9ms)
+I, [2017-10-24T13:43:44.005903 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.9ms)
+I, [2017-10-24T13:43:44.015758 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-10-24T13:43:44.017251 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+I, [2017-10-24T13:43:44.017534 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (72.9ms)
+I, [2017-10-24T13:45:17.743582 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:45:17 +0900
+I, [2017-10-24T13:45:17.745303 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:45:17.746184 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:45:17.749299 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:45:17.750737 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (1.0ms)
+I, [2017-10-24T13:45:18.197389 #6279]  INFO -- : Completed 200 OK in 450ms (Views: 448.5ms)
+
+
+I, [2017-10-24T13:45:18.251558 #6279]  INFO -- : Started GET "/assets/diaries/diaries.self-51a7d1c6a7ed6324852b28e2c04ee4a5a2ebd89245aac096085447e9c9dea6b7.js?body=1" for 192.168.33.1 at 2017-10-24 13:45:18 +0900
+I, [2017-10-24T13:45:18.253349 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:45:18.508134 #6279]  INFO -- : Started GET "/assets/bootstrap.css.map" for 192.168.33.1 at 2017-10-24 13:45:18 +0900
+I, [2017-10-24T13:45:18.508566 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2017-10-24T13:45:18.512094 #6279] FATAL -- :   
+F, [2017-10-24T13:45:18.512247 #6279] FATAL -- : ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+F, [2017-10-24T13:45:18.512303 #6279] FATAL -- :   
+F, [2017-10-24T13:45:18.512367 #6279] FATAL -- : vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger_silence.rb:20:in `silence'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:605:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:437:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:301:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-10-24T13:45:18.557101 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2017-10-24T13:45:18.576731 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-10-24T13:45:18.578536 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+I, [2017-10-24T13:45:18.674999 #6279]  INFO -- :   Rendered collection of vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [47 times] (26.2ms)
+I, [2017-10-24T13:45:18.685038 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+I, [2017-10-24T13:45:18.697456 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-10-24T13:45:18.699736 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+I, [2017-10-24T13:45:18.699864 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (142.0ms)
+I, [2017-10-24T13:47:11.784647 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:47:11 +0900
+I, [2017-10-24T13:47:11.785667 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:47:11.786574 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:47:11.789877 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:47:11.791305 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (0.8ms)
+I, [2017-10-24T13:47:12.242811 #6279]  INFO -- : Completed 200 OK in 455ms (Views: 453.1ms)
+
+
+I, [2017-10-24T13:47:12.302120 #6279]  INFO -- : Started GET "/assets/diaries/diaries.self-acad9cbeb64f41e9ab37f77e7fe2b23afbdd7ae7743307f4c73a0eb4c0966dc3.js?body=1" for 192.168.33.1 at 2017-10-24 13:47:12 +0900
+I, [2017-10-24T13:47:12.302917 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:47:12.663092 #6279]  INFO -- : Started GET "/assets/bootstrap.css.map" for 192.168.33.1 at 2017-10-24 13:47:12 +0900
+I, [2017-10-24T13:47:12.663876 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2017-10-24T13:47:12.669558 #6279] FATAL -- :   
+F, [2017-10-24T13:47:12.669697 #6279] FATAL -- : ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+F, [2017-10-24T13:47:12.670095 #6279] FATAL -- :   
+F, [2017-10-24T13:47:12.670432 #6279] FATAL -- : vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger_silence.rb:20:in `silence'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:605:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:437:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:301:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-10-24T13:47:12.697738 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2017-10-24T13:47:12.709209 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-10-24T13:47:12.710789 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+I, [2017-10-24T13:47:12.742328 #6279]  INFO -- :   Rendered collection of vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [47 times] (19.2ms)
+I, [2017-10-24T13:47:12.751771 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+I, [2017-10-24T13:47:12.759980 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-10-24T13:47:12.761344 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+I, [2017-10-24T13:47:12.761587 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (63.7ms)
+I, [2017-10-24T13:50:30.290391 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:50:30 +0900
+I, [2017-10-24T13:50:30.291508 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:50:30.292521 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:50:30.295536 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:50:30.296559 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (0.8ms)
+I, [2017-10-24T13:50:30.620947 #6279]  INFO -- : Completed 200 OK in 327ms (Views: 326.2ms)
+
+
+I, [2017-10-24T13:50:30.661057 #6279]  INFO -- : Started GET "/assets/diaries/diaries.self-b7b3620d5c39e78a6ffcc7f68e2c72949a6e17884da8262ffd754a60f4e1a5cc.js?body=1" for 192.168.33.1 at 2017-10-24 13:50:30 +0900
+I, [2017-10-24T13:50:30.661769 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:50:31.011550 #6279]  INFO -- : Started GET "/assets/bootstrap.css.map" for 192.168.33.1 at 2017-10-24 13:50:31 +0900
+I, [2017-10-24T13:50:31.012706 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2017-10-24T13:50:31.019714 #6279] FATAL -- :   
+F, [2017-10-24T13:50:31.019839 #6279] FATAL -- : ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+F, [2017-10-24T13:50:31.019903 #6279] FATAL -- :   
+F, [2017-10-24T13:50:31.019982 #6279] FATAL -- : vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger_silence.rb:20:in `silence'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:605:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:437:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:301:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-10-24T13:50:31.057039 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2017-10-24T13:50:31.068707 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-10-24T13:50:31.071449 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+I, [2017-10-24T13:50:31.110742 #6279]  INFO -- :   Rendered collection of vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [47 times] (20.8ms)
+I, [2017-10-24T13:50:31.120851 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+I, [2017-10-24T13:50:31.131456 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-10-24T13:50:31.133234 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+I, [2017-10-24T13:50:31.133397 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (76.2ms)
+I, [2017-10-24T13:52:15.750393 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:52:15 +0900
+I, [2017-10-24T13:52:15.751130 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:52:15.751851 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:52:15.754144 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:52:15.755264 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (1.0ms)
+I, [2017-10-24T13:52:16.200316 #6279]  INFO -- : Completed 200 OK in 446ms (Views: 444.9ms)
+
+
+I, [2017-10-24T13:52:16.247034 #6279]  INFO -- : Started GET "/assets/diaries/diaries.self-7f59eb0eff1fb51b0085e4b1c11a917638e87ec934cd27fa2254afd08a9747be.js?body=1" for 192.168.33.1 at 2017-10-24 13:52:16 +0900
+I, [2017-10-24T13:52:16.247516 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:52:16.546779 #6279]  INFO -- : Started GET "/assets/bootstrap.css.map" for 192.168.33.1 at 2017-10-24 13:52:16 +0900
+I, [2017-10-24T13:52:16.547199 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2017-10-24T13:52:16.549537 #6279] FATAL -- :   
+F, [2017-10-24T13:52:16.549634 #6279] FATAL -- : ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+F, [2017-10-24T13:52:16.549704 #6279] FATAL -- :   
+F, [2017-10-24T13:52:16.549820 #6279] FATAL -- : vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger_silence.rb:20:in `silence'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:605:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:437:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:301:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-10-24T13:52:16.596707 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2017-10-24T13:52:16.609845 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-10-24T13:52:16.612179 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+I, [2017-10-24T13:52:16.649800 #6279]  INFO -- :   Rendered collection of vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [47 times] (22.8ms)
+I, [2017-10-24T13:52:16.662843 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.8ms)
+I, [2017-10-24T13:52:16.682438 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-10-24T13:52:16.684964 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+I, [2017-10-24T13:52:16.685092 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (88.2ms)
+I, [2017-10-24T13:52:56.313999 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:52:56 +0900
+I, [2017-10-24T13:52:56.315262 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:52:56.317139 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:52:56.320621 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:52:56.322162 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (1.0ms)
+I, [2017-10-24T13:52:56.744122 #6279]  INFO -- : Completed 200 OK in 426ms (Views: 423.6ms)
+
+
+I, [2017-10-24T13:52:56.781433 #6279]  INFO -- : Started GET "/assets/diaries/diaries.self-8b4f7abafb1f2694d4a199ed3bdc3ffe9d13659d50b98cbd8939d8aec7dc2a41.js?body=1" for 192.168.33.1 at 2017-10-24 13:52:56 +0900
+I, [2017-10-24T13:52:56.781706 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:52:57.112772 #6279]  INFO -- : Started GET "/assets/bootstrap.css.map" for 192.168.33.1 at 2017-10-24 13:52:57 +0900
+I, [2017-10-24T13:52:57.113140 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2017-10-24T13:52:57.115410 #6279] FATAL -- :   
+F, [2017-10-24T13:52:57.115545 #6279] FATAL -- : ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+F, [2017-10-24T13:52:57.115637 #6279] FATAL -- :   
+F, [2017-10-24T13:52:57.115793 #6279] FATAL -- : vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger_silence.rb:20:in `silence'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:605:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:437:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:301:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-10-24T13:52:57.157201 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2017-10-24T13:52:57.169848 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-10-24T13:52:57.170978 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+I, [2017-10-24T13:52:57.208963 #6279]  INFO -- :   Rendered collection of vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [47 times] (20.1ms)
+I, [2017-10-24T13:52:57.214160 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+I, [2017-10-24T13:52:57.225734 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-10-24T13:52:57.231022 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.1ms)
+I, [2017-10-24T13:52:57.231432 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (73.8ms)
+I, [2017-10-24T13:53:18.707594 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:53:18 +0900
+I, [2017-10-24T13:53:18.709069 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:53:18.710342 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:53:18.714393 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:53:18.716321 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (1.0ms)
+I, [2017-10-24T13:53:19.239250 #6279]  INFO -- : Completed 200 OK in 527ms (Views: 524.5ms)
+
+
+I, [2017-10-24T13:53:19.270616 #6279]  INFO -- : Started GET "/assets/diaries/diaries.self-a3cf0e649a15169202917bc08edc605612860c8464e4039c61afc627d7a864d6.js?body=1" for 192.168.33.1 at 2017-10-24 13:53:19 +0900
+I, [2017-10-24T13:53:19.278365 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:53:19.570184 #6279]  INFO -- : Started GET "/assets/bootstrap.css.map" for 192.168.33.1 at 2017-10-24 13:53:19 +0900
+I, [2017-10-24T13:53:19.570674 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2017-10-24T13:53:19.572828 #6279] FATAL -- :   
+F, [2017-10-24T13:53:19.573160 #6279] FATAL -- : ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+F, [2017-10-24T13:53:19.573250 #6279] FATAL -- :   
+F, [2017-10-24T13:53:19.573432 #6279] FATAL -- : vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger_silence.rb:20:in `silence'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:605:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:437:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:301:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-10-24T13:53:19.617834 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2017-10-24T13:53:19.629875 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-10-24T13:53:19.630925 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+I, [2017-10-24T13:53:19.663237 #6279]  INFO -- :   Rendered collection of vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [47 times] (20.0ms)
+I, [2017-10-24T13:53:19.674872 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.4ms)
+I, [2017-10-24T13:53:19.686044 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-10-24T13:53:19.687008 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+I, [2017-10-24T13:53:19.687082 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (69.1ms)
+I, [2017-10-24T13:53:58.837566 #6279]  INFO -- : Started GET "/diaries/test2" for 192.168.33.1 at 2017-10-24 13:53:58 +0900
+I, [2017-10-24T13:53:58.838946 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:53:58.840539 #6279]  INFO -- : Processing by DiariesController#test2 as HTML
+I, [2017-10-24T13:53:58.843630 #6279]  INFO -- :   Rendering diaries/test2.html.erb within layouts/to_c
+I, [2017-10-24T13:53:58.844808 #6279]  INFO -- :   Rendered diaries/test2.html.erb within layouts/to_c (0.7ms)
+I, [2017-10-24T13:53:59.195372 #6279]  INFO -- : Completed 200 OK in 353ms (Views: 351.4ms)
+
+
+I, [2017-10-24T13:53:59.237048 #6279]  INFO -- : Started GET "/assets/diaries/diaries.self-a39bd82f74b249c7a3daa7527d0cfdb73d3fc75bea00b429f1dcc657b36072a2.js?body=1" for 192.168.33.1 at 2017-10-24 13:53:59 +0900
+I, [2017-10-24T13:53:59.237791 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2017-10-24T13:53:59.563035 #6279]  INFO -- : Started GET "/assets/bootstrap.css.map" for 192.168.33.1 at 2017-10-24 13:53:59 +0900
+I, [2017-10-24T13:53:59.564340 #6279]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2017-10-24T13:53:59.569238 #6279] FATAL -- :   
+F, [2017-10-24T13:53:59.569331 #6279] FATAL -- : ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+F, [2017-10-24T13:53:59.569375 #6279] FATAL -- :   
+F, [2017-10-24T13:53:59.569435 #6279] FATAL -- : vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:135:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:20:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `catch'
+vendor/bundle/ruby/2.4.0/gems/web-console-3.5.1/lib/web_console/middleware.rb:18:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:36:in `call_app'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/rack/logger.rb:26:in `call'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger_silence.rb:20:in `silence'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+vendor/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'
+vendor/bundle/ruby/2.4.0/gems/activesupport-5.1.4/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/executor.rb:12:in `call'
+vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/static.rb:125:in `call'
+vendor/bundle/ruby/2.4.0/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'
+vendor/bundle/ruby/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:522:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/configuration.rb:225:in `call'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:605:in `handle_request'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:437:in `process_client'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/server.rb:301:in `block in run'
+vendor/bundle/ruby/2.4.0/gems/puma-3.10.0/lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-10-24T13:53:59.613789 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+I, [2017-10-24T13:53:59.633089 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2017-10-24T13:53:59.635590 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+I, [2017-10-24T13:53:59.679779 #6279]  INFO -- :   Rendered collection of vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [47 times] (27.6ms)
+I, [2017-10-24T13:53:59.689669 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+I, [2017-10-24T13:53:59.698782 #6279]  INFO -- :   Rendering vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2017-10-24T13:53:59.700298 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+I, [2017-10-24T13:53:59.700549 #6279]  INFO -- :   Rendered vendor/bundle/ruby/2.4.0/gems/actionpack-5.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (86.5ms)
