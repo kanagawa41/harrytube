@@ -15,7 +15,13 @@
    <p class="notice"><%= notice %></p>
    <p class="alert"><%= alert %></p>
 
+    <%= render 'common/navi' %>
+
+    <%= render 'common/header' %>
+
     <%= yield %>
+
+    <%= render 'common/footer' %>
 
     <script>
       (function($) {

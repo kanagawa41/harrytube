@@ -12,4 +12,5 @@
 //
 //= require rails-ujs
 //= require turbolinks
+//= require @first/jquery.min.js
 //= require_tree .
