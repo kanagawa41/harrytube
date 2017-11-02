@@ -55,6 +55,9 @@ Rails.application.configure do
   config.log_level = :debug
   config.logger = Logger.new('log/development.log', 'daily')
 
+  # mailer setting
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
   # assetsをまとめない
   # config.assets.digest = false
   # config.assets.compress = false

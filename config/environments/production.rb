@@ -92,4 +92,7 @@ Rails.application.configure do
   # https://qiita.com/yuuna/items/9a2954300a130a9637b8
   # nginxで見つからないとunicornにいちいち問い合わせがいくのでサーバーの負荷が劇的にあがってしまう。
   config.serve_static_assets = false
+
+  # mailer setting
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 end

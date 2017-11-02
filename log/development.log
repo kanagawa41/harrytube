@@ -2832,3 +2832,34 @@ I, [2017-11-01T22:35:59.232703 #18482]  INFO -- :   Rendered common/_footer.html
 I, [2017-11-01T22:35:59.232958 #18482]  INFO -- : Completed 200 OK in 65ms (Views: 55.5ms)
 
 
+D, [2017-11-02T20:14:07.076365 #3633] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+D, [2017-11-02T20:14:07.124129 #3633] DEBUG -- :   [1m[35m (46.2ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) ENGINE=InnoDB[0m
+D, [2017-11-02T20:14:07.134975 #3633] DEBUG -- :   [1m[35m (8.6ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+D, [2017-11-02T20:14:07.135602 #3633] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK(8515619455971355035, 0)[0m
+D, [2017-11-02T20:14:07.146555 #3633] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+I, [2017-11-02T20:14:07.147922 #3633]  INFO -- : Migrating to DeviseCreateUsers (20171102110717)
+D, [2017-11-02T20:14:07.159332 #3633] DEBUG -- :   [1m[35m (8.8ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `confirmation_token` varchar(255), `confirmed_at` datetime, `confirmation_sent_at` datetime, `unconfirmed_email` varchar(255), `failed_attempts` int DEFAULT 0 NOT NULL, `unlock_token` varchar(255), `locked_at` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+D, [2017-11-02T20:14:07.167735 #3633] DEBUG -- :   [1m[35m (6.8ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+D, [2017-11-02T20:14:07.177571 #3633] DEBUG -- :   [1m[35m (8.3ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) [0m
+D, [2017-11-02T20:14:07.186088 #3633] DEBUG -- :   [1m[35m (7.2ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_confirmation_token`  ON `users` (`confirmation_token`) [0m
+D, [2017-11-02T20:14:07.193763 #3633] DEBUG -- :   [1m[35m (6.7ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_unlock_token`  ON `users` (`unlock_token`) [0m
+D, [2017-11-02T20:14:07.196071 #3633] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2017-11-02T20:14:07.197629 #3633] DEBUG -- :   [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20171102110717')[0m
+D, [2017-11-02T20:14:07.199646 #3633] DEBUG -- :   [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2017-11-02T20:14:07.202746 #3633] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2017-11-02T20:14:07.206709 #3633] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2017-11-02T20:14:07.207699 #3633] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2017-11-02 11:14:07', '2017-11-02 11:14:07')[0m
+D, [2017-11-02T20:14:07.209545 #3633] DEBUG -- :   [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2017-11-02T20:14:07.209930 #3633] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK(8515619455971355035)[0m
+D, [2017-11-02T20:14:07.215952 #3633] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+I, [2017-11-02T20:24:08.356917 #3828]  INFO -- : Started GET "/users/sign_in" for 192.168.33.1 at 2017-11-02 20:24:08 +0900
+I, [2017-11-02T20:24:08.358084 #3828]  INFO -- : Cannot render console from 192.168.33.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+D, [2017-11-02T20:24:08.364068 #3828] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+D, [2017-11-02T20:24:08.379635 #3828] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+I, [2017-11-02T20:24:08.397670 #3828]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2017-11-02T20:24:08.497077 #3828]  INFO -- :   Rendering devise/sessions/new.html.erb within layouts/application
+I, [2017-11-02T20:24:08.565105 #3828]  INFO -- :   Rendered devise/shared/_links.html.erb (1.6ms)
+I, [2017-11-02T20:24:08.565333 #3828]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/application (68.1ms)
+I, [2017-11-02T20:24:09.287958 #3828]  INFO -- : Completed 200 OK in 889ms (Views: 800.7ms | ActiveRecord: 5.3ms)
+
+
