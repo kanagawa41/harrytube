@@ -15,6 +15,7 @@ module LensManage
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
     config.generators do |g|
+      g.jbuilder false
       g.assets false
       g.javascripts false
       g.helper false

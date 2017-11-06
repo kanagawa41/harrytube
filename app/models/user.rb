@@ -6,13 +6,16 @@ class User < ApplicationRecord
          # FIXME: リリース前にテストする。
          # :confirmable, :lockable
 
-  before_save :prepare_save # This callback doesn't validate
+  # before_save :prepare_save # This callback doesn't validate
+  after_create  :prepare_create
 
-  def prepare_save
-    unless self.username.present?
-      self.username = self.email.split('@')[0]
-    end
+  # 新規作成の場合
+  def prepare_create
+    user_info = UserInfo.new
 
-    self
+    user_info.user_id = self.id
+    user_info.nickname = self.email.split('@')[0]
+
+    user_info.save
   end
 end

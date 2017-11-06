@@ -17,10 +17,15 @@
 
     <%= render 'common/navi' %>
 
-    <%= render 'common/header' %>
-
     <div class="container">
-      <%= yield %>
+      <div class="row">
+        <div class="col-md-8">
+          <%= yield %>
+        </div>
+        <div class="col-md-4">
+          <%= render 'common/side_bar' %>
+        </div>
+      </div>
     </div>
 
     <%= render 'common/footer' %>

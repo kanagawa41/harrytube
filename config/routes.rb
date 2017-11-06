@@ -2,9 +2,15 @@
 # Manage用のルーティング
 ###
 Rails.application.routes.draw do
-  devise_for :users
 
   root :to => 'harries#index'
+
+  devise_for :users
+  resources :comments
+  resources :favorites
+  resources :posts
+
+  resources :user_infos
 
   resources :harries do
     collection do

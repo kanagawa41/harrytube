@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @user_info.user %>
+</p>
+
+<p>
+  <strong>Nickname:</strong>
+  <%= @user_info.nickname %>
+</p>
+
+<p>
+  <strong>Sex:</strong>
+  <%= @user_info.sex %>
+</p>
+
+<p>
+  <strong>Icon:</strong>
+  <%= @user_info.icon %>
+</p>
+
+<p>
+  <strong>Breed history:</strong>
+  <%= @user_info.breed_history %>
+</p>
+
+<p>
+  <strong>Pet name:</strong>
+  <%= @user_info.pet_name %>
+</p>
+
+<p>
+  <strong>Pet type:</strong>
+  <%= @user_info.pet_type %>
+</p>
+
+<p>
+  <strong>Pet sex:</strong>
+  <%= @user_info.pet_sex %>
+</p>
+
+<p>
+  <strong>Youtube channel:</strong>
+  <%= @user_info.youtube_channel_id %>
+</p>
+
+<p>
+  <strong>Twitter:</strong>
+  <%= @user_info.twitter_id %>
+</p>
+
+<p>
+  <strong>Blog url:</strong>
+  <%= @user_info.blog_url %>
+</p>
+
+<%= link_to 'Edit', edit_user_info_path(@user_info) %> |
+<%= link_to 'Back', user_infos_path %>

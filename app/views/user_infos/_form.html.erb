@@ -1,0 +1,88 @@
+<%= form_with(model: user_info, local: true) do |form| %>
+<% if user_info.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(user_info.errors.count, "error") %> prohibited this user_info from being saved:</h2>
+
+    <ul>
+    <% user_info.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<%= form.hidden_field :user_id, id: :user_info_user_id %>
+
+<div class="control-group form-group">
+  <div class="controls">
+  <%= form.label :nickname %>
+  <%= form.text_field :nickname, id: :user_info_nickname, class: "form-control" %>
+  </div>
+</div>
+
+<div class="control-group form-group">
+  <div class="controls">
+  <%= form.label :sex %>
+  <%= form.number_field :sex, id: :user_info_sex, class: "form-control" %>
+  </div>
+</div>
+
+<div class="control-group form-group">
+  <div class="controls">
+  <%= form.label :icon %>
+  <%= form.text_field :icon, id: :user_info_icon, class: "form-control" %>
+  </div>
+</div>
+
+<div class="control-group form-group">
+  <div class="controls">
+  <%= form.label :breed_history %>
+  <%= form.number_field :breed_history, id: :user_info_breed_history, class: "form-control" %>
+  </div>
+</div>
+
+<div class="control-group form-group">
+  <div class="controls">
+  <%= form.label :pet_name %>
+  <%= form.text_field :pet_name, id: :user_info_pet_name, class: "form-control" %>
+  </div>
+</div>
+
+<div class="control-group form-group">
+  <div class="controls">
+  <%= form.label :pet_type %>
+  <%= form.text_field :pet_type, id: :user_info_pet_type, class: "form-control" %>
+  </div>
+</div>
+
+<div class="control-group form-group">
+  <div class="controls">
+  <%= form.label :pet_sex %>
+  <%= form.text_field :pet_sex, id: :user_info_pet_sex, class: "form-control" %>
+  </div>
+</div>
+
+<div class="control-group form-group">
+  <div class="controls">
+  <%= form.label :youtube_channel_id %>
+  <%= form.text_field :youtube_channel_id, id: :user_info_youtube_channel_id, class: "form-control" %>
+  </div>
+</div>
+
+<div class="control-group form-group">
+  <div class="controls">
+  <%= form.label :twitter_id %>
+  <%= form.text_field :twitter_id, id: :user_info_twitter_id, class: "form-control" %>
+  </div>
+</div>
+
+<div class="control-group form-group">
+  <div class="controls">
+  <%= form.label :blog_url %>
+  <%= form.text_field :blog_url, id: :user_info_blog_url, class: "form-control" %>
+  </div>
+</div>
+
+<div id="success"></div>
+<%= form.submit class: "btn btn-primary" %>
+<% end %>
