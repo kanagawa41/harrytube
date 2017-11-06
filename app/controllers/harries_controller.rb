@@ -5,67 +5,7 @@ class HarriesController < ApplicationController
   def index
   end
 
-
-  def services
-  end
-
-
-  def contact
-  end
-
-
-  def sidebar
-  end
-
-
-  def about
-  end
-
-
-  def blog_home_1
-  end
-
-
-  def blog_home_2
-  end
-
-
-  def blog_post
-  end
-
-
-  def faq
-  end
-
-
-  def full_width
-  end
-
-
-  def portfolio_1_col
-  end
-
-
-  def portfolio_2_col
-  end
-
-
-  def portfolio_3_col
-  end
-
-
-  def portfolio_4_col
-  end
-
-
-  def portfolio_item
-  end
-
-
-  def pricing
-  end
-
-  private 
+  private
 
   def init_setting
     @title = 'トップ'

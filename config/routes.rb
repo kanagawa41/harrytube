@@ -9,6 +9,12 @@ Rails.application.routes.draw do
   resources :harries do
     collection do
       get 'index'
+    end
+  end
+
+  resources :samples do
+    collection do
+      get 'index'
       get 'services'
       get 'contact'
       get 'sidebar'

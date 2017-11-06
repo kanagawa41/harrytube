@@ -1,31 +1,31 @@
 <!-- Navigation -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="/harries/index">Start Bootstrap</a>
+    <a class="navbar-brand" href="/samples/index">Start Bootstrap</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="/harries/about">About</a>
+          <a class="nav-link" href="/samples/about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/harries/services">Services</a>
+          <a class="nav-link" href="/samples/services">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/harries/contact">Contact</a>
+          <a class="nav-link" href="/samples/contact">Contact</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Portfolio
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-            <a class="dropdown-item" href="/harries/portfolio_1_col">1 Column Portfolio</a>
-            <a class="dropdown-item" href="/harries/portfolio_2_col">2 Column Portfolio</a>
-            <a class="dropdown-item" href="/harries/portfolio_3_col">3 Column Portfolio</a>
-            <a class="dropdown-item" href="/harries/portfolio_4_col">4 Column Portfolio</a>
-            <a class="dropdown-item" href="/harries/portfolio_item">Single Portfolio Item</a>
+            <a class="dropdown-item" href="/samples/portfolio_1_col">1 Column Portfolio</a>
+            <a class="dropdown-item" href="/samples/portfolio_2_col">2 Column Portfolio</a>
+            <a class="dropdown-item" href="/samples/portfolio_3_col">3 Column Portfolio</a>
+            <a class="dropdown-item" href="/samples/portfolio_4_col">4 Column Portfolio</a>
+            <a class="dropdown-item" href="/samples/portfolio_item">Single Portfolio Item</a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -33,9 +33,9 @@
             Blog
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-            <a class="dropdown-item" href="/harries/blog_home_1">Blog Home 1</a>
-            <a class="dropdown-item" href="/harries/blog_home_2">Blog Home 2</a>
-            <a class="dropdown-item" href="/harries/blog_post">Blog Post</a>
+            <a class="dropdown-item" href="/samples/blog_home_1">Blog Home 1</a>
+            <a class="dropdown-item" href="/samples/blog_home_2">Blog Home 2</a>
+            <a class="dropdown-item" href="/samples/blog_post">Blog Post</a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -43,18 +43,19 @@
             Other Pages
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-            <a class="dropdown-item" href="/harries/full_width">Full Width Page</a>
-            <a class="dropdown-item" href="/harries/sidebar">Sidebar Page</a>
-            <a class="dropdown-item" href="/harries/faq">FAQ</a>
+            <a class="dropdown-item" href="/samples/full_width">Full Width Page</a>
+            <a class="dropdown-item" href="/samples/sidebar">Sidebar Page</a>
+            <a class="dropdown-item" href="/samples/faq">FAQ</a>
             <a class="dropdown-item" href="/404.html">404</a>
-            <a class="dropdown-item" href="/harries/pricing">Pricing Table</a>
+            <a class="dropdown-item" href="/samples/pricing">Pricing Table</a>
           </div>
         </li>
       </ul>
     </div>
     <!-- ログイン -->
     <% if user_signed_in? %>
-    <strong><%= link_to current_user.username, pages_show_path %></strong>
+    <!-- FIXME: ユーザ名を表示する -->
+    <strong><%# link_to current_user.username, pages_show_path %></strong>
     <%= link_to 'プロフィール変更', edit_user_registration_path %>
     <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
     <% else %>
