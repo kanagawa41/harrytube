@@ -9,6 +9,8 @@ class User < ApplicationRecord
   # before_save :prepare_save # This callback doesn't validate
   after_create  :prepare_create
 
+  has_one :user_info
+
   # 新規作成の場合
   def prepare_create
     user_info = UserInfo.new

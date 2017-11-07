@@ -1,6 +1,9 @@
 <div class="row">
   <div class="col-lg-8 mb-4">
-    <h1>Editing User Info</h1>
+    <h2>プロフィール</h2>
+    <br>
     <%= render 'form', user_info: @user_info %>
+    <br>
+    <%= link_to 'メールアドレス、パスワードの変更', edit_user_registration_path %>
   </div>
 </div>
