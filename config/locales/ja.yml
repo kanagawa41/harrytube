@@ -1,4 +1,12 @@
 ja:
+  # deviseのフォーム周りの日本語化
+  activerecord:
+    attributes:
+      user:
+        name: 名前
+        password: パスワード
+        password_confirmation: パスワード確認
+        email: メールアドレス
   views:
     pagination:
       first: "最初"

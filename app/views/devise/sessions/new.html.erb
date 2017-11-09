@@ -1,34 +1,39 @@
-<h2>ログイン</h2>
-
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="control-group form-group">
-    <div class="controls">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-    </div>
-  </div>
-
-  <div class="control-group form-group">
-    <div class="controls">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-    </div>
-  </div>
-
-  <% if devise_mapping.rememberable? -%>
-    <div class="control-group form-group">
-      <div class="controls">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+<div class="row">
+  <!-- FIXME: http://blog.shuffleee.com/demo/bootstrap/offset.php を参考にoffsetで中央寄せできるようにする -->
+  <div class="col-lg-8 mb-4">
+    <h2>ログイン</h2>
+    <br>
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="control-group form-group">
+        <div class="controls">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true, class: "form-control" %>
+        </div>
       </div>
-    </div>
-  <% end -%>
 
-  <div class="actions">
-    <%= f.submit "ログイン", class: "btn btn-primary" %>
+      <div class="control-group form-group">
+        <div class="controls">
+        <%= f.label :password %><br />
+        <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
+        </div>
+      </div>
+
+      <% if devise_mapping.rememberable? -%>
+        <div class="control-group form-group">
+          <div class="controls">
+          <%= f.check_box :remember_me %>
+          <%= f.label :remember_me %>
+          </div>
+        </div>
+      <% end -%>
+
+      <div class="actions">
+        <%= f.submit "ログイン", class: "btn btn-primary" %>
+      </div>
+    <% end %>
+
+    <br>
+
+    <%= render "devise/shared/links" %>
   </div>
-<% end %>
-
-<br>
-
-<%= render "devise/shared/links" %>
+</div>

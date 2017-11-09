@@ -278,4 +278,12 @@ Devise.setup do |config|
   # With custom Devise parent controller
   # config/initializers/devise.rb
   config.parent_controller = 'MyBaseDeviseController'
+
+  Rails.application.config.to_prepare do
+    Devise::SessionsController.layout "simple"
+    Devise::RegistrationsController.layout proc{ |controller| user_signed_in? ? "devise" : "simple" }
+    Devise::ConfirmationsController.layout "devise"
+    Devise::UnlocksController.layout "devise"
+    Devise::PasswordsController.layout "devise"
+  end
 end
