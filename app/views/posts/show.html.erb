@@ -6,7 +6,7 @@
   <!-- Page Heading/Breadcrumbs -->
   <h1 class="mt-4 mb-3"><%= @post.title %>
     <small>by
-      <a href="#"><%= @post.user.user_info.nickname %></a>
+      <a href="<%= user_info_path(@post.user.user_info.id) %>"><%= @post.user.user_info.nickname %></a>
     </small>
   </h1>
 
