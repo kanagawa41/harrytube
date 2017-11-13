@@ -18,6 +18,12 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :posts do
+    collection do
+      get 'new'
+    end
+  end
+
   resources :samples do
     collection do
       get 'index'

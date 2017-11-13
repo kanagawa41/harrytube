@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  layout "to_c"
+
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
   # GET /posts
@@ -14,7 +16,9 @@ class PostsController < ApplicationController
 
   # GET /posts/new
   def new
-    @post = Post.new
+    return unless signed_in?
+
+    @post = Post.new(user_id: current_user.user_info.user_id)
   end
 
   # GET /posts/1/edit

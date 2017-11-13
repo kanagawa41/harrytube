@@ -11,32 +11,36 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :user_id %>
-    <%= form.text_field :user_id, id: :post_user_id %>
-  </div>
+<%= form.hidden_field :user_id, id: :post_user_id %>
 
-  <div class="field">
+<div class="control-group form-group">
+  <div class="controls">
     <%= form.label :title %>
-    <%= form.text_field :title, id: :post_title %>
+    <%= form.text_field :title, id: :post_title, class: "form-control" %>
   </div>
+</div>
 
-  <div class="field">
+<div class="control-group form-group">
+  <div class="controls">
     <%= form.label :description %>
-    <%= form.text_area :description, id: :post_description %>
+    <%= form.text_area :description, id: :post_description, class: "form-control" %>
   </div>
+</div>
 
-  <div class="field">
+<div class="control-group form-group">
+  <div class="controls">
     <%= form.label :youtube_video_id %>
-    <%= form.text_field :youtube_video_id, id: :post_youtube_video_id %>
+    <%= form.text_field :youtube_video_id, id: :post_youtube_video_id, class: "form-control" %>
   </div>
+</div>
 
-  <div class="field">
+<div class="control-group form-group">
+  <div class="controls">
     <%= form.label :tags %>
-    <%= form.text_field :tags, id: :post_tags %>
+    <%= form.text_field :tags, id: :post_tags, class: "form-control" %>
   </div>
+</div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+<%= form.submit class: "btn btn-primary" %>
+
 <% end %>
