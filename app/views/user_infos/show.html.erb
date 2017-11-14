@@ -1,59 +1,84 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>User:</strong>
-  <%= @user_info.user %>
-</p>
+<form>
 
-<p>
-  <strong>Nickname:</strong>
-  <%= @user_info.nickname %>
-</p>
+  <div class="form-group row">
+    <!-- FIXME: 正しいパスを設定する -->
+    <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/150x150" alt="<%= @user_info.nickname %>">
+    <!-- <img src="img/<%# @user_info.icon %>" class="img-circle">-->
+  </div>
 
-<p>
-  <strong>Sex:</strong>
-  <%= @user_info.sex %>
-</p>
+  <div class="form-group row">
+    <label class="col-sm-3 col-form-label">Nickname</label>
+    <div class="col-sm-9">
+      <p class="col-form-label"><%= @user_info.nickname %></p>
+    </div>
+  </div>
 
-<p>
-  <strong>Icon:</strong>
-  <%= @user_info.icon %>
-</p>
+  <div class="form-group row">
+    <label class="col-sm-3 col-form-label">Sex</label>
+    <div class="col-sm-9">
+      <p class="col-form-label"><%= @user_info.sex %></p>
+    </div>
+  </div>
 
-<p>
-  <strong>Breed history:</strong>
-  <%= @user_info.breed_history %>
-</p>
+  <h2>ペット</h2>
+  <hr>
 
-<p>
-  <strong>Pet name:</strong>
-  <%= @user_info.pet_name %>
-</p>
+  <div class="form-group row">
+    <label class="col-sm-3 col-form-label">Breed history</label>
+    <div class="col-sm-9">
+      <p class="col-form-label"><%= @user_info.breed_history %></p>
+    </div>
+  </div>
 
-<p>
-  <strong>Pet type:</strong>
-  <%= @user_info.pet_type %>
-</p>
+  <div class="form-group row">
+    <label class="col-sm-3 col-form-label">Pet name</label>
+    <div class="col-sm-9">
+      <p class="col-form-label"><%= @user_info.pet_name %></p>
+    </div>
+  </div>
 
-<p>
-  <strong>Pet sex:</strong>
-  <%= @user_info.pet_sex %>
-</p>
+  <div class="form-group row">
+    <label class="col-sm-3 col-form-label">Pet type</label>
+    <div class="col-sm-9">
+      <p class="col-form-label"><%= @user_info.pet_type %></p>
+    </div>
+  </div>
 
-<p>
-  <strong>Youtube channel:</strong>
-  <%= @user_info.youtube_channel_id %>
-</p>
+  <div class="form-group row">
+    <label class="col-sm-3 col-form-label">Pet sex</label>
+    <div class="col-sm-9">
+      <p class="col-form-label"><%= @user_info.pet_sex %></p>
+    </div>
+  </div>
 
-<p>
-  <strong>Twitter:</strong>
-  <%= @user_info.twitter_id %>
-</p>
+  <h2>メディア</h2>
+  <hr>
 
-<p>
-  <strong>Blog url:</strong>
-  <%= @user_info.blog_url %>
-</p>
+  <div class="form-group row">
+    <label class="col-sm-3 col-form-label">Youtube channel</label>
+    <div class="col-sm-9">
+      <p class="col-form-label"><%= @user_info.youtube_channel_id %></p>
+    </div>
+  </div>
 
-<%= link_to 'Edit', edit_user_info_path(@user_info) %> |
-<%= link_to 'Back', user_infos_path %>
+  <div class="form-group row">
+    <label class="col-sm-3 col-form-label">Twitter</label>
+    <div class="col-sm-9">
+      <p class="col-form-label"><%= @user_info.twitter_id %></p>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label class="col-sm-3 col-form-label">Blog url</label>
+    <div class="col-sm-9">
+      <p class="col-form-label"><%= @user_info.blog_url %></p>
+    </div>
+  </div>
+
+</form>
+
+<% if @is_org_user %>
+<%= link_to 'Edit', edit_user_info_path(@user_info), class: "btn btn-primary" %>
+<% end %>

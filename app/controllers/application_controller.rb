@@ -26,6 +26,12 @@ class ApplicationController < ActionController::Base
     true
   end
 
+  # 本人確認
+  def original_person?(user_info_id)
+    # 本人が開いた場合
+    @is_org_user = user_signed_in? && user_info_id == current_user.user_info.id
+  end
+
   # COMMENT: ActiveAdminではlocalをenを使用していたが、jaが見つかったので対処が不要になった
   # before_action :set_locale
   # アプリではJA、管理画面ではENを使用するため

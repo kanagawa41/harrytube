@@ -5,8 +5,40 @@
 
   <% if @posts.present? %>
 
-  <!-- Portfolio Section -->
-  <h2>投稿一覧</h2>
+  <h2>新着順</h2>
+  <hr>
+
+  <div class="row">
+
+    <% @posts.each do |post| %>
+    <div class="col-lg-4 col-sm-6 portfolio-item">
+      <div class="card h-100">
+        <a href="<%= post_path(post.id) %>"><img class="card-img-top" src="<%= "http://i.ytimg.com/vi/#{post.youtube_video_id}/sddefault.jpg" %>" alt="<%= post.title %>"></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="<%= post_path(post.id) %>"><%= post.title %></a>
+          </h4>
+          <p class="card-text"><%= post.description %></p>
+        </div>
+        <div class="card-footer">
+          by <a href="<%= user_info_path(post.user.user_info.id) %>"><%= post.user.user_info.nickname %></a>
+        </div>
+      </div>
+    </div>
+    <% end %>
+
+  </div>
+  <% end %>
+  <!-- /.row -->
+
+  <% if @posts.present? %>
+
+  <br>
+  <br>
+
+  <!-- FIXME: ランキングを表示する。 -->
+  <h2>ランキング</h2>
+  <hr>
 
   <div class="row">
 

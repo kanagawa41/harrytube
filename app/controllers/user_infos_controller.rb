@@ -5,19 +5,20 @@ class UserInfosController < ApplicationController
 
   # GET /user_infos
   # GET /user_infos.json
-  def index
-    @user_infos = UserInfo.all
-  end
+  # def index
+  #   @user_infos = UserInfo.all
+  # end
 
   # GET /user_infos/1
   # GET /user_infos/1.json
   def show
+    original_person? params[:id].to_i
   end
 
   # GET /user_infos/new
-  def new
-    @user_info = UserInfo.new
-  end
+  # def new
+  #   @user_info = UserInfo.new
+  # end
 
   # GET /user_infos/1/edit
   def edit

@@ -4,6 +4,12 @@
 @import "common/modern-business";
 @import "common/font-awesome.css";
 
+/* bootstrapの上書き */
+.col-form-label {
+  word-wrap: break-word;
+}
+/* !bootstrapの上書き */
+
 .modal-header {
     border-radius: 5px 5px 0px 0px;
     background: #ff4486;
