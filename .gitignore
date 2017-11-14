@@ -30,7 +30,8 @@ nohup.out
 _up.log
 public/assets/*
 
+*~
+._*
 .DS_Store
-._.DS_Store
 
 .jbuilder

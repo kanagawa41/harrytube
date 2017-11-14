@@ -5,16 +5,16 @@
 
   <!-- Page Heading/Breadcrumbs -->
   <h1 class="mt-4 mb-3"><%= @post.title %>
-    <small>by
-      <a href="<%= user_info_path(@post.user.user_info.id) %>"><%= @post.user.user_info.nickname %></a>
-    </small>
   </h1>
-
   <ol class="breadcrumb">
-    <li class="breadcrumb-item">
-      <a href="index.html">Home</a>
+    <li class="breadcrumb-item active">
+      <small>by
+        <a href="<%= user_info_path(@post.user.user_info.id) %>"><%= @post.user.user_info.nickname %></a>
+      </small>
+      <% if @post.tags.present? %>
+      <i class="fa fa-tags fa-lg"></i></span><span><%= @post.tags %></span>
+      <% end %>
     </li>
-    <li class="breadcrumb-item active">Blog Home 2</li>
   </ol>
 
   <div class="row">
@@ -35,8 +35,6 @@
 
       <!-- Post Content -->
       <p class="lead"><%= @post.description %></p>
-
-      <p><%= @post.tags %></p>
 
       <hr>
 
