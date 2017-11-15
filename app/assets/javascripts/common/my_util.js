@@ -20,6 +20,8 @@ module.getAjaxTemplate = function() {
     headers: {
       'content-type': 'application/json; charset=UTF-8',
       'x-csrf-token': module.getCsrfToken(),
+      // ajaxで通信していることを知らせる
+      'x-requested-with': 'XMLHttpRequest',
     },
   };
 }
@@ -27,7 +29,7 @@ module.getAjaxTemplate = function() {
 // AJAXの接続失敗の処理
 
 module.getAjaxFailedTemplate = function(XMLHttpRequest, textStatus, errorThrown ) {
-  alert('AJAXの接続が失敗しました。');
+  toastr.error('接続に失敗しました。');
 }
 
 // CSRFトークンを取得

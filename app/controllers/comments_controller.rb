@@ -4,7 +4,45 @@ class CommentsController < ApplicationController
   # GET /comments
   # GET /comments.json
   def index
+    request_ajax?
+
     @comments = Comment.all
+
+    render json: {"result" => @comments}, status: 200
+  end
+
+  # POST /comments
+  # POST /comments.json
+  def create
+    request_ajax?
+    signed_in?
+
+    @comment = Comment.new(comment_params)
+
+    @comment.user_id = current_user.id
+
+    if @comment.save
+      render json: {result: 
+        {
+          nickname: @comment.user.user_info.nickname,
+          icon: @comment.user.user_info.icon,
+          comment: @comment.comment,
+        }
+      }, status: 200
+    else
+      render json: @comment.errors, status: :unprocessable_entity
+    end
+  end
+
+  # DELETE /comments/1
+  # DELETE /comments/1.json
+  def destroy
+    request_ajax?
+    signed_in?
+
+    @comment.destroy
+
+    render json: {"result" => "ok"}, status: 200
   end
 
   # GET /comments/1
@@ -17,6 +55,7 @@ class CommentsController < ApplicationController
     @comment = Comment.new
   end
 
+  # 使用では更新はさせない
   # GET /comments/1/edit
   def edit
     return unless origin_signed_in?(@post.user.user_info.id)
@@ -41,29 +80,7 @@ class CommentsController < ApplicationController
   #   end
   # end
 
-  # POST /comments
-  # POST /comments.json
-  def create
-$logger.info "whatwhat"
-    # FIXME: 判定が正しくされない
-    # request_ajax?
-$logger.info "whatwhat2"
-
-    signed_in?
-
-    @comment = Comment.new(comment_params)
-
-    @comment.user_id = current_user.id
-
-    if @comment.save
-$logger.info "whatwhat3"
-      render json: {"result" => "ok"}, status: 200
-    else
-$logger.info "whatwhat4"
-      render json: @comment.errors, status: :unprocessable_entity
-    end
-  end
-
+  # 使用では更新はさせない
   # PATCH/PUT /comments/1
   # PATCH/PUT /comments/1.json
   def update
@@ -77,17 +94,6 @@ $logger.info "whatwhat4"
       else
         format.json { render json: @comment.errors, status: :unprocessable_entity }
       end
-    end
-  end
-
-  # DELETE /comments/1
-  # DELETE /comments/1.json
-  def destroy
-    request_ajax?
-
-    @comment.destroy
-    respond_to do |format|
-      format.json { head :no_content }
     end
   end
 

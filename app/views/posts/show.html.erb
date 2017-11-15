@@ -32,7 +32,7 @@
       <hr>
 
       <!-- Date/Time -->
-      <p><%= @post.updated_at %></p>
+      <p><%= l(@post.updated_at, format: :long) %></p>
 
       <hr>
 
@@ -62,18 +62,20 @@
 
       <% end %>
 
-      <% @comments.each do |comment| %>
-      <!-- Single Comment -->
-      <div class="media mb-4">
-        <!-- FIXME: ユーザのアイコンを表示する -->
-        <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
-        <div class="media-body">
-          <h5 class="mt-0"><%= comment.user.user_info.nickname %></h5>
-          <%= comment.comment %>
+      <div id="comment-field"> 
+        <% @comments.each do |comment| %>
+        <!-- Single Comment -->
+        <div class="media mb-4">
+          <!-- FIXME: ユーザのアイコンを表示する -->
+          <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+          <div class="media-body">
+            <h5 class="mt-0"><%= comment.user.user_info.nickname %></h5>
+            <%= comment.comment %>
+          </div>
         </div>
+        <hr>
+        <% end %>
       </div>
-      <hr>
-      <% end %>
     </div>
 
   </div>

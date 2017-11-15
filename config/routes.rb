@@ -6,8 +6,11 @@ Rails.application.routes.draw do
   root :to => 'harries#index'
 
   devise_for :users
-  resources :comments
+
+  resources :comments, only: [:index, :create, :destroy]
+
   resources :favorites
+
   resources :posts
 
   resources :user_infos
@@ -15,12 +18,6 @@ Rails.application.routes.draw do
   resources :harries do
     collection do
       get 'index'
-    end
-  end
-
-  resources :posts do
-    collection do
-      get 'new'
     end
   end
 

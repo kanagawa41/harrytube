@@ -7,20 +7,6 @@ class FavoritesController < ApplicationController
     @favorites = Favorite.all
   end
 
-  # GET /favorites/1
-  # GET /favorites/1.json
-  def show
-  end
-
-  # GET /favorites/new
-  def new
-    @favorite = Favorite.new
-  end
-
-  # GET /favorites/1/edit
-  def edit
-  end
-
   # POST /favorites
   # POST /favorites.json
   def create
@@ -37,6 +23,30 @@ class FavoritesController < ApplicationController
     end
   end
 
+  # DELETE /favorites/1
+  # DELETE /favorites/1.json
+  def destroy
+    @favorite.destroy
+    respond_to do |format|
+      format.html { redirect_to favorites_url, notice: 'Favorite was successfully destroyed.' }
+      format.json { head :no_content }
+    end
+  end
+
+  # GET /favorites/1
+  # GET /favorites/1.json
+  def show
+  end
+
+  # GET /favorites/new
+  def new
+    @favorite = Favorite.new
+  end
+
+  # GET /favorites/1/edit
+  def edit
+  end
+
   # PATCH/PUT /favorites/1
   # PATCH/PUT /favorites/1.json
   def update
@@ -48,16 +58,6 @@ class FavoritesController < ApplicationController
         format.html { render :edit }
         format.json { render json: @favorite.errors, status: :unprocessable_entity }
       end
-    end
-  end
-
-  # DELETE /favorites/1
-  # DELETE /favorites/1.json
-  def destroy
-    @favorite.destroy
-    respond_to do |format|
-      format.html { redirect_to favorites_url, notice: 'Favorite was successfully destroyed.' }
-      format.json { head :no_content }
     end
   end
 
