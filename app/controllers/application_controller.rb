@@ -26,10 +26,24 @@ class ApplicationController < ActionController::Base
     true
   end
 
-  # 本人確認
-  def original_person?(user_info_id)
+  # 本人か？
+  def origin_person?(user_info_id)
     # 本人が開いた場合
     @is_org_user = user_signed_in? && user_info_id == current_user.user_info.id
+  end
+
+  # ログインしているかつ、本人か？
+  def origin_signed_in?(user_info_id)
+    return false unless signed_in?
+
+    origin_person? user_info_id
+
+    unless @is_org_user
+      redirect_to controller: 'devise/sessions', action: 'new'
+      return false
+    end
+
+    true
   end
 
   # COMMENT: ActiveAdminではlocalをenを使用していたが、jaが見つかったので対処が不要になった

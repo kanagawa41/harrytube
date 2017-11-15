@@ -12,7 +12,7 @@ class UserInfosController < ApplicationController
   # GET /user_infos/1
   # GET /user_infos/1.json
   def show
-    original_person? params[:id].to_i
+    origin_person? params[:id].to_i
   end
 
   # GET /user_infos/new

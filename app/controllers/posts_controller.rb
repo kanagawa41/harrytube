@@ -12,6 +12,9 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+    origin_person? @post.user.user_info.id
+
+    @comments = PostsService.show  @post
   end
 
   # GET /posts/new
@@ -23,6 +26,7 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
+    return unless origin_signed_in?(@post.user.user_info.id)
   end
 
   # POST /posts
@@ -44,6 +48,8 @@ class PostsController < ApplicationController
   # PATCH/PUT /posts/1
   # PATCH/PUT /posts/1.json
   def update
+    return unless origin_signed_in?(@post.user.user_info.id)
+
     respond_to do |format|
       if @post.update(post_params)
         format.html { redirect_to @post, notice: 'Post was successfully updated.' }

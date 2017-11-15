@@ -19,12 +19,16 @@ class CommentsController < ApplicationController
 
   # GET /comments/1/edit
   def edit
+    return unless origin_signed_in?(@post.user.user_info.id)
   end
 
   # POST /comments
   # POST /comments.json
+  # FIXME: AJAXのみ対応にする。
   def create
     @comment = Comment.new(comment_params)
+
+    @comment.user_id = current_user.id
 
     respond_to do |format|
       if @comment.save
@@ -40,6 +44,8 @@ class CommentsController < ApplicationController
   # PATCH/PUT /comments/1
   # PATCH/PUT /comments/1.json
   def update
+    return unless origin_signed_in?(@post.user.user_info.id)
+
     respond_to do |format|
       if @comment.update(comment_params)
         format.html { redirect_to @comment, notice: 'Comment was successfully updated.' }
