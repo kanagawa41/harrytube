@@ -3,6 +3,21 @@ class ApplicationController < ActionController::Base
 
   before_action :set_logger
 
+  # 別だしで宣言できないか検討する
+  ##########################################
+
+  # 本人が操作する必要がある
+  class NeedBeOriginal < ActionController::ActionControllerError; end
+
+  rescue_from NeedBeOriginal, with: :rescue403
+
+  def rescue403(e)
+    @exception = e
+    redirect_to controller: 'devise/sessions', action: 'new', status: 403
+  end
+
+  ##########################################
+
   def set_logger
     $logger = Rails.logger
   end
@@ -12,6 +27,14 @@ class ApplicationController < ActionController::Base
     if params[:page].present?
       page = params[:page].to_i
       @page = (page <= 1 || page > Kaminari.config.max_pages.to_i) ? nil : page
+    end
+  end
+
+  # Ajaxで通信を行っているか
+  def request_ajax?
+    # FIXME: 本番ではどのように表示されるか確認する
+    unless request.xhr?
+      raise AbstractController::ActionNotFound
     end
   end
 
@@ -34,16 +57,11 @@ class ApplicationController < ActionController::Base
 
   # ログインしているかつ、本人か？
   def origin_signed_in?(user_info_id)
-    return false unless signed_in?
+    raise NeedBeOriginal unless signed_in?
 
     origin_person? user_info_id
 
-    unless @is_org_user
-      redirect_to controller: 'devise/sessions', action: 'new'
-      return false
-    end
-
-    true
+    raise NeedBeOriginal unless @is_org_user
   end
 
   # COMMENT: ActiveAdminではlocalをenを使用していたが、jaが見つかったので対処が不要になった

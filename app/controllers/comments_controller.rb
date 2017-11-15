@@ -25,33 +25,56 @@ class CommentsController < ApplicationController
   # POST /comments
   # POST /comments.json
   # FIXME: AJAXのみ対応にする。
+  # def create
+  #   @comment = Comment.new(comment_params)
+
+  #   @comment.user_id = current_user.id
+
+  #   respond_to do |format|
+  #     if @comment.save
+  #       format.html { redirect_to @comment, notice: 'Comment was successfully created.' }
+  #       format.json { render :show, status: :created, location: @comment }
+  #     else
+  #       format.html { render :new }
+  #       format.json { render json: @comment.errors, status: :unprocessable_entity }
+  #     end
+  #   end
+  # end
+
+  # POST /comments
+  # POST /comments.json
   def create
+$logger.info "whatwhat"
+    # FIXME: 判定が正しくされない
+    # request_ajax?
+$logger.info "whatwhat2"
+
+    signed_in?
+
     @comment = Comment.new(comment_params)
 
     @comment.user_id = current_user.id
 
-    respond_to do |format|
-      if @comment.save
-        format.html { redirect_to @comment, notice: 'Comment was successfully created.' }
-        format.json { render :show, status: :created, location: @comment }
-      else
-        format.html { render :new }
-        format.json { render json: @comment.errors, status: :unprocessable_entity }
-      end
+    if @comment.save
+$logger.info "whatwhat3"
+      render json: {"result" => "ok"}, status: 200
+    else
+$logger.info "whatwhat4"
+      render json: @comment.errors, status: :unprocessable_entity
     end
   end
 
   # PATCH/PUT /comments/1
   # PATCH/PUT /comments/1.json
   def update
-    return unless origin_signed_in?(@post.user.user_info.id)
+    request_ajax?
+
+    origin_signed_in?(@post.user.user_info.id)
 
     respond_to do |format|
       if @comment.update(comment_params)
-        format.html { redirect_to @comment, notice: 'Comment was successfully updated.' }
         format.json { render :show, status: :ok, location: @comment }
       else
-        format.html { render :edit }
         format.json { render json: @comment.errors, status: :unprocessable_entity }
       end
     end
@@ -60,9 +83,10 @@ class CommentsController < ApplicationController
   # DELETE /comments/1
   # DELETE /comments/1.json
   def destroy
+    request_ajax?
+
     @comment.destroy
     respond_to do |format|
-      format.html { redirect_to comments_url, notice: 'Comment was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
