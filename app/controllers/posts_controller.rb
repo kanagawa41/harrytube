@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  layout "to_c"
+  layout "blog_home1"
 
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
@@ -14,7 +14,7 @@ class PostsController < ApplicationController
   def show
     origin_person? @post.user.user_info.id
 
-    @comments = PostsService.show  @post
+    @comments, @is_favorite, @favorite_size = PostsService.show  @post
   end
 
   # GET /posts/new

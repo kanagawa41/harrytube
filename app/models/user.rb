@@ -15,6 +15,7 @@ class User < ApplicationRecord
   def prepare_create
     user_info = UserInfo.new
 
+    user_info.id = self.id
     user_info.user_id = self.id
     user_info.nickname = self.email.split('@')[0]
 

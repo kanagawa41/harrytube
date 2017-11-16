@@ -18,14 +18,15 @@ class CommentsController < ApplicationController
     signed_in?
 
     @comment = Comment.new(comment_params)
-
     @comment.user_id = current_user.id
 
     if @comment.save
-      render json: {result: 
+      render json: {result:
         {
           nickname: @comment.user.user_info.nickname,
-          icon: @comment.user.user_info.icon,
+          # FIXME: アイコンを正しく表示できるようになったら元に戻す
+          # icon: @comment.user.user_info.icon,
+          icon: "http://placehold.it/50x50",
           comment: @comment.comment,
         }
       }, status: 200

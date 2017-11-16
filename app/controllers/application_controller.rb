@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
-  before_action :set_logger
+  before_action :set_variables
 
   # 別だしで宣言できないか検討する
   ##########################################
@@ -18,8 +18,10 @@ class ApplicationController < ActionController::Base
 
   ##########################################
 
-  def set_logger
+  # moduleでも使用できるように詰め直す
+  def set_variables
     $logger = Rails.logger
+    $current_user = current_user
   end
 
   # page パラメータを手動で設定された場合の対策

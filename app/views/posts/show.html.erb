@@ -11,28 +11,44 @@
   </h1>
   <ol class="breadcrumb">
     <li class="breadcrumb-item active">
-      <small>by
-        <a href="<%= user_info_path(@post.user.user_info.id) %>"><%= @post.user.user_info.nickname %></a>
-      </small>
+      <span><i class="fa fa-user-circle fa-lg"></i><a href="<%= user_info_path(@post.user.user_info.id) %>"><%= @post.user.user_info.nickname %></a></span>
       <% if @post.tags.present? %>
-      <i class="fa fa-tags fa-lg"></i></span><span><%= @post.tags %></span>
+      <span><i class="fa fa-tags fa-lg"></i><%= @post.tags %></span>
       <% end %>
+      <!-- Date/Time -->
+      <span><i class="fa fa-calendar fa-lg"></i><%= l(@post.updated_at, format: :long) %></span>
+      <span><i class="fa fa-comments fa-lg"></i><%= @comments.size %>コメント</span>
     </li>
   </ol>
 
   <div class="row">
 
     <!-- Post Content Column -->
-    <div class="col-lg-8">
+    <div class="col-lg-12">
 
       <!-- Preview Image -->
       <!-- FIXME: 動画を見れるようにする -->
       <img class="img-fluid rounded" src="<%= "http://i.ytimg.com/vi/#{@post.youtube_video_id}/sddefault.jpg" %>" alt="">
 
-      <hr>
+      <br>
+      <br>
 
-      <!-- Date/Time -->
-      <p><%= l(@post.updated_at, format: :long) %></p>
+      <!-- Like -->
+      <div>
+        <% if user_signed_in? %>
+          <% if @is_favorite %>
+          <span><i id="favorite" class="fa fa-heart fa-lg"></i></span>
+          <% else %>
+          <span><i id="favorite-o" class="fa fa-heart-o fa-lg"></i></span>
+          <% end %>
+        <% end %>
+
+        <% if @favorite_size > 0 %>
+        <span id="favorite_count">いいね！<%= @favorite_size %>件</span>
+        <% else %>
+        <span id="favorite_count">いいね！はありません</span>
+        <% end %>
+      </div>
 
       <hr>
 
@@ -45,7 +61,6 @@
 
       <!-- FIXME: AJAXで処理するよう修正 -->
       <%= form_for(Comment.new, url: comments_path) do |comment| %>
-      <%= comment.hidden_field :post_id, value: @post.id %>
       <!-- Comments Form -->
       <div class="card my-4">
         <h5 class="card-header">コメントを書く</h5>
@@ -81,6 +96,7 @@
   </div>
   <!-- /.row -->
 
+  <%= hidden_field_tag 'post[id]', @post.id %>
 </div>
 <!-- /.container -->
 

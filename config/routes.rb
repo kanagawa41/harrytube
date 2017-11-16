@@ -7,9 +7,20 @@ Rails.application.routes.draw do
 
   devise_for :users
 
-  resources :comments, only: [:index, :create, :destroy]
+  resources :comments
+    collection do
+      get 'index'
+      post 'create'
+    end
+  end
 
-  resources :favorites
+  resources :favorites do
+    collection do
+      get 'index'
+      post 'create'
+      delete 'destroy'
+    end
+  end
 
   resources :posts
 
