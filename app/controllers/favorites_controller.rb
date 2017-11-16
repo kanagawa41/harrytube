@@ -37,6 +37,7 @@ class FavoritesController < ApplicationController
     request_ajax?
     signed_in?
 
+    # FIXME: 取得できない場合にその旨のエラーを通知する
     @favorite = Favorite.find_by(post_id: favorite_params[:post_id], user_id: current_user.id)
 
     @favorite.destroy
@@ -46,34 +47,6 @@ class FavoritesController < ApplicationController
         favorite_count: Favorite.where(post_id: @favorite.post_id).count,
       }
     }, status: 200
-  end
-
-  # GET /favorites/1
-  # GET /favorites/1.json
-  def show
-  end
-
-  # GET /favorites/new
-  def new
-    @favorite = Favorite.new
-  end
-
-  # GET /favorites/1/edit
-  def edit
-  end
-
-  # PATCH/PUT /favorites/1
-  # PATCH/PUT /favorites/1.json
-  def update
-    respond_to do |format|
-      if @favorite.update(favorite_params)
-        format.html { redirect_to @favorite, notice: 'Favorite was successfully updated.' }
-        format.json { render :show, status: :ok, location: @favorite }
-      else
-        format.html { render :edit }
-        format.json { render json: @favorite.errors, status: :unprocessable_entity }
-      end
-    end
   end
 
   private

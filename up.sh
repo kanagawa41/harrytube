@@ -195,6 +195,7 @@ elif [ "${target_env}" = "test" ]; then
 
   putst "Up server"
   RAILS_ENV=${target_env} bundle exec puma -w 4 $PORT -d > $UP_LOG 2>&1
+  # FIXME: デーモン起動でラグがあるのか、正しく起動しなくてもエラーとならない
   if [ ! $? = 0 ] ; then putsi "FAILD: set up rails."; exit 1; fi
   putsd
 
@@ -229,6 +230,7 @@ elif [ "${target_env}" = "production" ]; then
   putst "Up server"
   # ポートを指定するとsockが使用できない
   SECRET_KEY_BASE=`bundle exec rails secret` RAILS_SERVE_STATIC_FILES=true RAILS_ENV=${target_env} bundle exec puma -w 4 $PORT -d > $UP_LOG 2>&1
+  # FIXME: デーモン起動でラグがあるのか、正しく起動しなくてもエラーとならない
   if [ ! $? = 0 ] ; then putsi "FAILD: set up rails."; exit 1; fi
   putsd
 

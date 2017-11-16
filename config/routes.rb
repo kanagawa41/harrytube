@@ -7,7 +7,19 @@ Rails.application.routes.draw do
 
   devise_for :users
 
-  resources :comments
+  resources :user_pets
+
+  resources :posts
+
+  resources :user_infos
+
+  resources :harries do
+    collection do
+      get 'index'
+    end
+  end
+
+  resources :comments do
     collection do
       get 'index'
       post 'create'
@@ -19,16 +31,6 @@ Rails.application.routes.draw do
       get 'index'
       post 'create'
       delete 'destroy'
-    end
-  end
-
-  resources :posts
-
-  resources :user_infos
-
-  resources :harries do
-    collection do
-      get 'index'
     end
   end
 

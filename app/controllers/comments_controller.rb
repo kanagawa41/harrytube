@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-  before_action :set_comment, only: [:show, :edit, :update, :destroy]
+  before_action :set_comment, only: [:show, :update]
 
   # GET /comments
   # GET /comments.json
@@ -35,59 +35,13 @@ class CommentsController < ApplicationController
     end
   end
 
-  # DELETE /comments/1
-  # DELETE /comments/1.json
-  def destroy
-    request_ajax?
-    signed_in?
-
-    @comment.destroy
-
-    render json: {"result" => "ok"}, status: 200
-  end
-
-  # GET /comments/1
-  # GET /comments/1.json
-  def show
-  end
-
-  # GET /comments/new
-  def new
-    @comment = Comment.new
-  end
-
-  # 使用では更新はさせない
-  # GET /comments/1/edit
-  def edit
-    return unless origin_signed_in?(@post.user.user_info.id)
-  end
-
-  # POST /comments
-  # POST /comments.json
-  # FIXME: AJAXのみ対応にする。
-  # def create
-  #   @comment = Comment.new(comment_params)
-
-  #   @comment.user_id = current_user.id
-
-  #   respond_to do |format|
-  #     if @comment.save
-  #       format.html { redirect_to @comment, notice: 'Comment was successfully created.' }
-  #       format.json { render :show, status: :created, location: @comment }
-  #     else
-  #       format.html { render :new }
-  #       format.json { render json: @comment.errors, status: :unprocessable_entity }
-  #     end
-  #   end
-  # end
-
   # 使用では更新はさせない
   # PATCH/PUT /comments/1
   # PATCH/PUT /comments/1.json
   def update
     request_ajax?
 
-    origin_signed_in?(@post.user.user_info.id)
+    origin_signed_in?(@post.user.id)
 
     respond_to do |format|
       if @comment.update(comment_params)

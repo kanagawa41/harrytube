@@ -7,7 +7,7 @@ class Post < ApplicationRecord
 
   def prepare_save
     # URLのまま入力されている場合は、IDを抽出
-    if self.youtube_video_id =~ /^https:\/\/www.youtube.com\/watch\?v=(.+)$/
+    if self.youtube_video_id =~ /^youtube.com\/watch\?v=(.+)$/
       self.youtube_video_id = $1
     end
 

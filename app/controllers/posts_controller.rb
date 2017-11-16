@@ -12,7 +12,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
-    origin_person? @post.user.user_info.id
+    origin_person? @post.user.id
 
     @comments, @is_favorite, @favorite_size = PostsService.show  @post
   end
@@ -21,12 +21,12 @@ class PostsController < ApplicationController
   def new
     return unless signed_in?
 
-    @post = Post.new(user_id: current_user.user_info.user_id)
+    @post = Post.new(user_id: current_user.id)
   end
 
   # GET /posts/1/edit
   def edit
-    return unless origin_signed_in?(@post.user.user_info.id)
+    return unless origin_signed_in?(@post.user.id)
   end
 
   # POST /posts
@@ -48,7 +48,7 @@ class PostsController < ApplicationController
   # PATCH/PUT /posts/1
   # PATCH/PUT /posts/1.json
   def update
-    return unless origin_signed_in?(@post.user.user_info.id)
+    return unless origin_signed_in?(@post.user.id)
 
     respond_to do |format|
       if @post.update(post_params)

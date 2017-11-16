@@ -5,13 +5,21 @@
   <div class="form-group row">
     <!-- FIXME: 正しいパスを設定する -->
     <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/150x150" alt="<%= @user_info.nickname %>">
-    <!-- <img src="img/<%# @user_info.icon %>" class="img-circle">-->
+    <!-- <img src="img/<%# @user_info.has_icon %>" class="img-circle">-->
   </div>
 
   <div class="form-group row">
     <label class="col-sm-3 col-form-label">Nickname</label>
     <div class="col-sm-9">
       <p class="col-form-label"><%= @user_info.nickname %></p>
+    </div>
+  </div>
+
+  <!-- FIXME: 表示するか検討する -->
+  <div class="form-group row">
+    <label class="col-sm-3 col-form-label">Hash id</label>
+    <div class="col-sm-9">
+      <p class="col-form-label"><%= @user_info.hash_id %></p>
     </div>
   </div>
 
@@ -22,9 +30,6 @@
     </div>
   </div>
 
-  <h2>ペット</h2>
-  <hr>
-
   <div class="form-group row">
     <label class="col-sm-3 col-form-label">Breed history</label>
     <div class="col-sm-9">
@@ -32,26 +37,33 @@
     </div>
   </div>
 
+  <h2>ペット</h2>
+  <hr>
+
+  <!-- TODO: user_petにデータがあれば取得するように修正する -->
+
+  <!--
   <div class="form-group row">
     <label class="col-sm-3 col-form-label">Pet name</label>
     <div class="col-sm-9">
-      <p class="col-form-label"><%= @user_info.pet_name %></p>
+      <p class="col-form-label"><%# @user_info.pet_name %></p>
     </div>
   </div>
 
   <div class="form-group row">
     <label class="col-sm-3 col-form-label">Pet type</label>
     <div class="col-sm-9">
-      <p class="col-form-label"><%= @user_info.pet_type %></p>
+      <p class="col-form-label"><%# @user_info.pet_type %></p>
     </div>
   </div>
 
   <div class="form-group row">
     <label class="col-sm-3 col-form-label">Pet sex</label>
     <div class="col-sm-9">
-      <p class="col-form-label"><%= @user_info.pet_sex %></p>
+      <p class="col-form-label"><%# @user_info.pet_sex %></p>
     </div>
   </div>
+  -->
 
   <h2>メディア</h2>
   <hr>

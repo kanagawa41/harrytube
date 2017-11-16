@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171106124110) do
+ActiveRecord::Schema.define(version: 20171116061928) do
 
   create_table "comments", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.bigint "user_id", null: false
@@ -25,10 +25,15 @@ ActiveRecord::Schema.define(version: 20171106124110) do
   create_table "favorites", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.bigint "user_id", null: false
     t.bigint "post_id", null: false
+    t.index ["post_id"], name: "fk_rails_dcaf44a136"
+    t.index ["user_id", "post_id"], name: "index_favorites_on_user_id_and_post_id", unique: true
+  end
+
+  create_table "ng_words", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "word", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["post_id"], name: "fk_rails_dcaf44a136"
-    t.index ["user_id"], name: "fk_rails_d15744e438"
+    t.index ["word"], name: "index_ng_words_on_word", unique: true
   end
 
   create_table "posts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -45,22 +50,32 @@ ActiveRecord::Schema.define(version: 20171106124110) do
   create_table "user_infos", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.bigint "user_id", null: false
     t.string "nickname", null: false
+    t.string "hash_id", null: false
     t.integer "sex"
-    t.string "icon"
+    t.boolean "has_icon"
     t.integer "breed_history"
-    t.string "pet_name"
-    t.string "pet_type"
-    t.string "pet_sex"
+    t.string "one_phrase"
     t.string "youtube_channel_id"
     t.string "twitter_id"
     t.string "blog_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["hash_id"], name: "index_user_infos_on_hash_id", unique: true
     t.index ["user_id"], name: "index_user_infos_on_user_id"
   end
 
+  create_table "user_pets", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.bigint "user_id"
+    t.boolean "has_icon"
+    t.string "pet_name"
+    t.string "pet_type"
+    t.string "pet_sex"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_user_pets_on_user_id"
+  end
+
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string "username", default: "", null: false
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
@@ -92,4 +107,5 @@ ActiveRecord::Schema.define(version: 20171106124110) do
   add_foreign_key "favorites", "users"
   add_foreign_key "posts", "users"
   add_foreign_key "user_infos", "users"
+  add_foreign_key "user_pets", "users"
 end

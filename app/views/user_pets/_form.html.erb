@@ -1,0 +1,42 @@
+<%= form_with(model: user_pet, local: true) do |form| %>
+  <% if user_pet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user_pet.errors.count, "error") %> prohibited this user_pet from being saved:</h2>
+
+      <ul>
+      <% user_pet.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id, id: :user_pet_user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :has_icon %>
+    <%= form.check_box :has_icon, id: :user_pet_has_icon %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pet_name %>
+    <%= form.text_field :pet_name, id: :user_pet_pet_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pet_type %>
+    <%= form.text_field :pet_type, id: :user_pet_pet_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pet_sex %>
+    <%= form.text_field :pet_sex, id: :user_pet_pet_sex %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
