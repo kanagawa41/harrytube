@@ -1,6 +1,11 @@
-<p id="notice"><%= notice %></p>
-
 <form>
+
+  <% if @is_org_user %>
+  <%= link_to '編集する', edit_user_info_path(@user_info.hash_id), class: "btn btn-primary" %>
+  <% end %>
+
+  <br>
+  <br>
 
   <div class="form-group row">
     <!-- FIXME: 正しいパスを設定する -->
@@ -46,7 +51,3 @@
   <%== item_label("Blog url", @user_info.blog_url) %>
 
 </form>
-
-<% if @is_org_user %>
-<%= link_to '編集する', edit_user_info_path(@user_info), class: "btn btn-primary" %>
-<% end %>
