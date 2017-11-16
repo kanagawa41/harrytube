@@ -8,86 +8,42 @@
     <!-- <img src="img/<%# @user_info.has_icon %>" class="img-circle">-->
   </div>
 
-  <div class="form-group row">
-    <label class="col-sm-3 col-form-label">Nickname</label>
-    <div class="col-sm-9">
-      <p class="col-form-label"><%= @user_info.nickname %></p>
-    </div>
-  </div>
+  <%== item_label("Nickname", @user_info.nickname) %>
 
-  <!-- FIXME: 表示するか検討する -->
-  <div class="form-group row">
-    <label class="col-sm-3 col-form-label">Hash id</label>
-    <div class="col-sm-9">
-      <p class="col-form-label"><%= @user_info.hash_id %></p>
-    </div>
-  </div>
+  <%== item_label("Hash id", @user_info.hash_id) %>
 
-  <div class="form-group row">
-    <label class="col-sm-3 col-form-label">Sex</label>
-    <div class="col-sm-9">
-      <p class="col-form-label"><%= @user_info.sex %></p>
-    </div>
-  </div>
+  <%== item_label("Sex", @user_info.sex) %>
 
-  <div class="form-group row">
-    <label class="col-sm-3 col-form-label">Breed history</label>
-    <div class="col-sm-9">
-      <p class="col-form-label"><%= @user_info.breed_history %></p>
-    </div>
-  </div>
+  <%== item_label("Breed history", @user_info.breed_history) %>
 
   <h2>ペット</h2>
   <hr>
 
-  <!-- TODO: user_petにデータがあれば取得するように修正する -->
+  <% if @user_info.user.user_pets.present? %>
 
-  <!--
-  <div class="form-group row">
-    <label class="col-sm-3 col-form-label">Pet name</label>
-    <div class="col-sm-9">
-      <p class="col-form-label"><%# @user_info.pet_name %></p>
-    </div>
-  </div>
+    <% @user_info.user.user_pets.each do |user_pet| %>
+    <!-- TODO: user_petにデータがあれば取得するように修正する -->
 
-  <div class="form-group row">
-    <label class="col-sm-3 col-form-label">Pet type</label>
-    <div class="col-sm-9">
-      <p class="col-form-label"><%# @user_info.pet_type %></p>
-    </div>
-  </div>
+    <%== item_label("Pet name", user_pet.pet_name) %>
 
-  <div class="form-group row">
-    <label class="col-sm-3 col-form-label">Pet sex</label>
-    <div class="col-sm-9">
-      <p class="col-form-label"><%# @user_info.pet_sex %></p>
-    </div>
-  </div>
-  -->
+    <%== item_label("Pet type", user_pet.pet_type) %>
+
+    <%== item_label("Pet sex", user_pet.pet_sex) %>
+
+    <% end %>
+
+  <% else %>
+  <%== only_label("飼っていない") %>
+  <% end %>
 
   <h2>メディア</h2>
   <hr>
 
-  <div class="form-group row">
-    <label class="col-sm-3 col-form-label">Youtube channel</label>
-    <div class="col-sm-9">
-      <p class="col-form-label"><%= @user_info.youtube_channel_id %></p>
-    </div>
-  </div>
+  <%== item_label("Youtube channel", @user_info.youtube_channel_id) %>
 
-  <div class="form-group row">
-    <label class="col-sm-3 col-form-label">Twitter</label>
-    <div class="col-sm-9">
-      <p class="col-form-label"><%= @user_info.twitter_id %></p>
-    </div>
-  </div>
+  <%== item_label("Twitter", @user_info.twitter_id) %>
 
-  <div class="form-group row">
-    <label class="col-sm-3 col-form-label">Blog url</label>
-    <div class="col-sm-9">
-      <p class="col-form-label"><%= @user_info.blog_url %></p>
-    </div>
-  </div>
+  <%== item_label("Blog url", @user_info.blog_url) %>
 
 </form>
 

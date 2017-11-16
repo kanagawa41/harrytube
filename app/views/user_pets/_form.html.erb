@@ -27,13 +27,23 @@
   </div>
 
   <div class="field">
+    <%= form.label :pet_birthday %>
+    <%= form.date_select :pet_birthday, id: :user_pet_pet_birthday %>
+  </div>
+
+  <div class="field">
     <%= form.label :pet_type %>
     <%= form.text_field :pet_type, id: :user_pet_pet_type %>
   </div>
 
   <div class="field">
     <%= form.label :pet_sex %>
-    <%= form.text_field :pet_sex, id: :user_pet_pet_sex %>
+    <%= form.number_field :pet_sex, id: :user_pet_pet_sex %>
+  </div>
+
+  <div class="field">
+    <%= form.label :one_phrase %>
+    <%= form.text_field :one_phrase, id: :user_pet_one_phrase %>
   </div>
 
   <div class="actions">

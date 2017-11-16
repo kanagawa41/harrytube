@@ -8,8 +8,10 @@
       <th>User</th>
       <th>Has icon</th>
       <th>Pet name</th>
+      <th>Pet birthday</th>
       <th>Pet type</th>
       <th>Pet sex</th>
+      <th>One phrase</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,8 +22,10 @@
         <td><%= user_pet.user %></td>
         <td><%= user_pet.has_icon %></td>
         <td><%= user_pet.pet_name %></td>
+        <td><%= user_pet.pet_birthday %></td>
         <td><%= user_pet.pet_type %></td>
         <td><%= user_pet.pet_sex %></td>
+        <td><%= user_pet.one_phrase %></td>
         <td><%= link_to 'Show', user_pet %></td>
         <td><%= link_to 'Edit', edit_user_pet_path(user_pet) %></td>
         <td><%= link_to 'Destroy', user_pet, method: :delete, data: { confirm: 'Are you sure?' } %></td>

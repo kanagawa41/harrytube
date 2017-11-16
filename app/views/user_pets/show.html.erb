@@ -16,6 +16,11 @@
 </p>
 
 <p>
+  <strong>Pet birthday:</strong>
+  <%= @user_pet.pet_birthday %>
+</p>
+
+<p>
   <strong>Pet type:</strong>
   <%= @user_pet.pet_type %>
 </p>
@@ -23,6 +28,11 @@
 <p>
   <strong>Pet sex:</strong>
   <%= @user_pet.pet_sex %>
+</p>
+
+<p>
+  <strong>One phrase:</strong>
+  <%= @user_pet.one_phrase %>
 </p>
 
 <%= link_to 'Edit', edit_user_pet_path(@user_pet) %> |

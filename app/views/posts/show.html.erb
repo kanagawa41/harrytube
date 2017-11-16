@@ -11,7 +11,7 @@
   </h1>
   <ol class="breadcrumb">
     <li class="breadcrumb-item active">
-      <span><i class="fa fa-user-circle fa-lg"></i><a href="<%= user_info_path(@post.user.user_info.id) %>"><%= @post.user.user_info.nickname %></a></span>
+      <span><i class="fa fa-user-circle fa-lg"></i><a href="<%= user_info_path(@post.user.user_info.hash_id) %>"><%= @post.user.user_info.nickname %></a></span>
       <% if @post.tags.present? %>
       <span><i class="fa fa-tags fa-lg"></i><%= @post.tags %></span>
       <% end %>

@@ -67,9 +67,11 @@ ActiveRecord::Schema.define(version: 20171116061928) do
   create_table "user_pets", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.bigint "user_id"
     t.boolean "has_icon"
-    t.string "pet_name"
+    t.string "pet_name", null: false
+    t.date "pet_birthday"
     t.string "pet_type"
-    t.string "pet_sex"
+    t.integer "pet_sex"
+    t.string "one_phrase"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_user_pets_on_user_id"

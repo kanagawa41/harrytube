@@ -1,7 +1,7 @@
 class UserInfosController < ApplicationController
   layout "blog_home1"
 
-  before_action :set_user_info, only: [:show, :edit, :update, :destroy]
+  before_action :set_user_info, only: [:show, :edit, :update]
 
   # GET /user_infos
   # GET /user_infos.json
@@ -12,16 +12,19 @@ class UserInfosController < ApplicationController
   # GET /user_infos/1
   # GET /user_infos/1.json
   def show
-    origin_person? params[:id].to_i
+    origin_person? @user_info.id
   end
 
   # GET /user_infos/1/edit
   def edit
+    origin_signed_in?(@user_info.id)
   end
 
   # PATCH/PUT /user_infos/1
   # PATCH/PUT /user_infos/1.json
   def update
+    origin_signed_in?(@user_info.id)
+
     respond_to do |format|
       if @user_info.update(user_info_params)
         format.html { redirect_to @user_info, notice: 'User info was successfully updated.' }
@@ -33,20 +36,10 @@ class UserInfosController < ApplicationController
     end
   end
 
-  # DELETE /user_infos/1
-  # DELETE /user_infos/1.json
-  def destroy
-    @user_info.destroy
-    respond_to do |format|
-      format.html { redirect_to user_infos_url, notice: 'User info was successfully destroyed.' }
-      format.json { head :no_content }
-    end
-  end
-
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user_info
-      @user_info = UserInfo.find(params[:id])
+      @user_info = UserInfo.find_by(hash_id: params[:hash_id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

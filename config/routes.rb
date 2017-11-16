@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   resources :posts
 
-  resources :user_infos
+  resources :user_infos, only: [:index, :show, :edit, :update], param: :hash_id
 
   resources :harries do
     collection do

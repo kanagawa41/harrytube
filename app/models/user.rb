@@ -27,8 +27,8 @@ class User < ApplicationRecord
     user_info.nickname = self.email.split('@')[0]
 
     # ea703e7aa1efda0064eaa507d9e8ab7eのうち
-    # efda0064eaが取得できる
-    user_info.hash_id = Digest::MD5.new.update(self.id.to_s).to_s[10,10]
+    # ea703e7aa1が取得できる
+    user_info.hash_id = Digest::MD5.new.update("harry#{self.id.to_s}").to_s[0,10]
 
     user_info.save
   end

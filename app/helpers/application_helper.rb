@@ -5,4 +5,25 @@ module ApplicationHelper
 
   	sentence.size > limit ? sentence[0, 50] + pattern : sentence
   end
+
+	# リードオンリーのラベルを表示
+  def item_label(title, value)
+  	str = <<-EOS
+		  <div class="form-group row">
+		    <label class="col-sm-3 col-form-label">#{title}</label>
+		    <div class="col-sm-9">
+		      <p class="col-form-label">#{value}</p>
+		    </div>
+		  </div>
+	  EOS
+  end
+
+  def only_label(title)
+  	str = <<-EOS
+		  <div class="form-group row">
+		    <label class="col-sm-12 col-form-label">#{title}</label>
+		  </div>
+	  EOS
+  end
+
 end
