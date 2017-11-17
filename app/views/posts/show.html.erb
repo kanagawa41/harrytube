@@ -16,7 +16,7 @@
       <span><i class="fa fa-tags fa-lg"></i><%= @post.tags %></span>
       <% end %>
       <!-- Date/Time -->
-      <span><i class="fa fa-calendar fa-lg"></i><%= l(@post.updated_at, format: :long) %></span>
+      <span><i class="fa fa-calendar fa-lg"></i><%= l(@post.updated_at, format: :short) %>に公開</span>
       <span><i class="fa fa-comments fa-lg"></i><%= @comments.size %>コメント</span>
     </li>
   </ol>

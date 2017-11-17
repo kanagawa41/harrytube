@@ -2,5 +2,9 @@
 
 <%= render 'form', user_pet: @user_pet %>
 
-<%= link_to 'Show', @user_pet %> |
-<%= link_to 'Back', user_pets_path %>
+<br>
+
+<%= link_to 'ハリネズミ一覧を見る', user_pets_user_infos_path(current_user.user_info.hash_id) %>
+
+<br>
+<br>

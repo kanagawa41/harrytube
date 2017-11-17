@@ -1,0 +1,23 @@
+<% unless @user_pets.present? %>
+<%== only_label("ハリネズミは登録されておりません。") %>
+<% end %>
+
+<% @user_pets.each do |user_pet| %>
+
+<% if @is_org_user %>
+<%== buttons(edit_user_pet_path(user_pet), edit_user_pet_path(user_pet)) %>
+<% end %>
+
+<br>
+<br>
+
+<%= render 'show', user_pet: user_pet %>
+
+<hr>
+
+<% end %>
+
+<%= link_to 'ハリネズミを登録する', new_user_pet_path, class: "btn btn-primary" %>
+
+<br>
+<br>

@@ -1,39 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>User:</strong>
-  <%= @user_pet.user %>
-</p>
+<% if @is_org_user %>
+<%= link_to '編集する', edit_user_pet_path(@user_pet), class: "btn btn-primary" %>
+<% end %>
 
-<p>
-  <strong>Has icon:</strong>
-  <%= @user_pet.has_icon %>
-</p>
+<br>
+<br>
 
-<p>
-  <strong>Pet name:</strong>
-  <%= @user_pet.pet_name %>
-</p>
+<%= render 'show', user_pet: @user_pet %>
 
-<p>
-  <strong>Pet birthday:</strong>
-  <%= @user_pet.pet_birthday %>
-</p>
+<%= link_to 'ハリネズミ一覧を見る', user_pets_user_infos_path(current_user.user_info.hash_id) %>
 
-<p>
-  <strong>Pet type:</strong>
-  <%= @user_pet.pet_type %>
-</p>
-
-<p>
-  <strong>Pet sex:</strong>
-  <%= @user_pet.pet_sex %>
-</p>
-
-<p>
-  <strong>One phrase:</strong>
-  <%= @user_pet.one_phrase %>
-</p>
-
-<%= link_to 'Edit', edit_user_pet_path(@user_pet) %> |
-<%= link_to 'Back', user_pets_path %>
+<br>
+<br>

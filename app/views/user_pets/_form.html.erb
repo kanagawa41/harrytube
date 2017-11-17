@@ -11,42 +11,59 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :user_id %>
-    <%= form.text_field :user_id, id: :user_pet_user_id %>
-  </div>
-
-  <div class="field">
+<div class="control-group form-group">
+  <div class="controls">
     <%= form.label :has_icon %>
-    <%= form.check_box :has_icon, id: :user_pet_has_icon %>
+    <%= form.check_box :has_icon, id: :user_pet_has_icon, class: "form-control" %>
   </div>
+</div>
 
-  <div class="field">
+<div class="control-group form-group">
+  <div class="controls">
     <%= form.label :pet_name %>
-    <%= form.text_field :pet_name, id: :user_pet_pet_name %>
+    <%= form.text_field :pet_name, id: :user_pet_pet_name, class: "form-control" %>
   </div>
+</div>
 
-  <div class="field">
-    <%= form.label :pet_birthday %>
-    <%= form.date_select :pet_birthday, id: :user_pet_pet_birthday %>
+<div class="control-group form-group">
+  <div class="controls">
+    <%= form.label :pet_birthday %><br>
+    <%== sprintf(form.date_select(
+            :pet_birthday,
+            id: :user_pet_pet_birthday,
+            use_month_numbers: true,
+            start_year:        2000,
+            end_year:          (Time.now.year),
+            default:           Date.new(2010, 1, 1),
+            date_separator:    '%s',
+            discard_day:       true,
+            class: "form-control"),
+         '年 ') + '月'
+    %>
+
   </div>
+</div>
 
-  <div class="field">
+<div class="control-group form-group">
+  <div class="controls">
     <%= form.label :pet_type %>
-    <%= form.text_field :pet_type, id: :user_pet_pet_type %>
+    <%= form.text_field :pet_type, id: :user_pet_pet_type, class: "form-control" %>
   </div>
+</div>
 
-  <div class="field">
+<div class="control-group form-group">
+  <div class="controls">
     <%= form.label :pet_sex %>
-    <%= form.number_field :pet_sex, id: :user_pet_pet_sex %>
+    <%= form.number_field :pet_sex, id: :user_pet_pet_sex, class: "form-control" %>
   </div>
+</div>
 
-  <div class="field">
+<div class="control-group form-group">
+  <div class="controls">
     <%= form.label :one_phrase %>
-    <%= form.text_field :one_phrase, id: :user_pet_one_phrase %>
+    <%= form.text_field :one_phrase, id: :user_pet_one_phrase, class: "form-control" %>
   </div>
+</div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+<%= form.submit class: "btn btn-primary" %>
 <% end %>

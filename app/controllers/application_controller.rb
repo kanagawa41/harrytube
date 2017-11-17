@@ -54,7 +54,7 @@ class ApplicationController < ActionController::Base
   # 本人か？
   def origin_person?(user_info_id)
     # 本人が開いた場合
-    @is_org_user = user_signed_in? && user_info_id == current_user.user_info.id
+    @is_org_user = user_signed_in? && user_info_id == current_user.id
   end
 
   # ログインしているかつ、本人か？

@@ -18,6 +18,7 @@ module ApplicationHelper
 	  EOS
   end
 
+  # 値なしのラベルのみを表示
   def only_label(title)
   	str = <<-EOS
 		  <div class="form-group row">
@@ -25,5 +26,35 @@ module ApplicationHelper
 		  </div>
 	  EOS
   end
+
+  # 大きめのアイコン
+  def big_circle_icon(src, alt="")
+  	str = <<-EOS
+		  <div class="form-group row">
+		    <img class="d-flex mr-3 rounded-circle" src="#{src}" alt="#{alt}">
+		  </div>
+	  EOS
+  end
+
+  # 編集ボタン、削除ボタン
+  def buttons(edit_path=nil, delete_path=nil)
+  	str = <<-EOS
+			<div class="btn-toolbar">
+			  <div class="btn-group">
+	  EOS
+
+	  if edit_path.present?
+	  	str << link_to('編集する', edit_path, class: "btn btn-primary")
+	  end
+
+	  if delete_path.present?
+	  	str << link_to('削除する', delete_path, class: "btn btn-danger", data: { confirm: '本当に削除しますか？' })
+	  end
+
+  	str << <<-EOS
+			  </div>
+			</div>
+	  EOS
+	end
 
 end
