@@ -25,14 +25,10 @@ class UserInfosController < ApplicationController
   def update
     origin_signed_in?(@user_info.id)
 
-    respond_to do |format|
-      if @user_info.update(user_info_params)
-        format.html { redirect_to @user_info, notice: 'User info was successfully updated.' }
-        format.json { render :show, status: :ok, location: @user_info }
-      else
-        format.html { render :edit }
-        format.json { render json: @user_info.errors, status: :unprocessable_entity }
-      end
+    if @user_info.update(user_info_params)
+      redirect_to user_info_path(@user_info.hash_id), notice: 'ユーザ情報を更新しました。'
+    else
+      render :edit
     end
   end
 

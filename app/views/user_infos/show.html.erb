@@ -7,33 +7,32 @@
   <br>
   <br>
 
-  <!-- FIXME: 正しいパスを設定する -->
-  <%#= big_circle_icon(@user_info.has_icon, @user_info.nickname) %>
-  <%== big_circle_icon("http://placehold.it/150x150", @user_info.nickname) %>
+  <div class="form-group row">
+    <!-- FIXME: 正しいパスを設定する -->
+    <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/150x150" alt="<%= @user_info.nickname %>">
+    <!-- <img src="img/<%# @user_info.has_icon %>" class="img-circle">-->
+  </div>
 
-  <%== item_label("Nickname", @user_info.nickname) %>
+  <%== t_item_label("user_info.nickname", @user_info.nickname) %>
 
-  <%== item_label("Hash id", @user_info.hash_id) %>
+  <%== t_item_label("user_info.sex", @user_info.sex) %>
 
-  <%== item_label("Sex", @user_info.sex) %>
-
-  <%== item_label("Breed history", @user_info.breed_history) %>
-
-  <br>
+  <%== t_item_label("user_info.breed_history", @user_info.breed_history) %>
 
   <h2>ペット</h2>
   <hr>
 
   <% if @user_info.user.user_pets.present? %>
+    <%= link_to 'ペット詳細を見る', user_pets_user_infos_path(@user_info.hash_id), class: "btn btn-link" %>
 
     <% @user_info.user.user_pets.each do |user_pet| %>
     <!-- TODO: user_petにデータがあれば取得するように修正する -->
 
-    <%== item_label("Pet name", user_pet.pet_name) %>
+    <%== t_item_label("user_pet.pet_name", user_pet.pet_name) %>
 
-    <%== item_label("Pet type", user_pet.pet_type) %>
+    <%== t_item_label("user_pet.pet_type", user_pet.pet_type) %>
 
-    <%== item_label("Pet sex", user_pet.pet_sex) %>
+    <%== t_item_label("user_pet.pet_sex", user_pet.pet_sex) %>
 
     <% end %>
 
@@ -41,15 +40,13 @@
   <%== only_label("飼っていない") %>
   <% end %>
 
-  <br>
-
   <h2>メディア</h2>
   <hr>
 
-  <%== item_label("Youtube channel", @user_info.youtube_channel_id) %>
+  <%== t_item_label("user_info.youtube_channel_id", @user_info.youtube_channel_id) %>
 
-  <%== item_label("Twitter", @user_info.twitter_id) %>
+  <%== t_item_label("user_info.twitter_id", @user_info.twitter_id) %>
 
-  <%== item_label("Blog url", @user_info.blog_url) %>
+  <%== t_item_label("user_info.blog_url", @user_info.blog_url) %>
 
 </form>

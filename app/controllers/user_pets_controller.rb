@@ -36,7 +36,6 @@ class UserPetsController < ApplicationController
   # POST /user_pets
   def create
     return unless signed_in?
-
     @user_pet = UserPet.new(user_pet_params)
     @user_pet.user_id = current_user.id
 
@@ -49,6 +48,8 @@ class UserPetsController < ApplicationController
 
   # PATCH/PUT /user_pets/1
   def update
+    origin_signed_in?(@user_pet.user.id)
+
     if @user_pet.update(user_pet_params)
       redirect_to @user_pet, notice: 'ハリネズミの情報を更新しました。'
     else
@@ -58,8 +59,10 @@ class UserPetsController < ApplicationController
 
   # DELETE /user_pets/1
   def destroy
+    origin_signed_in?(@user_pet.user.id)
+
     @user_pet.destroy
-    redirect_to user_pets_url, notice: 'ハリネズミの情報を削除しました。'
+    redirect_to user_pets_user_infos_url, notice: 'ハリネズミの情報を削除しました。'
   end
 
   private
@@ -70,6 +73,9 @@ class UserPetsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def user_pet_params
-      params.require(:user_pet).permit(:user_id, :has_icon, :pet_name, :pet_birthday, :pet_type, :pet_sex, :one_phrase)
+      tmp_params = params.require(:user_pet).permit(:user_id, :has_icon, :pet_name, :pet_birthday, :pet_type, :pet_sex, :one_phrase)
+      tmp_params[:pet_sex] = tmp_params[:pet_sex].to_i if tmp_params[:pet_sex].present?
+
+      tmp_params
     end
 end

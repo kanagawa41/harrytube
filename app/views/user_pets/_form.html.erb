@@ -1,15 +1,7 @@
 <%= form_with(model: user_pet, local: true) do |form| %>
-  <% if user_pet.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(user_pet.errors.count, "error") %> prohibited this user_pet from being saved:</h2>
-
-      <ul>
-      <% user_pet.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+<% if user_pet.errors.any? %>
+  <%= render 'common/error_explanation', form: user_pet %>
+<% end %>
 
 <div class="control-group form-group">
   <div class="controls">
@@ -25,24 +17,30 @@
   </div>
 </div>
 
-<div class="control-group form-group">
-  <div class="controls">
-    <%= form.label :pet_birthday %><br>
+<%= form.label :pet_birthday %><br>
+<div class="form-inline">
+  <div class="control-group form-group">
     <%== sprintf(form.date_select(
             :pet_birthday,
-            id: :user_pet_pet_birthday,
-            use_month_numbers: true,
-            start_year:        2000,
-            end_year:          (Time.now.year),
-            default:           Date.new(2010, 1, 1),
-            date_separator:    '%s',
-            discard_day:       true,
-            class: "form-control"),
+            {
+              id: :user_pet_pet_birthday,
+              use_month_numbers: true,
+              start_year:        2000,
+              end_year:          (Time.now.year),
+              default:           Date.new(2010, 1, 1),
+              date_separator:    '%s',
+              discard_day:       true,
+            },
+            {
+              class:             "form-control",
+            }),
          '年 ') + '月'
     %>
 
   </div>
 </div>
+
+<br>
 
 <div class="control-group form-group">
   <div class="controls">
@@ -51,11 +49,18 @@
   </div>
 </div>
 
-<div class="control-group form-group">
-  <div class="controls">
-    <%= form.label :pet_sex %>
-    <%= form.number_field :pet_sex, id: :user_pet_pet_sex, class: "form-control" %>
-  </div>
+<%= form.label :pet_sex %>
+<br>
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-secondary <%= user_pet.unknown? ? "active" : "" %>">
+    <%= form.radio_button :pet_sex, UserPet.pet_sexes["unknown"], {:checked => true} %> 不明
+  </label>
+  <label class="btn btn-primary <%= user_pet.male? ? "active" : "" %>">
+    <%= form.radio_button :pet_sex, UserPet.pet_sexes["male"] %> オス
+  </label>
+  <label class="btn btn-primary <%= user_pet.female? ? "active" : "" %>">
+    <%= form.radio_button :pet_sex, UserPet.pet_sexes["female"] %> メス
+  </label>
 </div>
 
 <div class="control-group form-group">

@@ -1,7 +1,5 @@
-<p id="notice"><%= notice %></p>
-
 <% if @is_org_user %>
-<%= link_to '編集する', edit_user_pet_path(@user_pet), class: "btn btn-primary" %>
+<%== buttons(edit_user_pet_path(@user_pet), user_pet_path(@user_pet)) %>
 <% end %>
 
 <br>
@@ -10,6 +8,3 @@
 <%= render 'show', user_pet: @user_pet %>
 
 <%= link_to 'ハリネズミ一覧を見る', user_pets_user_infos_path(current_user.user_info.hash_id) %>
-
-<br>
-<br>

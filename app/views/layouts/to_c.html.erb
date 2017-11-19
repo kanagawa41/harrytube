@@ -12,15 +12,17 @@
   </head>
 
   <body>
-   <p class="notice" style="display: none;"><%= notice %></p>
-   <p class="alert" style="display: none;"><%= alert %></p>
+   <p class="notice"><%= notice %></p>
+   <p class="alert"><%= alert %></p>
 
     <%= render 'common/navi' %>
 
     <%= render 'common/header' %>
 
-    <div class="container">
-      <%= yield %>
+    <div class="wrap-container">
+      <div class="container">
+        <%= yield %>
+      </div>
     </div>
 
     <%= render 'common/footer' %>

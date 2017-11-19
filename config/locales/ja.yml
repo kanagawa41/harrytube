@@ -1,12 +1,57 @@
 ja:
-  # deviseのフォーム周りの日本語化
+  # active admin の日本語化
+  # https://github.com/svenfuchs/rails-i18n/blob/master/rails/locale/ja.yml
   activerecord:
+    models:
+      user: 基本情報
+      user_info: プロフィール
+      user_pet: ペット
+      post: 投稿
+      favorite: いいね
+      comment: コメント
+      ngword: NGワード
+
     attributes:
       user:
         name: 名前
         password: パスワード
         password_confirmation: パスワード確認
         email: メールアドレス
+      user_info:
+        nickname: ニックネーム
+        hash: ユーザID
+        sex: 性別
+        breed_history: 飼育歴
+        one_phrase: 一言
+        youtube_channel_id: ユーチューブのチャンネルID
+        twitter_id: ツイッターID
+        blog_url: ブログURL
+      user_pet:
+        pet_name: ペットの名前
+        pet_birthday: ペットの誕生日
+        pet_type: ペットの種類
+        pet_sex: ペットの性別
+        one_phrase: ペットの一言
+      post:
+        title: タイトル
+        description: 記事の詳細
+        youtube_video_id: ユーチューブのビデオID
+        tags: タグ
+
+    errors:
+      messages:
+        record_invalid: "バリデーションに失敗しました: %{errors}"
+        restrict_dependent_destroy:
+          has_one: "%{record}が存在しているので削除できません"
+          has_many: "%{record}が存在しているので削除できません"
+
+  enums:
+    user_pet:
+      pet_sex:
+        unknown: ふめい
+        male: オス
+        female: メス
+
   views:
     pagination:
       first: "最初"
@@ -23,16 +68,6 @@ ja:
           other: "<b>&nbsp;%{count}</b>&nbsp;件がヒット"
       more_pages:
         display_entries: "<b>%{total}</b>&nbsp;件がヒット&nbsp;<b>%{first}&nbsp;~&nbsp;%{last}</b>&nbsp;件を表示"
-
-  # active admin の日本語化
-  # https://github.com/svenfuchs/rails-i18n/blob/master/rails/locale/ja.yml
-  activerecord:
-    errors:
-      messages:
-        record_invalid: "バリデーションに失敗しました: %{errors}"
-        restrict_dependent_destroy:
-          has_one: "%{record}が存在しているので削除できません"
-          has_many: "%{record}が存在しているので削除できません"
   date:
     abbr_day_names:
     - 日
@@ -68,6 +103,8 @@ ja:
       default: ! "%Y/%m/%d"
       long: ! "%Y年%m月%d日(%a)"
       short: ! "%m/%d"
+      birth_default: ! "%Y年%m月%d日"
+      birth_short: ! "%Y年%m月"
     month_names:
     -
     - 1月

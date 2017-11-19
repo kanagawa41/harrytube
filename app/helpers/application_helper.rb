@@ -6,6 +6,12 @@ module ApplicationHelper
   	sentence.size > limit ? sentence[0, 50] + pattern : sentence
   end
 
+  # リードオンリーのラベルを表示(翻訳する)
+  # model_and_attributeの形式はモデル名.属性名(product.name)
+  def t_item_label(model_and_attribute, value)
+    item_label(t('activerecord.attributes.' + model_and_attribute), value)
+  end
+
 	# リードオンリーのラベルを表示
   def item_label(title, value)
   	str = <<-EOS
@@ -30,7 +36,7 @@ module ApplicationHelper
   # 大きめのアイコン
   def big_circle_icon(src, alt="")
   	str = <<-EOS
-		  <div class="form-group row">
+		  <div class="form-group">
 		    <img class="d-flex mr-3 rounded-circle" src="#{src}" alt="#{alt}">
 		  </div>
 	  EOS
@@ -44,11 +50,11 @@ module ApplicationHelper
 	  EOS
 
 	  if edit_path.present?
-	  	str << link_to('編集する', edit_path, class: "btn btn-primary")
+	  	str << link_to('編集する', edit_path, class: "btn btn-default")
 	  end
 
 	  if delete_path.present?
-	  	str << link_to('削除する', delete_path, class: "btn btn-danger", data: { confirm: '本当に削除しますか？' })
+	  	str << link_to('削除する', delete_path, method: :delete, class: "btn btn-danger", data: { confirm: '本当に削除しますか？' })
 	  end
 
   	str << <<-EOS

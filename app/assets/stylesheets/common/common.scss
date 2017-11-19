@@ -11,6 +11,39 @@
 }
 /* !bootstrapの上書き */
 
+/* font-awesomeの上書き */
+i {
+  padding-right: 0.3em;
+}
+/* !font-awesomeの上書き */
+
+/* テンプレート */
+.notice, .alert {
+  display: none;
+}
+
+.wrap-container {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+/* !テンプレート */
+
+/* エラー */
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+  }
+  padding-bottom: 2em;
+}
+
+.field_with_errors {
+  color: red;
+}
+/* !エラー */
+
+
+/* モーダル */
 .modal-header {
     border-radius: 5px 5px 0px 0px;
     background: #ff4486;
@@ -24,3 +57,4 @@
 .modal-dialog select {
     border: solid 1px #333;
 }
+/* !モーダル */

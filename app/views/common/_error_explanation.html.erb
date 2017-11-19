@@ -1,0 +1,14 @@
+<div id="error_explanation">
+  <div class="card">
+    <h5 class="card-header">入力エラーがあります。エラー箇所を確認してください。</h5>
+    <div class="card-body">
+      <div class="input-group">
+        <ul>
+        <% form.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

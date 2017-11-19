@@ -2,17 +2,13 @@
 <%#= big_circle_icon(user_pet.has_icon, user_pet.pet_name) %>
 <%== big_circle_icon("http://placehold.it/150x150", user_pet.pet_name) %>
 
-<%== item_label("Pet name", user_pet.pet_name) %>
+<%== t_item_label("user_pet.pet_name", user_pet.pet_name) %>
 
-<%== item_label("Has icon", user_pet.has_icon) %>
+<%== t_item_label("user_pet.pet_birthday", l(user_pet.pet_birthday, format: :birth_short)) %>
 
-<%== item_label("Pet name", user_pet.pet_name) %>
+<%== t_item_label("user_pet.pet_type", user_pet.pet_type) %>
 
-<%== item_label("Pet birthday", user_pet.pet_birthday) %>
+<%== t_item_label("user_pet.pet_sex", user_pet.pet_sex_i18n) %>
 
-<%== item_label("Pet type", user_pet.pet_type) %>
-
-<%== item_label("Pet sex", user_pet.pet_sex) %>
-
-<%== item_label("One phrase", user_pet.one_phrase) %>
+<%== t_item_label("user_pet.one_phrase", user_pet.one_phrase) %>
 

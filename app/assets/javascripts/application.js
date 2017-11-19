@@ -13,4 +13,6 @@
 //= require rails-ujs
 //= require turbolinks
 //= require @first/jquery.min.js
+//= require @first/popper.js
+//= require @first/bootstrap.js
 //= require_tree .

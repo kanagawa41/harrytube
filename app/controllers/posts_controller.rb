@@ -39,7 +39,7 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       if @post.save
-        format.html { redirect_to @post, notice: 'Post was successfully created.' }
+        format.html { redirect_to @post, notice: '投稿を作成しました。' }
         format.json { render :show, status: :created, location: @post }
       else
         format.html { render :new }
@@ -51,13 +51,11 @@ class PostsController < ApplicationController
   # PATCH/PUT /posts/1
   # PATCH/PUT /posts/1.json
   def update
-    return unless origin_signed_in?(@post.user.id)
-
-    @post.user_id = current_user.id
+    origin_signed_in?(@post.user.id)
 
     respond_to do |format|
       if @post.update(post_params)
-        format.html { redirect_to @post, notice: 'Post was successfully updated.' }
+        format.html { redirect_to @post, notice: '投稿に成功しました。' }
         format.json { render :show, status: :ok, location: @post }
       else
         format.html { render :edit }
@@ -69,11 +67,11 @@ class PostsController < ApplicationController
   # DELETE /posts/1
   # DELETE /posts/1.json
   def destroy
-    return unless origin_signed_in?(@post.user.id)
+    origin_signed_in?(@post.user.id)
 
     @post.destroy
     respond_to do |format|
-      format.html { redirect_to posts_url, notice: 'Post was successfully destroyed.' }
+      format.html { redirect_to posts_url, notice: '投稿を削除しました。' }
       format.json { head :no_content }
     end
   end

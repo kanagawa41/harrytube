@@ -65,3 +65,4 @@ gem 'whenever', :require => false
 gem 'devise'
 gem 'mimemagic'
 gem 'kaminari'
+gem 'enum_help'

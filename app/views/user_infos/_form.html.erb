@@ -1,17 +1,7 @@
-<%= form_with(model: user_info, local: true) do |form| %>
+<%= form_with(model: user_info, url: user_info_path(user_info.hash_id), local: true) do |form| %>
 <% if user_info.errors.any? %>
-  <div id="error_explanation">
-    <h2><%= pluralize(user_info.errors.count, "error") %> prohibited this user_info from being saved:</h2>
-
-    <ul>
-    <% user_info.errors.full_messages.each do |message| %>
-      <li><%= message %></li>
-    <% end %>
-    </ul>
-  </div>
+  <%= render 'common/error_explanation', form: user_info %>
 <% end %>
-
-<%= form.hidden_field :user_id, id: :user_info_user_id %>
 
 <div class="control-group form-group">
   <div class="controls">
