@@ -1,5 +1,5 @@
-<h1>New User Pet</h1>
+<h1>ハリネズミの情報を登録する</h1>
 
 <%= render 'form', user_pet: @user_pet %>
 
-<%= link_to 'Back', user_pets_path %>
+<%= link_to 'ハリネズミ一覧を見る', user_pets_user_infos_path(current_user.user_info.hash_id), class: "btn btn-link" %>

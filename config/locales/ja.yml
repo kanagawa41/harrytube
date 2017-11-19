@@ -46,6 +46,11 @@ ja:
           has_many: "%{record}が存在しているので削除できません"
 
   enums:
+    user_info:
+      sex:
+        unknown: "-"
+        male: 男性
+        female: 女性
     user_pet:
       pet_sex:
         unknown: ふめい

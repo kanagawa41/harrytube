@@ -10,12 +10,21 @@
   </div>
 </div>
 
-<div class="control-group form-group">
-  <div class="controls">
-  <%= form.label :sex %>
-  <%= form.number_field :sex, id: :user_info_sex, class: "form-control" %>
-  </div>
+<%= form.label :sex %>
+<br>
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-secondary <%= user_info.unknown? ? "active" : "" %>">
+    <%= form.radio_button :sex, UserInfo.sexes["unknown"], {:checked => true} %> -
+  </label>
+  <label class="btn btn-primary <%= user_info.male? ? "active" : "" %>">
+    <%= form.radio_button :sex, UserInfo.sexes["male"] %> 男性
+  </label>
+  <label class="btn btn-primary <%= user_info.female? ? "active" : "" %>">
+    <%= form.radio_button :sex, UserInfo.sexes["female"] %> 女性
+  </label>
 </div>
+
+
 
 <div class="control-group form-group">
   <div class="controls">
@@ -26,22 +35,31 @@
 
 <div class="control-group form-group">
   <div class="controls">
-  <%= form.label :breed_history %>
-  <%= form.number_field :breed_history, id: :user_info_breed_history, class: "form-control" %>
+    <%= form.label :breed_history %>
+    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+      <%= form.number_field :breed_history, id: :user_info_breed_history, class: "form-control" %>
+      <div class="input-group-addon">ヶ月</div>
+    </div>
   </div>
 </div>
 
 <div class="control-group form-group">
   <div class="controls">
-  <%= form.label :youtube_channel_id %>
-  <%= form.text_field :youtube_channel_id, id: :user_info_youtube_channel_id, class: "form-control" %>
+    <%= form.label :youtube_channel_id %>
+    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+      <div class="input-group-addon">youtube.com/channel/</div>
+      <%= form.text_field :youtube_channel_id, id: :user_info_youtube_channel_id, class: "form-control" %>
+    </div>
   </div>
 </div>
 
 <div class="control-group form-group">
   <div class="controls">
-  <%= form.label :twitter_id %>
-  <%= form.text_field :twitter_id, id: :user_info_twitter_id, class: "form-control" %>
+    <%= form.label :twitter_id %>
+    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+      <div class="input-group-addon">twitter.com/</div>
+      <%= form.text_field :twitter_id, id: :user_info_twitter_id, class: "form-control" %>
+    </div>
   </div>
 </div>
 

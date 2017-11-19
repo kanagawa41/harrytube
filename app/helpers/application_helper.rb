@@ -63,4 +63,14 @@ module ApplicationHelper
 	  EOS
 	end
 
+  # 安全に文字列結合を行う
+  # ※いずれも空白の場合は空白を返却する
+  def concat_safe(base_val, *vals)
+    all_str = ""
+    vals.each do |val|
+      all_str << val.to_s if val.present?
+    end
+
+    all_str.present? ? base_val.to_s + all_str : ""
+  end
 end

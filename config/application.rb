@@ -36,5 +36,16 @@ module LensManage
     # https://stackoverflow.com/questions/17007685/rails-4-uninitialized-constant-for-module
     config.autoload_paths << Rails.root.join("lib")
     config.eager_load_paths << Rails.root.join("lib")
+
+    # field_with_errorsの出力を制御する
+    # https://qiita.com/youcune/items/76a50ae3a2863a8f8b00
+    config.action_view.field_error_proc = Proc.new do |html_tag, instance|
+      if instance.kind_of?(ActionView::Helpers::Tags::Label)
+        "<div class=\"field_with_errors\">#{html_tag}</div>".html_safe
+      else
+        %Q(#{html_tag}).html_safe
+      end
+    end
+
   end
 end

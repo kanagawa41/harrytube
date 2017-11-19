@@ -15,9 +15,9 @@
 
   <%== t_item_label("user_info.nickname", @user_info.nickname) %>
 
-  <%== t_item_label("user_info.sex", @user_info.sex) %>
+  <%== t_item_label("user_info.sex", @user_info.sex_i18n) %>
 
-  <%== t_item_label("user_info.breed_history", @user_info.breed_history) %>
+  <%== t_item_label("user_info.breed_history", concat_safe(@user_info.breed_history, 'ヶ月')) %>
 
   <h2>ペット</h2>
   <hr>
@@ -32,7 +32,7 @@
 
     <%== t_item_label("user_pet.pet_type", user_pet.pet_type) %>
 
-    <%== t_item_label("user_pet.pet_sex", user_pet.pet_sex) %>
+    <%== t_item_label("user_pet.pet_sex", user_pet.pet_sex_i18n) %>
 
     <% end %>
 
@@ -43,9 +43,9 @@
   <h2>メディア</h2>
   <hr>
 
-  <%== t_item_label("user_info.youtube_channel_id", @user_info.youtube_channel_id) %>
+  <%== t_item_label("user_info.youtube_channel_id", concat_safe("https://www.youtube.com/watch?v=", @user_info.youtube_channel_id)) %>
 
-  <%== t_item_label("user_info.twitter_id", @user_info.twitter_id) %>
+  <%== t_item_label("user_info.twitter_id", concat_safe("https://twitter.com/", @user_info.twitter_id)) %>
 
   <%== t_item_label("user_info.blog_url", @user_info.blog_url) %>
 

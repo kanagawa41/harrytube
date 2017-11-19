@@ -20,7 +20,10 @@
 <div class="control-group form-group">
   <div class="controls">
     <%= form.label :youtube_video_id %>
-    <%= form.text_field :youtube_video_id, id: :post_youtube_video_id, class: "form-control" %>
+    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+      <div class="input-group-addon">youtube.com/watch?v=</div>
+      <%= form.text_field :youtube_video_id, id: :post_youtube_video_id, class: "form-control" %>
+    </div>
   </div>
 </div>
 
