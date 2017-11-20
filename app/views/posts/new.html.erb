@@ -5,4 +5,4 @@
 <br>
 
 <!-- FIXME: ユーザの投稿一覧に戻るようにする -->
-<%= link_to '投稿一覧を見る', posts_path, class: "btn btn-link" %>
+<%= link_to '投稿一覧を見る', posts_user_infos_path(current_user.user_info.hash_id), class: "btn btn-link" %>

@@ -24,7 +24,13 @@
             <%= yield %>
           </div>
           <div class="col-md-4">
-            <%= render 'common/side_bar' %>
+            <!-- TODO:仮置きのため実際のものに変更する -->
+            <!-- FIXME:新規投稿の場合は、elseに遷移してしまう。 -->
+            <% if @is_org_user %>
+            <%= render 'common/side_bar_for_user' %>
+            <% else %>
+            <%= render 'common/side_bar_for_guest' %>
+            <% end %>
           </div>
         </div>
       </div>

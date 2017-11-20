@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
-  before_action :set_variables
+  before_action :set_variables, :normalize_page
 
   # 別だしで宣言できないか検討する
   ##########################################

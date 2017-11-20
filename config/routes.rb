@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   resources :user_infos, only: [:index, :show, :edit, :update], param: :hash_id do
     collection do
       get ':hash_id/user_pets', to: 'user_pets#user_index', as: 'user_pets'
+      get ':hash_id/posts', to: 'posts#user_index', as: 'posts'
     end
   end
 

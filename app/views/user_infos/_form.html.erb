@@ -14,13 +14,13 @@
 <br>
 <div class="btn-group" data-toggle="buttons">
   <label class="btn btn-secondary <%= user_info.unknown? ? "active" : "" %>">
-    <%= form.radio_button :sex, UserInfo.sexes["unknown"], {:checked => true} %> -
+    <%= form.radio_button :sex, UserInfo.sexes["unknown"], checked: user_info.unknown? %> -
   </label>
   <label class="btn btn-primary <%= user_info.male? ? "active" : "" %>">
-    <%= form.radio_button :sex, UserInfo.sexes["male"] %> 男性
+    <%= form.radio_button :sex, UserInfo.sexes["male"], checked: user_info.male? %> 男性
   </label>
   <label class="btn btn-primary <%= user_info.female? ? "active" : "" %>">
-    <%= form.radio_button :sex, UserInfo.sexes["female"] %> 女性
+    <%= form.radio_button :sex, UserInfo.sexes["female"], checked: user_info.female? %> 女性
   </label>
 </div>
 

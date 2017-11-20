@@ -9,6 +9,14 @@ class PostsController < ApplicationController
     @posts = Post.all
   end
 
+  # GET /posts/user/ea703e7aa1
+  def user_index
+    user_id = UserInfo.find_id_by_hash(params[:hash_id])
+    origin_person? user_id
+
+    @posts = Post.where(user_id: user_id).page(@page)
+  end
+
   # GET /posts/1
   # GET /posts/1.json
   def show

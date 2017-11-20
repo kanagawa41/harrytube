@@ -1,0 +1,27 @@
+<div class="row">
+
+  <% @posts.each do |post| %>
+  <div class="col-lg-4 col-sm-6 portfolio-item">
+    <div class="card h-100">
+      <div class="card-header">
+        <span><i class="fa fa-calendar fa-lg"></i><%= l(post.updated_at, format: :short) %>に公開</span>
+      </div>
+      <a href="<%= post_path(post.id) %>"><img class="card-img-top" src="<%= "http://i.ytimg.com/vi/#{post.youtube_video_id}/sddefault.jpg" %>" alt="<%= post.title %>"></a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="<%= post_path(post.id) %>"><%= cut_str post.title, 25 %></a>
+        </h4>
+        <p class="card-text"><%= cut_str post.description %></p>
+      </div>
+    </div>
+  </div>
+  <% end %>
+
+</div>
+
+<hr>
+
+<!-- 挙動を確認する -->
+<%# if @posts.total_count > 12 %>
+  <%= paginate @posts, :theme => 'twitter-bootstrap-4' %>
+<%# end %>

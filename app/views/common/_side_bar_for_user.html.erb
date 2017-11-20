@@ -1,0 +1,14 @@
+<!-- TODO:仮置きのため実際のものに変更する -->
+<!-- FIXME:新規投稿の場合は、elseに遷移してしまう。 -->
+
+<div class="col-mb-12">
+  <div class="list-group">
+    <!-- FIXME: 現在が対象パスの場合はclassに"active"を付与する -->
+    <%= link_to '投稿する', new_post_path, class: "list-group-item" %>
+    <%= link_to '投稿一覧', posts_user_infos_path(current_user.user_info.hash_id), class: "list-group-item" %>
+    <!-- FIXME: ハッシュなしで編集できるようにする -->
+    <%= link_to 'プロフィール', edit_user_info_path(current_user.user_info.hash_id), class: "list-group-item" %>
+    <%= link_to 'ペット', user_pets_user_infos_path(current_user.user_info.hash_id), class: "list-group-item" %>
+    <%= link_to '基本情報', edit_user_registration_path, class: "list-group-item" %>
+  </div>
+</div>

@@ -53,13 +53,13 @@
 <br>
 <div class="btn-group" data-toggle="buttons">
   <label class="btn btn-secondary <%= user_pet.unknown? ? "active" : "" %>">
-    <%= form.radio_button :pet_sex, UserPet.pet_sexes["unknown"], {:checked => true} %> 不明
+    <%= form.radio_button :pet_sex, UserPet.pet_sexes["unknown"], checked: user_pet.unknown? %> 不明
   </label>
   <label class="btn btn-primary <%= user_pet.male? ? "active" : "" %>">
-    <%= form.radio_button :pet_sex, UserPet.pet_sexes["male"] %> オス
+    <%= form.radio_button :pet_sex, UserPet.pet_sexes["male"], checked: user_pet.male? %> オス
   </label>
   <label class="btn btn-primary <%= user_pet.female? ? "active" : "" %>">
-    <%= form.radio_button :pet_sex, UserPet.pet_sexes["female"] %> メス
+    <%= form.radio_button :pet_sex, UserPet.pet_sexes["female"], checked: user_pet.female? %> メス
   </label>
 </div>
 
