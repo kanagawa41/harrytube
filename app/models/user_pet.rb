@@ -5,4 +5,6 @@ class UserPet < ApplicationRecord
 
   enum pet_sex: [:unknown, :male, :female]
 
+  mount_uploader :image, ImageUploader
+
 end

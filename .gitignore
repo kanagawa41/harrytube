@@ -29,6 +29,7 @@ nohup.out
 /test/*
 _up.log
 public/assets/*
+public/uploads/*
 
 *~
 ._*

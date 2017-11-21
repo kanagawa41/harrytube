@@ -3,6 +3,10 @@
   <%= render 'common/error_explanation', form: user_pet %>
 <% end %>
 
+<!-- FIXME: 見栄えを良くする -->
+<%= form.label :image, "ペット画像" %>
+<%= form.file_field :image %>
+
 <div class="control-group form-group">
   <div class="controls">
     <%= form.label :has_icon %>

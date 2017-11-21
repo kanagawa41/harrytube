@@ -24,7 +24,6 @@ class UserInfosController < ApplicationController
   # PATCH/PUT /user_infos/1.json
   def update
     origin_signed_in?(@user_info.id)
-
     if @user_info.update(user_info_params)
       redirect_to user_info_path(@user_info.hash_id), notice: 'ユーザ情報を更新しました。'
     else
@@ -40,7 +39,7 @@ class UserInfosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_info_params
-      tmp_params = params.require(:user_info).permit(:user_id, :hash_id, :nickname, :sex, :has_icon, :breed_history, :one_phrase, :youtube_channel_id, :twitter_id, :blog_url)
+      tmp_params = params.require(:user_info).permit(:user_id, :hash_id, :nickname, :sex, :has_icon, :breed_history, :one_phrase, :youtube_channel_id, :twitter_id, :blog_url, :image)
       tmp_params[:sex] = tmp_params[:sex].to_i if tmp_params[:sex].present?
 
       tmp_params

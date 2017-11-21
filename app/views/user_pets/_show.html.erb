@@ -1,6 +1,4 @@
-<!-- FIXME: 正しいパスを設定する -->
-<%#= big_circle_icon(user_pet.has_icon, user_pet.pet_name) %>
-<%== big_circle_icon("http://placehold.it/150x150", user_pet.pet_name) %>
+<%== big_circle_icon(user_pet.image.to_s, user_pet.pet_name) %>
 
 <%== t_item_label("user_pet.pet_name", user_pet.pet_name) %>
 

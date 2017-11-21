@@ -35,9 +35,11 @@ module ApplicationHelper
 
   # 大きめのアイコン
   def big_circle_icon(src, alt="")
+    src = "http://placehold.it/150x150" unless src.present?
+
   	str = <<-EOS
 		  <div class="form-group">
-		    <img class="d-flex mr-3 rounded-circle" src="#{src}" alt="#{alt}">
+        #{image_tag src, alt: alt, class: "d-flex mr-3 rounded-circle"}
 		  </div>
 	  EOS
   end
@@ -50,11 +52,11 @@ module ApplicationHelper
 	  EOS
 
 	  if edit_path.present?
-	  	str << link_to('編集する', edit_path, class: "btn btn-default")
+	  	str << link_to('編集する', edit_path, class: "btn btn-outline-primary")
 	  end
 
 	  if delete_path.present?
-	  	str << link_to('削除する', delete_path, method: :delete, class: "btn btn-danger", data: { confirm: '本当に削除しますか？' })
+	  	str << link_to('削除する', delete_path, method: :delete, class: "btn btn-outline-danger", data: { confirm: '本当に削除しますか？' })
 	  end
 
   	str << <<-EOS

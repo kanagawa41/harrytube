@@ -1,16 +1,14 @@
 <form>
 
   <% if @is_org_user %>
-  <%= link_to '編集する', edit_user_info_path(@user_info.hash_id), class: "btn btn-primary" %>
+  <%== buttons edit_user_info_path(@user_info.hash_id) %>
   <% end %>
 
   <br>
   <br>
 
-  <div class="form-group row">
-    <!-- FIXME: 正しいパスを設定する -->
-    <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/150x150" alt="<%= @user_info.nickname %>">
-    <!-- <img src="img/<%# @user_info.has_icon %>" class="img-circle">-->
+  <div class="form-group">
+    <%== big_circle_icon(@user_info.image.to_s, @user_info.nickname) %>
   </div>
 
   <%== t_item_label("user_info.nickname", @user_info.nickname) %>
