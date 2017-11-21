@@ -1,0 +1,12 @@
+<a href="<%= post_path(post.id) %>">
+  <div class="row">
+    <div class="col-md-5 col-0">
+      <a href="#">
+        <img class="img-fluid rounded mb-3 mb-md-0" src="<%= "http://i.ytimg.com/vi/#{post.youtube_video_id}/sddefault.jpg" %>" alt="<%= post.title %>">
+      </a>
+    </div>
+    <div class="col-md-7 col-0">
+      <h6><%= cut_str post.title, 25 %></h6>
+    </div>
+  </div>
+</a>

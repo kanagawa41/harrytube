@@ -78,6 +78,34 @@
     }
 }
 /* !gridのgutter調整 */
+
+.col-0{
+    padding-right:0px;
+    padding-left:0px;
+}
+
+a.normal{
+    color: #343a40;
+}
+a.normal:hover{
+  color: #007bff;
+}
+
+.card-body.movie-list-m{
+  padding: 0.25rem;
+  font-size: 11px;
+
+  .card-title{
+    margin-bottom: 0;
+    font-size: 13px;
+  }
+}
+
+.card-body.movie-list-s{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 /* !bootstrap関連 */
 
 /* font-awesomeの上書き */

@@ -1,0 +1,16 @@
+<div class="col-lg-4 col-sm-6 portfolio-item">
+  <div class="card h-100">
+    <a href="<%= post_path(post.id) %>"><img class="card-img-top" src="<%= "http://i.ytimg.com/vi/#{post.youtube_video_id}/sddefault.jpg" %>" alt="<%= post.title %>"></a>
+    <div class="card-body movie-list-m">
+      <h4 class="card-title">
+        <a href="<%= post_path(post.id) %>"><%= cut_str post.title, 25 %></a>
+      </h4>
+      <p class="card-text">
+        <a href="<%= user_info_path(post.user.user_info.hash_id) %>" class="normal"><%= post.user.user_info.nickname %></a>
+        <br>
+        <!-- FIXME: 閲覧数を表示する --><!-- FIXME: youtubeと同じように右のように表示する 2 年前, 3 か月前, 4 日前, 16 時間前 -->
+        いいね！<%= post.favorites.count %>件・<%= l(post.created_at, format: :short) %>
+      </p>
+    </div>
+  </div>
+</div>

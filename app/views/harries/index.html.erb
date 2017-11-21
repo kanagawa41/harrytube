@@ -11,20 +11,9 @@
   <div class="row">
 
     <% @posts.each do |post| %>
-    <div class="col-lg-4 col-sm-6 portfolio-item">
-      <div class="card h-100">
-        <a href="<%= post_path(post.id) %>"><img class="card-img-top" src="<%= "http://i.ytimg.com/vi/#{post.youtube_video_id}/sddefault.jpg" %>" alt="<%= post.title %>"></a>
-        <div class="card-body">
-          <h4 class="card-title">
-            <a href="<%= post_path(post.id) %>"><%= cut_str post.title, 25 %></a>
-          </h4>
-          <p class="card-text"><%= cut_str post.description %></p>
-        </div>
-        <div class="card-footer">
-          <span><i class="fa fa-user-circle fa-lg"></i><a href="<%= user_info_path(post.user.user_info.hash_id) %>"><%= post.user.user_info.nickname %></a></span>
-        </div>
-      </div>
-    </div>
+
+      <%= render 'post_list', post: post %>
+
     <% end %>
 
   </div>
@@ -43,26 +32,16 @@
   <div class="row">
 
     <% @posts.each do |post| %>
-    <div class="col-lg-4 col-sm-6 portfolio-item">
-      <div class="card h-100">
-        <a href="<%= post_path(post.id) %>"><img class="card-img-top" src="<%= "http://i.ytimg.com/vi/#{post.youtube_video_id}/sddefault.jpg" %>" alt="<%= post.title %>"></a>
-        <div class="card-body">
-          <h4 class="card-title">
-            <a href="<%= post_path(post.id) %>"><%= post.title %></a>
-          </h4>
-          <p class="card-text"><%= post.description %></p>
-        </div>
-        <div class="card-footer">
-          <span><i class="fa fa-user-circle fa-lg"></i><a href="<%= user_info_path(post.user.user_info.hash_id) %>"><%= post.user.user_info.nickname %></a></span>
-        </div>
-      </div>
-    </div>
+
+      <%= render 'post_list', post: post %>
+
     <% end %>
 
   </div>
   <% end %>
   <!-- /.row -->
 
+  <!-- FIXME: このサイトの簡易詳細を記載する -->
   <!-- Features Section -->
   <div class="row">
     <div class="col-lg-6">
@@ -80,7 +59,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
     </div>
     <div class="col-lg-6">
-      <img class="img-fluid rounded" src="http://placehold.it/700x450" alt="">
+      <img class="img-fluid rounded" src="<%= asset_path '/assets/harries/profil.jpg' %>" alt="">
     </div>
   </div>
   <!-- /.row -->
@@ -102,6 +81,6 @@
 
 <script>
 (function($) {
-modules.harries.init();
+  modules.harries.init();
 })(jQuery);
 </script>
