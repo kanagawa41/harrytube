@@ -26,6 +26,7 @@
         <% if user_signed_in? %>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <%== navi_icon(current_user.user_info.image.thumb.to_s, current_user.user_info.nickname) %>
               <%= current_user.user_info.nickname %>
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">

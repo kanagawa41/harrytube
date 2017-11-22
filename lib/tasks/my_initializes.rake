@@ -1,9 +1,9 @@
 desc "実行環境を構築する"
 task my_initializers: :environment do
-  # 必須のミドルウェアがインストールされているか？
-  # if `which convert > /dev/null 2>&1; echo $?;`.to_i != 0
-  #   raise 'imagemagicがインストールされていません。'
-  # end
+  必須のミドルウェアがインストールされているか？
+  if `which convert > /dev/null 2>&1; echo $?;`.to_i != 0
+    raise 'imagemagicがインストールされていません。'
+  end
 
   # pidファイル設置場所
   FileUtils.mkdir_p(Rails.application.config.common.nginx[:pid_dir])

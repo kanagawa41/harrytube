@@ -85,3 +85,6 @@ gem 'bootstrap4-kaminari-views'
 # Debug
 gem 'better_errors'
 gem 'binding_of_caller'
+
+# conoha object strageに接続する為に必要
+gem 'fog'

@@ -37,9 +37,28 @@ module ApplicationHelper
   def big_circle_icon(src, alt="")
     src = "http://placehold.it/150x150" unless src.present?
 
-  	str = <<-EOS
-      #{image_tag src, alt: alt, class: "d-flex mr-3 rounded-circle"}
-	  EOS
+    str = <<-EOS
+      #{image_tag src, alt: alt, class: "d-flex mr-3 rounded-circle img-responsive"}
+    EOS
+  end
+
+  # サムネイルアイコン
+  def thumbnail_icon(src, alt="")
+    src = "http://placehold.it/150x150" unless src.present?
+
+    str = <<-EOS
+      #{image_tag src, alt: alt, class: "d-flex mr-3 rounded-circle img-responsive"}
+    EOS
+  end
+
+  # ナビのアイコン
+  # FIXME: 画像サイズをcssに記載する。
+  def navi_icon(src, alt="")
+    src = "http://placehold.it/25x25" unless src.present?
+
+    str = <<-EOS
+      #{image_tag src, alt: alt, class: "d-flex mr-3 rounded-circle float-left img-responsive", style: "width: 25px; height: 25px;"}
+    EOS
   end
 
   # 編集ボタン、削除ボタン
