@@ -4,7 +4,6 @@
   <thead>
     <tr>
       <th>User</th>
-      <th>Has icon</th>
       <th>Pet name</th>
       <th>Pet birthday</th>
       <th>Pet type</th>
@@ -18,7 +17,6 @@
     <% @user_pets.each do |user_pet| %>
       <tr>
         <td><%= user_pet.user %></td>
-        <td><%= user_pet.has_icon %></td>
         <td><%= user_pet.pet_name %></td>
         <td><%= user_pet.pet_birthday %></td>
         <td><%= user_pet.pet_type %></td>

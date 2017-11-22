@@ -12,11 +12,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   # This is a sensible default for uploaders that are meant to be mounted:
   # "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   def store_dir
-    if model.class.to_s.underscore == "user_info"
-      "uploads/user/#{model.hash_id}/#{model.id}"
-    else
-      "uploads/user/#{model.user.user_info.hash_id}/#{model.class.to_s.underscore}/#{model.id}"
-    end
+    "uploads/user/#{model.user.user_info.hash_id}/#{model.class.to_s.underscore}/#{model.id}"
   end
 
   # Provide a default URL as a default if there hasn't been a file uploaded:

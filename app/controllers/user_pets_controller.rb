@@ -73,7 +73,7 @@ class UserPetsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def user_pet_params
-      tmp_params = params.require(:user_pet).permit(:user_id, :has_icon, :pet_name, :pet_birthday, :pet_type, :pet_sex, :one_phrase, :image)
+      tmp_params = params.require(:user_pet).permit(:user_id, :pet_name, :pet_birthday, :pet_type, :pet_sex, :one_phrase, :image)
       tmp_params[:pet_sex] = tmp_params[:pet_sex].to_i if tmp_params[:pet_sex].present?
 
       tmp_params

@@ -39,7 +39,7 @@ class UserInfosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_info_params
-      tmp_params = params.require(:user_info).permit(:user_id, :hash_id, :nickname, :sex, :has_icon, :breed_history, :one_phrase, :youtube_channel_id, :twitter_id, :blog_url, :image)
+      tmp_params = params.require(:user_info).permit(:user_id, :hash_id, :nickname, :sex, :breed_history, :one_phrase, :youtube_channel_id, :twitter_id, :blog_url, :image)
       tmp_params[:sex] = tmp_params[:sex].to_i if tmp_params[:sex].present?
 
       tmp_params

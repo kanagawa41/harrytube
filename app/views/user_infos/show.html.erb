@@ -24,7 +24,7 @@
     <%= link_to 'ペット詳細を見る', user_pets_user_infos_path(@user_info.hash_id), class: "btn btn-link" %>
 
     <% @user_info.user.user_pets.each do |user_pet| %>
-    <!-- TODO: user_petにデータがあれば取得するように修正する -->
+    <%== big_circle_icon(user_pet.image.to_s, user_pet.pet_name) %>
 
     <%== t_item_label("user_pet.pet_name", user_pet.pet_name) %>
 

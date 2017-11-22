@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171121131733) do
+ActiveRecord::Schema.define(version: 20171122094853) do
 
   create_table "comments", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.bigint "user_id", null: false
@@ -52,7 +52,6 @@ ActiveRecord::Schema.define(version: 20171121131733) do
     t.string "nickname", null: false
     t.string "hash_id", null: false
     t.integer "sex"
-    t.boolean "has_icon"
     t.integer "breed_history"
     t.string "one_phrase"
     t.string "youtube_channel_id"
@@ -67,7 +66,6 @@ ActiveRecord::Schema.define(version: 20171121131733) do
 
   create_table "user_pets", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.bigint "user_id"
-    t.boolean "has_icon"
     t.string "pet_name", null: false
     t.date "pet_birthday"
     t.string "pet_type"
