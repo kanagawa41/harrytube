@@ -4,8 +4,13 @@
 <% end %>
 
 <!-- FIXME: 見栄えを良くする -->
-<%= form.label :image,"ユーザー画像" %>
-<%= form.file_field :image %>
+<div class="control-group form-group">
+  <div class="controls">
+  <%= form.label :image,"ユーザー画像" %>
+  <%== big_circle_icon(user_info.image.present? ? user_info.image.to_s : nil, user_info.nickname) %>
+  <%= form.file_field :image, class: "form-control" %>
+  </div>
+</div>
 
 <div class="control-group form-group">
   <div class="controls">

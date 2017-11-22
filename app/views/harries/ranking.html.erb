@@ -1,0 +1,24 @@
+<h1 class="my-4">ランキング</h1>
+
+<p><%= page_entries_info @ranking_post %></p>
+
+<% if @ranking_post.present? %>
+
+<div class="row">
+
+  <% @ranking_post.each do |post| %>
+
+    <%= render 'post_list', post: post %>
+
+  <% end %>
+
+</div>
+
+<% end %>
+
+<hr>
+
+<!-- 挙動を確認する -->
+<%# if @posts.total_count > 12 %>
+  <%= paginate @ranking_post, :theme => 'twitter-bootstrap-4' %>
+<%# end %>

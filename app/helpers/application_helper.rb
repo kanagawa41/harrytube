@@ -38,9 +38,7 @@ module ApplicationHelper
     src = "http://placehold.it/150x150" unless src.present?
 
   	str = <<-EOS
-		  <div class="form-group">
-        #{image_tag src, alt: alt, class: "d-flex mr-3 rounded-circle"}
-		  </div>
+      #{image_tag src, alt: alt, class: "d-flex mr-3 rounded-circle"}
 	  EOS
   end
 

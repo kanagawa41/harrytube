@@ -64,15 +64,23 @@ ja:
       previous: "前"
       next: "次"
       truncate: "..."
+
   helpers:
     page_entries_info:
       one_page:
         display_entries:
-          zero: "お探しの条件に該当するレンズ情報が見つかりませんでした。"
+          zero: "お探しの条件に該当するデータが見つかりませんでした。"
           one: "<b>1</b>&nbsp;件がヒット"
           other: "<b>&nbsp;%{count}</b>&nbsp;件がヒット"
       more_pages:
         display_entries: "<b>%{total}</b>&nbsp;件がヒット&nbsp;<b>%{first}&nbsp;~&nbsp;%{last}</b>&nbsp;件を表示"
+    select:
+      prompt: 選択してください
+    submit:
+      create: 登録する
+      submit: 保存する
+      update: 更新する
+
   date:
     abbr_day_names:
     - 日
@@ -206,13 +214,7 @@ ja:
       header:
         one: "%{model}にエラーが発生しました"
         other: "%{model}に%{count}個のエラーが発生しました"
-  helpers:
-    select:
-      prompt: 選択してください
-    submit:
-      create: 登録する
-      submit: 保存する
-      update: 更新する
+
   number:
     currency:
       format:
@@ -259,11 +261,13 @@ ja:
     precision:
       format:
         delimiter: ''
+
   support:
     array:
       last_word_connector: 、
       two_words_connector: 、
       words_connector: 、
+
   time:
     am: 午前
     formats:

@@ -21,6 +21,10 @@ Rails.application.routes.draw do
   resources :harries do
     collection do
       get 'index'
+      get 'information'
+      get 'feature'
+      get 'ranking'
+      get 'tag'
     end
   end
 
