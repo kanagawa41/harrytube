@@ -247,6 +247,8 @@ GEM
       domain_name (~> 0.5)
     i18n (0.9.1)
       concurrent-ruby (~> 1.0)
+    impressionist (1.6.0)
+      nokogiri (~> 1)
     inflecto (0.0.2)
     ipaddress (0.8.3)
     json (2.1.0)
@@ -410,6 +412,7 @@ DEPENDENCIES
   devise
   enum_help
   fog
+  impressionist
   kaminari
   listen (>= 3.0.5, < 3.2)
   mysql2
