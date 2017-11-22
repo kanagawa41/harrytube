@@ -62,4 +62,8 @@ Rails.application.configure do
   # config.assets.digest = false
   # config.assets.compress = false
   # config.assets.compile = true
+
+  # デバッグを行えるようにする。
+  # https://qiita.com/osamu1203/items/c72a1b2c27ac3e02cb15
+  BetterErrors::Middleware.allow_ip! "192.168.33.1"
 end

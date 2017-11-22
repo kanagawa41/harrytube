@@ -54,18 +54,34 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Scrayping
-gem 'poltergeist'
-gem 'capybara', '~> 2.13'
-gem 'phantomjs', '~> 2.1'
+# gem 'poltergeist'
+# gem 'capybara', '~> 2.13'
+# gem 'phantomjs', '~> 2.1'
+
+# Activerecord
 gem 'activerecord-import'
 gem 'seed_dump'
+gem 'enum_help'
+
+# Cron
 gem 'whenever', :require => false
+
+# Management Display
 # gem 'activeadmin'
 # gem "active_admin_import" , '3.0.0'
+
+# Login
 gem 'devise'
-gem 'mimemagic'
-gem 'kaminari'
-gem 'enum_help'
-gem 'bootstrap4-kaminari-views'
+
+# Image
 gem 'carrierwave'
+# gem 'mimemagic'
 gem 'rmagick'
+
+# Pagenation
+gem 'kaminari'
+gem 'bootstrap4-kaminari-views'
+
+# Debug
+gem 'better_errors'
+gem 'binding_of_caller'
