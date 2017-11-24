@@ -50,8 +50,8 @@
           <span><i class="fa fa-tv fa-lg"></i><%= @post.impressionist_count %>回閲覧</span>
           <br>
 
-          <% if @post.tags.present? %>
-          <span><i class="fa fa-tags fa-lg"></i><%= @post.tags %></span>
+          <% if @post.tag_list.present? %>
+          <span><i class="fa fa-tags fa-lg"></i><%= @post.tag_list %></span>
           <% end %>
         </li>
       </ol>

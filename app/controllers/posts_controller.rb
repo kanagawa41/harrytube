@@ -25,6 +25,10 @@ class PostsController < ApplicationController
     origin_person? @post.user.id
 
     @comments, @is_favorite, @favorite_size = PostsService.show  @post
+
+    @recommend_post = Post.find_recommend_posts_for_sidebar(@post)
+
+    @ranking_post = Post.find_ranking_posts_for_sidebar(5)
   end
 
   # GET /posts/new
@@ -94,6 +98,6 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:user_id, :title, :description, :youtube_video_id, :tags)
+      params.require(:post).permit(:user_id, :title, :description, :youtube_video_id, :tag_list)
     end
 end

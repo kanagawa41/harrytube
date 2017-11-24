@@ -5,10 +5,11 @@ class HarriesController < ApplicationController
 
   def index
     @posts = HarriesService.index
-    # FIXME: キチンとしたロジックに基づき取得する。
-    @recommend_post = Post.order(created_at: :desc).limit(4)
-    # FIXME: キチンとしたロジックに基づき取得する。
-    @ranking_post = Post.order(created_at: :desc).limit(4)
+
+    # FIXME: オススメの基準を調査する(TOPでは何を基準にすればいいかわかっていない)
+    @recommend_post = Post.find_ranking_posts_for_sidebar(5)
+
+    @ranking_post = Post.find_ranking_posts_for_sidebar(5)
   end
 
   def information

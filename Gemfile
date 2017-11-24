@@ -91,3 +91,5 @@ gem 'fog'
 
 # PVの計測
 gem 'impressionist'
+# タグの管理
+gem 'acts-as-taggable-on'
