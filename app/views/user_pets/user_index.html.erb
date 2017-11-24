@@ -18,5 +18,11 @@
 <% end %>
 
 <% if @is_org_user %>
-<%= link_to 'ハリネズミを登録する', new_user_pet_path, class: "btn btn-primary" %>
+	<% if @is_ok_regist %>
+	<%= link_to 'ハリネズミを登録する', new_user_pet_path, class: "btn btn-primary" %>
+	<% else %>
+  <div class="form-group row">
+    <label class="col-sm-12 col-form-label">これ以上はペットを登録できません。</label>
+  </div>
+	<% end %>
 <% end %>

@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   resources :harries do
     collection do
       get 'index'
+      get 'firsttime'
       get 'information'
       get 'feature'
       get 'ranking'

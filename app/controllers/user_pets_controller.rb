@@ -14,6 +14,7 @@ class UserPetsController < ApplicationController
     origin_person? user_id
 
     @user_pets = UserPet.where(user_id: user_id).all
+    @is_ok_regist = UserPet.has_pets_space? user_id
   end
 
   # GET /user_pets/1
@@ -39,6 +40,12 @@ class UserPetsController < ApplicationController
     @user_pet = UserPet.new(user_pet_params)
     @user_pet.user_id = current_user.id
 
+    unless UserPet.has_pets_space? @user_pet.user_id
+      @user_pet.errors[:base] << "ペットは10匹までしか登録できません。"
+      render :new
+      return
+    end
+
     if @user_pet.save
       redirect_to @user_pet, notice: 'ハリネズミを登録しました。'
     else
@@ -62,7 +69,8 @@ class UserPetsController < ApplicationController
     origin_signed_in?(@user_pet.user.id)
 
     @user_pet.destroy
-    redirect_to user_pets_user_infos_url, notice: 'ハリネズミの情報を削除しました。'
+    # FIXME: 次に表示するページが正しく表示されない
+    redirect_to user_pets_user_infos_url(hash_id: @user_pet.user.user_info.hash_id), notice: 'ハリネズミの情報を削除しました。'
   end
 
   private

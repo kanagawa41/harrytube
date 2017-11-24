@@ -29,6 +29,9 @@ class HarriesController < ApplicationController
     # TODO: タグの出力処理を作成する。
   end
 
+  def firsttime
+  end
+
   private
 
   def init_setting
