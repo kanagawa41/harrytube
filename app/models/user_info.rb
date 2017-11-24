@@ -17,4 +17,9 @@ class UserInfo < ApplicationRecord
   def self.find_id_by_hash(hash_id)
     UserInfo.where(hash_id: hash_id).first[:user_id]
   end
+
+  # ハッシュよりuserを取得する
+  def self.find_user_by_hash(hash_id)
+    UserInfo.where(hash_id: hash_id).first
+  end
 end

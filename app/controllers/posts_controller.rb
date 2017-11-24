@@ -8,13 +8,18 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
+    @posts = Post.order(created_at: :desc).page(@page)
+
+    # 検索結果の一番目でオススメを決定する
+    @recommend_post = Post.find_recommend_posts_for_sidebar(@posts.first) if @posts.present?
+
+    @ranking_post = Post.find_ranking_posts_for_sidebar(5)
   end
 
   # GET /posts/user/ea703e7aa1
   def user_index
-    user_id = UserInfo.find_id_by_hash(params[:hash_id])
-    origin_person? user_id
+    @target_user_info = UserInfo.find_user_by_hash(params[:hash_id])
+    origin_person? @target_user_info[:user_id]
 
     @posts = Post.where(user_id: user_id).page(@page)
   end

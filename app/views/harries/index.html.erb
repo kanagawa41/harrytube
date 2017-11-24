@@ -9,28 +9,7 @@
 
   <% @posts.each do |post| %>
 
-    <%= render 'post_list', post: post %>
-
-  <% end %>
-
-</div>
-<% end %>
-<!-- /.row -->
-
-<% if @posts.present? %>
-
-<br>
-<br>
-
-<!-- FIXME: ランキングを表示する。 -->
-<h2>ランキング</h2>
-<hr>
-
-<div class="row">
-
-  <% @posts.each do |post| %>
-
-    <%= render 'post_list', post: post %>
+    <%= render 'post_list_item', post: post %>
 
   <% end %>
 

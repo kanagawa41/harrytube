@@ -5,7 +5,7 @@ class UserPetsController < ApplicationController
 
   # GET /user_pets
   def index
-    @user_pets = UserPet.all
+    @user_pets = UserPet.order(created_at: :desc).page(@page)
   end
 
   # GET /user_pets/user/ea703e7aa1

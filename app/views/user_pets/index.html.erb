@@ -1,35 +1,24 @@
-<h1>User Pets</h1>
+<h1 class="my-4">ペット一覧</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>User</th>
-      <th>Pet name</th>
-      <th>Pet birthday</th>
-      <th>Pet type</th>
-      <th>Pet sex</th>
-      <th>One phrase</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<p><%= page_entries_info @user_pets %></p>
 
-  <tbody>
-    <% @user_pets.each do |user_pet| %>
-      <tr>
-        <td><%= user_pet.user %></td>
-        <td><%= user_pet.pet_name %></td>
-        <td><%= user_pet.pet_birthday %></td>
-        <td><%= user_pet.pet_type %></td>
-        <td><%= user_pet.pet_sex %></td>
-        <td><%= user_pet.one_phrase %></td>
-        <td><%= link_to 'Show', user_pet %></td>
-        <td><%= link_to 'Edit', edit_user_pet_path(user_pet) %></td>
-        <td><%= link_to 'Destroy', user_pet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<div class="row">
 
-<br>
+  <% @user_pets.each do |user_pet| %>
+    <!-- レイアウトの調整が必要 -->
+    <div class="form-inline">
+      <div class="form-group">
+          <%== thumbnail_icon(user_pet.image.to_s, user_pet.pet_name) %>
+      </div>
+      <div class="form-group">
+        <%= user_pet.pet_name %>
+      </div>
+    </div>
+  <% end %>
 
-<%= link_to 'New User Pet', new_user_pet_path %>
+</div>
+
+<hr>
+
+<!-- 挙動を確認する -->
+<%= paginate @user_pets, :theme => 'twitter-bootstrap-4' %>

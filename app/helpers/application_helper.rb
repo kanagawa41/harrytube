@@ -35,6 +35,7 @@ module ApplicationHelper
 
   # 大きめのアイコン
   def big_circle_icon(src, alt="")
+    # FIXME: 自前で用意したダミー画像を表示するようにする
     src = "http://placehold.it/150x150" unless src.present?
 
     str = <<-EOS
@@ -44,16 +45,18 @@ module ApplicationHelper
 
   # サムネイルアイコン
   def thumbnail_icon(src, alt="")
-    src = "http://placehold.it/150x150" unless src.present?
+    # FIXME: 自前で用意したダミー画像を表示するようにする
+    src = "http://placehold.it/50x50" unless src.present?
 
     str = <<-EOS
-      #{image_tag src, alt: alt, class: "d-flex mr-3 rounded-circle img-responsive"}
+      #{image_tag src, alt: alt, class: "d-flex mr-3 rounded-circle img-responsive", width: "50", hegiht: "50"}
     EOS
   end
 
   # ナビのアイコン
   # FIXME: 画像サイズをcssに記載する。
   def navi_icon(src, alt="")
+    # FIXME: 自前で用意したダミー画像を表示するようにする
     src = "http://placehold.it/25x25" unless src.present?
 
     str = <<-EOS
