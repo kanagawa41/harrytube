@@ -165,8 +165,9 @@ if [ "${target_env}" = "dev" ]; then
   putst "Up server"
   # 「-d」でデーモン化すると、css、jsの読み込みがされなくなる(precompileすれば大丈夫)
   bundle exec rails s -b 0.0.0.0 $PORT -e ${target_env} 2> $UP_LOG 1>/dev/null &
+  putsi "Waiting..."
 
-  sleep 3s
+  sleep 5s
   # ログファイルにエラーが記載されているか？
   if [ -s $UP_LOG ]; then putsi "FAILD: set up rails."; exit 1; fi
 
@@ -197,8 +198,9 @@ elif [ "${target_env}" = "test" ]; then
 
   putst "Up server"
   RAILS_ENV=${target_env} bundle exec puma -w 4 $PORT -d 2> $UP_LOG 1>/dev/null
+  putsi "Waiting..."
 
-  sleep 3s
+  sleep 5s
   # ログファイルにエラーが記載されているか？
   if [ -s $UP_LOG ]; then putsi "FAILD: set up rails."; exit 1; fi
   putsd
@@ -234,8 +236,9 @@ elif [ "${target_env}" = "production" ]; then
   putst "Up server"
   # ポートを指定するとsockが使用できない
   SECRET_KEY_BASE=`bundle exec rails secret` RAILS_SERVE_STATIC_FILES=true RAILS_ENV=${target_env} bundle exec puma -w 4 $PORT -d 2> $UP_LOG 1>/dev/null
+  putsi "Waiting..."
 
-  sleep 3s
+  sleep 5s
   # ログファイルにエラーが記載されているか？
   if [ -s $UP_LOG ]; then putsi "FAILD: set up rails."; exit 1; fi
   putsd
