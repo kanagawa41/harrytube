@@ -6,16 +6,16 @@
 
   <% @user_pets.each do |user_pet| %>
     <div class="col-lg-4 col-sm-6 mt-4">
-
-      <div class="form-inline">
-        <div class="form-group">
-            <%== thumbnail_icon(user_pet.image.to_s, user_pet.pet_name) %>
+      <a href="<%= user_pet_path user_pet.id %>">
+        <div class="form-inline">
+          <div class="form-group">
+              <%== thumbnail_icon(user_pet.image.to_s, user_pet.pet_name) %>
+          </div>
+          <div class="form-group">
+            <%= user_pet.pet_name %>
+          </div>
         </div>
-        <div class="form-group">
-          <%= user_pet.pet_name %>
-        </div>
-      </div>
-
+      </a>
     </div>
   <% end %>
 
