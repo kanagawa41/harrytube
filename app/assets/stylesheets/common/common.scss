@@ -28,6 +28,9 @@ body {
   a.navbar-brand{
     color: #004065;
   }
+  a.navbar-brand:hover{
+    color: #004065;
+  }
   .nav-item{
     a.nav-link{
       color: #004065;
@@ -136,6 +139,10 @@ a.normal:hover{
   color: #007bff;
 }
 
+.card-header{
+  background: #FFC776;
+}
+
 .card-body.movie-list-m{
   padding: 0.25rem;
   font-size: 11px;
@@ -230,10 +237,10 @@ hr.style17:after {
 
 /* アンカー */
 a{
-  color: #004065;
+  color: #F99273;
 }
 a:hover{
-  color: #004065;
+  color: #F99273;
 }
 /* !アンカー */
 
