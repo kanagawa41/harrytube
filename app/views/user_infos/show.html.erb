@@ -41,10 +41,31 @@
   <h2><%= t('views.user_infos.show_sub_media_title') %></h2>
   <hr class="style17">
 
-  <%== t_item_label("user_info.youtube_channel_id", concat_safe("https://www.youtube.com/watch?v=", @user_info.youtube_channel_id)) %>
+  <% if @user_info.youtube_channel_id.present? %>
+  <div class="form-group row">
+    <label class="col-sm-3 col-form-label"><%= t('activerecord.attributes.user_info.youtube_channel_id') %></label>
+    <div class="col-sm-9">
+      <p class="col-form-label"><a href="<%= "https://www.youtube.com/watch?v=#{@user_info.youtube_channel_id}" %>" target="_blank"><%= "https://www.youtube.com/watch?v=#{@user_info.youtube_channel_id}" %></a></p>
+    </div>
+  </div>
+  <% end %>
 
-  <%== t_item_label("user_info.twitter_id", concat_safe("https://twitter.com/", @user_info.twitter_id)) %>
+  <% if @user_info.twitter_id.present? %>
+  <div class="form-group row">
+    <label class="col-sm-3 col-form-label"><%= t('activerecord.attributes.user_info.twitter_id') %></label>
+    <div class="col-sm-9">
+      <p class="col-form-label"><a href="<%= "https://twitter.com/#{@user_info.twitter_id}" %>" target="_blank"><%= "https://twitter.com/#{@user_info.twitter_id}" %></a></p>
+    </div>
+  </div>
+  <% end %>
 
-  <%== t_item_label("user_info.blog_url", @user_info.blog_url) %>
+  <% if @user_info.blog_url.present? %>
+  <div class="form-group row">
+    <label class="col-sm-3 col-form-label"><%= t('activerecord.attributes.user_info.blog_url') %></label>
+    <div class="col-sm-9">
+      <p class="col-form-label"><a href="<%= @user_info.blog_url %>" target="_blank"><%= @user_info.blog_url %></a></p>
+    </div>
+  </div>
+  <% end %>
 
 </form>

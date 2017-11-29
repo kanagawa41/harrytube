@@ -24,7 +24,9 @@
             <%= yield %>
           </div>
           <div class="col-md-4">
+            <% if @is_org_user %>
             <%= render 'common/side_bar_for_user' %>
+            <% end %>
           </div>
         </div>
       </div>

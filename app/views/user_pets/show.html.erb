@@ -7,4 +7,6 @@
 
 <%= render 'show', user_pet: @user_pet %>
 
+<% if user_signed_in? %>
 <%= link_to t('views.user_pets.show_list'), user_pets_user_infos_path(current_user.user_info.hash_id), class: "btn btn-link" %>
+<% end %>

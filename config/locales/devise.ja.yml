@@ -62,7 +62,7 @@ ja:
       # signed_in: "Signed in successfully."
       signed_out: 'ログアウトしました。'
       # signed_out: "Signed out successfully."
-      already_signed_out: "Signed out successfully."
+      already_signed_out: "サインアウトしました。"
     unlocks:
       send_instructions: 'アカウントの凍結解除方法を数分以内にメールでご連絡します。'
       # send_instructions: "You will receive an email with instructions for how to unlock your account in a few minutes."
@@ -71,18 +71,40 @@ ja:
       # unlocked: "Your account has been unlocked successfully. Please sign in to continue."
   views:
     devise:
+      confirmations:
+        confirmation_title: "確認メールの再送"
+        confirmation_btn: "メールを送信"
+      unlocks:
+        unlock_title: "ロック解除の再送"
+        unlock_btn: "メールを送信"
+      passwords:
+        new_password_title: "パスワードの再発行"
+        new_password_btn: "メールを送信"
+        change_password_title: "パスワードの変更"
+        new_password_btn: "新規パスワード"
+        new_password_confirmation_btn: "新規パスワードの確認"
+        change_password_btn: "パスワードを変更"
+        password_explanation: (最低 %{minimum_password_length}文字)
       registrations:
+        edit_profile_title: "基本情報の変更"
         edit_comfirm_email: "現在メールの確認待ちになります: %{unconfirmed_email}"
         edit_delete_confirm_msg: "本当に退会しますか？"
         edit_delete_btn: "削除する"
         edit_update_btn: "更新する"
         edit_current_password_explanation: "(パスワードの変更には、現在のパスワードを入力して下さい。)"
         edit_password_explanation: "(変更しない場合は空白のままにして下さい。)"
-        edit_profile_btn: "プロフィール変更"
+        edit_profile_btn: "プロフィールの変更"
         edit_title: "基本情報の変更"
         password_explanation: (最低 %{minimum_password_length}文字)
         sined_up_title: "サインアップ"
         sined_up_btn: "サインアップ"
+      links:
+        login_btn: "ログイン"
+        sighup_btn: "サインアップ"
+        new_password: "パスワードの再発行"
+        new_confirmation: "確認メールの再送"
+        new_unlock: "ロック解除メールの再送"
+        omniauth_authorize: "Sign in with %{provider}"
 
   errors:
     messages:

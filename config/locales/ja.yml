@@ -18,6 +18,7 @@ ja:
         password_confirmation: "パスワード確認"
         email: "メールアドレス"
         current_password: "現在のメールアドレス"
+        remember_me: "パスワードを記憶する"
       user_info:
         nickname: "ニックネーム"
         hash: "ユーザID"

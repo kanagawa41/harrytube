@@ -1,43 +1,37 @@
-<div class="row">
-  <!-- FIXME: http://blog.shuffleee.com/demo/bootstrap/offset.php を参考にoffsetで中央寄せできるようにする -->
-  <div class="col-lg-8 mb-4">
-    <h2><%= t('views.devise.registrations.sined_up_title') %></h2>
-    <br>
-    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-      <%= devise_error_messages! %>
+<h2><%= t('views.devise.registrations.sined_up_title') %></h2>
+<br>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
 
-      <div class="control-group form-group">
-        <div class="controls">
-        <%= f.label :email %><br />
-        <%= f.email_field :email, autofocus: true, class: "form-control" %>
-        </div>
-      </div>
-
-      <div class="control-group form-group">
-        <div class="controls">
-        <%= f.label :password %>
-        <% if @minimum_password_length %>
-        <em><%= t('views.devise.registrations.password_explanation', minimum_password_length: @minimum_password_length) %></em>
-        <% end %><br />
-        <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
-        </div>
-      </div>
-
-      <div class="control-group form-group">
-        <div class="controls">
-        <%= f.label :password_confirmation %><br />
-        <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control" %>
-        </div>
-      </div>
-
-      <div class="actions">
-        <%= f.submit t('views.devise.registrations.sined_up_btn'), class: "btn btn-primary" %>
-      </div>
-    <% end %>
-
-    <br>
-
-    <%= render "devise/shared/links" %>
-
+  <div class="control-group form-group">
+    <div class="controls">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, class: "form-control" %>
+    </div>
   </div>
-</div>
+
+  <div class="control-group form-group">
+    <div class="controls">
+    <%= f.label :password %>
+    <% if @minimum_password_length %>
+    <em><%= t('views.devise.registrations.password_explanation', minimum_password_length: @minimum_password_length) %></em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="control-group form-group">
+    <div class="controls">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="actions">
+    <%= f.submit t('views.devise.registrations.sined_up_btn'), class: "btn btn-primary" %>
+  </div>
+<% end %>
+
+<br>
+
+<%= render "devise/shared/links" %>

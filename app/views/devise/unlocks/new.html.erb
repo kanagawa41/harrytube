@@ -1,15 +1,17 @@
-<h2>Resend unlock instructions</h2>
+<h2><%= t('views.devise.unlocks.unlock_title') %></h2>
 
 <%= form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class="field">
+  <div class="control-group form-group">
+    <div class="controls">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+    <%= f.email_field :email, autofocus: true, class: "form-control" %>
+    </div>
   </div>
 
   <div class="actions">
-    <%= f.submit "Resend unlock instructions" %>
+    <%= f.submit t('views.devise.unlocks.unlock_btn'), class: "btn btn-primary" %>
   </div>
 <% end %>
 

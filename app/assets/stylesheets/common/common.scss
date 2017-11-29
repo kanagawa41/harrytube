@@ -12,8 +12,12 @@ $anchor-c: #18BC9C;
 /* フォント */
 /* http://www.fontna.com/blog/1226/ */
 @font-face {
+    /* 登録の「録」が文字化けする */
     font-family: "LogoTypeGothic7";
     src: font-url("07LogoTypeGothic7.ttf") format("truetype");
+    /* 文字が小さい */
+    font-family: "Hannari";
+    src: font-url("Hannari.otf") format("truetype");
 }
 /* !フォント */
 
@@ -50,6 +54,14 @@ body {
     background: rgba(255,255,255,0.9) !important;
 }
 /* !ナビ */
+
+/* パスワード */
+/* オリジナルの書体にした場合、文字が表示されない */
+input[type="password"]{
+  font-family: "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* !パスワード */
+
 
 /* ボタン */
 /* FIXME: 適用させる*/
