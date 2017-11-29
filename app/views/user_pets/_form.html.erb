@@ -3,10 +3,9 @@
   <%= render 'common/error_explanation', form: user_pet %>
 <% end %>
 
-<!-- FIXME: 見栄えを良くする -->
 <div class="control-group form-group">
   <div class="controls">
-  <%= form.label :image,"ペット画像" %>
+  <%= form.label :image %>
   <%== big_circle_icon(user_pet.image.present? ? user_pet.image.to_s : nil, user_pet.pet_name) %>
   <%= form.file_field :image, class: "form-control" %>
   </div>
@@ -55,13 +54,13 @@
 <br>
 <div class="btn-group" data-toggle="buttons">
   <label class="btn btn-secondary <%= user_pet.unknown? ? "active" : "" %>">
-    <%= form.radio_button :pet_sex, UserPet.pet_sexes["unknown"], checked: user_pet.unknown? %> 不明
+    <%= form.radio_button :pet_sex, UserPet.pet_sexes["unknown"], checked: user_pet.unknown? %> <%= t('enums.user_pet.sex.unknown') %>
   </label>
   <label class="btn btn-primary <%= user_pet.male? ? "active" : "" %>">
-    <%= form.radio_button :pet_sex, UserPet.pet_sexes["male"], checked: user_pet.male? %> オス
+    <%= form.radio_button :pet_sex, UserPet.pet_sexes["male"], checked: user_pet.male? %> <%= t('enums.user_pet.sex.male') %>
   </label>
   <label class="btn btn-primary <%= user_pet.female? ? "active" : "" %>">
-    <%= form.radio_button :pet_sex, UserPet.pet_sexes["female"], checked: user_pet.female? %> メス
+    <%= form.radio_button :pet_sex, UserPet.pet_sexes["female"], checked: user_pet.female? %> <%= t('enums.user_pet.sex.female') %>
   </label>
 </div>
 

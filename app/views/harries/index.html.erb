@@ -1,8 +1,8 @@
-<h1 class="my-4">トップページ</h1>
+<h1 class="my-4"><%= t('views.harries.top_title') %></h1>
 
 <% if @posts.present? %>
 
-<h2>新着順</h2>
+<h2><%= t('views.harries.show_new_arrive_title') %></h2>
 <hr class="style17">
 
 <div class="row">
@@ -43,7 +43,7 @@
     <p>どのように始めたらいいか分からない方は以下をご覧ください。簡単ですよ。</p>
   </div>
   <div class="col-md-4">
-    <a class="btn btn-lg btn-secondary btn-block" href="<%= firsttime_harries_path %>">Harrytubeを始める</a>
+    <a class="btn btn-lg btn-secondary btn-block" href="<%= firsttime_harries_path %>"><%= t('views.harries.way_of_start_btn') %></a>
   </div>
 </div>
 

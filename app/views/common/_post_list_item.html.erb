@@ -6,9 +6,12 @@
       </a>
     </div>
     <div class="col-md-7 col-0">
-      <a href="<%= post_path post.id %>">
-        <h6><%= cut_str post.title, 25 %></h6>
-      </a>
+      <h6>
+        <a href="<%= post_path post.id %>" class="normal">
+          <%= cut_str post.title, 25 %>
+        </a>
+      </h6>
+
       <%= post.impressionist_count %>回閲覧
     </div>
   </div>

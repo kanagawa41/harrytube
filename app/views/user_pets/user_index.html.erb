@@ -1,5 +1,5 @@
 <% unless @user_pets.present? %>
-<%== only_label("ハリネズミは登録されておりません。") %>
+<%== only_label(t('views.user_pets.regist_none_msg')) %>
 <% end %>
 
 <% @user_pets.each do |user_pet| %>
@@ -19,10 +19,10 @@
 
 <% if @is_org_user %>
 	<% if @is_ok_regist %>
-	<%= link_to 'ハリネズミを登録する', new_user_pet_path, class: "btn btn-primary" %>
+	<%= link_to t('views.user_pets.regist_btn'), new_user_pet_path, class: "btn btn-primary" %>
 	<% else %>
   <div class="form-group row">
-    <label class="col-sm-12 col-form-label">これ以上はペットを登録できません。</label>
+    <label class="col-sm-12 col-form-label"><%= t('views.user_pets.regist_over_msg') %></label>
   </div>
 	<% end %>
 <% end %>

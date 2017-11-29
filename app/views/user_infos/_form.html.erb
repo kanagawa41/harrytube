@@ -6,7 +6,7 @@
 <!-- FIXME: 見栄えを良くする -->
 <div class="control-group form-group">
   <div class="controls">
-  <%= form.label :image,"ユーザー画像" %>
+  <%= form.label :image %>
   <%== big_circle_icon(user_info.image.present? ? user_info.image.to_s : nil, user_info.nickname) %>
   <%= form.file_field :image, class: "form-control" %>
   </div>
@@ -23,13 +23,13 @@
 <br>
 <div class="btn-group" data-toggle="buttons">
   <label class="btn btn-secondary <%= user_info.unknown? ? "active" : "" %>">
-    <%= form.radio_button :sex, UserInfo.sexes["unknown"], checked: user_info.unknown? %> -
+    <%= form.radio_button :sex, UserInfo.sexes["unknown"], checked: user_info.unknown? %> <%= t('enums.user_info.sex.unknown') %>
   </label>
   <label class="btn btn-primary <%= user_info.male? ? "active" : "" %>">
-    <%= form.radio_button :sex, UserInfo.sexes["male"], checked: user_info.male? %> 男性
+    <%= form.radio_button :sex, UserInfo.sexes["male"], checked: user_info.male? %> <%= t('enums.user_info.sex.male') %>
   </label>
   <label class="btn btn-primary <%= user_info.female? ? "active" : "" %>">
-    <%= form.radio_button :sex, UserInfo.sexes["female"], checked: user_info.female? %> 女性
+    <%= form.radio_button :sex, UserInfo.sexes["female"], checked: user_info.female? %> <%= t('enums.user_info.sex.female') %>
   </label>
 </div>
 

@@ -8,7 +8,7 @@
       <p class="card-text">
         <a href="<%= user_info_path(post.user.user_info.hash_id) %>" class="normal"><%= post.user.user_info.nickname %></a>
         <br>
-        いいね！<%= post.favorites.count %>件・<%= post.impressionist_count %>回閲覧・<%= time_ago_in_words(post.created_at) + "前" %>
+        <%= t('views.posts.show_favorite_count_msg', favorite_count: post.favorites.count) %>・<%= t('views.posts.show_impressionist_count_msg', impressionist_count: post.impressionist_count) %>・<%= t('views.posts.show_open_date_msg', open_date: l(post.created_at, format: :short)) %>
       </p>
     </div>
   </div>

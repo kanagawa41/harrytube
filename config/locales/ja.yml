@@ -13,30 +13,32 @@ ja:
 
     attributes:
       user:
-        name: 名前
-        password: パスワード
-        password_confirmation: パスワード確認
-        email: メールアドレス
+        name: "名前"
+        password: "パスワード"
+        password_confirmation: "パスワード確認"
+        email: "メールアドレス"
       user_info:
-        nickname: ニックネーム
-        hash: ユーザID
-        sex: 性別
-        breed_history: 飼育歴
-        one_phrase: 一言
-        youtube_channel_id: ユーチューブのチャンネルID
-        twitter_id: ツイッターID
-        blog_url: ブログURL
+        nickname: "ニックネーム"
+        hash: "ユーザID"
+        sex: "性別"
+        breed_history: "飼育歴"
+        one_phrase: "一言"
+        youtube_channel_id: "ユーチューブのチャンネルID"
+        twitter_id: "ツイッターID"
+        blog_url: "ブログURL"
+        image: "ユーザ画像"
       user_pet:
-        pet_name: ペットの名前
-        pet_birthday: ペットの誕生日
-        pet_type: ペットの種類
-        pet_sex: ペットの性別
-        one_phrase: ペットの一言
+        pet_name: "ペットの名前"
+        pet_birthday: "ペットの誕生日"
+        pet_type: "ペットの種類"
+        pet_sex: "ペットの性別"
+        one_phrase: "ペットの一言"
+        image: "ペット画像"
       post:
-        title: タイトル
-        description: 記事の詳細
-        youtube_video_id: ユーチューブのビデオID
-        tags: タグ
+        title: "タイトル"
+        description: "記事の詳細"
+        youtube_video_id: "ユーチューブのビデオID"
+        tags: "タグ"
 
     errors:
       messages:
@@ -49,21 +51,60 @@ ja:
     user_info:
       sex:
         unknown: "-"
-        male: 男性
-        female: 女性
+        male: "男性"
+        female: "女性"
     user_pet:
       pet_sex:
-        unknown: ふめい
-        male: オス
-        female: メス
+        unknown: "ふめい"
+        male: "オス"
+        female: "メス"
 
   views:
+    layouts:
+      main_title: "Harrytube(ハリネズミの動画まとめサイト)"
     pagination:
       first: "最初"
       last: "最後"
       previous: "前"
       next: "次"
       truncate: "..."
+    harries:
+      way_of_start_btn: "Harrytubeを始める"
+      show_new_arrive_title: "新着"
+      top_title: "トップページ"
+      information_title: "お知らせ"
+      information_sub_title: "information"
+      ranking_title: "ランキング"
+    posts:
+      edit_title: "投稿内容を編集する"
+      list_title: "投稿一覧"
+      regist_title: "新規投稿"
+      show_comment_submit_btn: "コメントを送信"
+      show_comment_title: "コメントを書く"
+      show_impressionist_count_msg: "%{impressionist_count}回閲覧"
+      show_comment_count_msg: "%{comment_count}コメント"
+      show_open_date_msg: "%{open_date}前に公開"
+      show_favorite_count_msg: "いいね！%{favorite_count}件"
+      show_favorite_none_msg: "いいね！はありません"
+      show_user_list_title: "%{nickname}さん の投稿一覧"
+      show_post_info_btn: "投稿を表示する"
+      show_list: "投稿一覧を見る"
+    user_infos:
+      edit_base_info_btn: "メールアドレス、パスワードの変更する"
+      edit_title: "プロフィール"
+      show_pet_info_btn: "ペット詳細を見る"
+      show_pet_info_btn: "ペット詳細を見る"
+      show_sub_pet_title: "ペット"
+      show_sub_media_title: "メディア"
+      regist_none_msg: "ハリネズミは登録されておりません。"
+    user_pets:
+      edit_title: "ハリネズミの情報を編集する"
+      list_title: "ペット一覧"
+      regist_title: "ハリネズミの情報を登録する"
+      regist_btn: "ハリネズミを登録する"
+      regist_over_msg: "これ以上はペットを登録できません。"
+      regist_none_msg: "ハリネズミは登録されておりません。"
+      show_list: "ハリネズミちゃん達を見る"
 
   helpers:
     page_entries_info:
