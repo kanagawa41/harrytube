@@ -6,8 +6,8 @@
 @import "vendor/toastr/toastr";
 
 $title-c: #004065;
-$hearder-c: #FFC776;
-$anchor-c: #F99273;
+$hearder-c: #18BC9C;
+$anchor-c: #18BC9C;
 
 /* フォント */
 /* http://www.fontna.com/blog/1226/ */
@@ -145,6 +145,7 @@ a.normal:hover{
 
 .card-header{
   background: $hearder-c;
+  color: #fff
 }
 
 .card-body.movie-list-m{
