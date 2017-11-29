@@ -150,7 +150,7 @@ else
   if [ "${target_type}" = "app" ]; then
     ./up.sh production
   else
-    ./up.sh production -p 3002 --migrate
+    ./up.sh production -p 3003 --migrate
   fi
 
 fi
