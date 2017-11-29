@@ -1,32 +1,32 @@
 <!-- Navigation -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-harf-white fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="<%= harries_path %>">Harrytube</a>
+    <a class="navbar-brand" href="<%= harries_path %>"><%= t('views.common.navi.site_title') %></a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="<%= firsttime_harries_path %>">はじめに</a>
+          <a class="nav-link" href="<%= firsttime_harries_path %>"><%= t('views.common.navi.first_time_btn') %></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<%= posts_path %>">投稿一覧</a>
+          <a class="nav-link" href="<%= posts_path %>"><%= t('views.common.navi.post_list_btn') %></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<%= user_pets_path %>">ハリネズミを探す</a>
+          <a class="nav-link" href="<%= user_pets_path %>"><%= t('views.common.navi.user_pets_list_btn') %></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<%= information_harries_path %>">お知らせ</a>
+          <a class="nav-link" href="<%= information_harries_path %>"><%= t('views.common.navi.show_information_btn') %></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<%= feature_harries_path %>">特集</a>
+          <a class="nav-link" href="<%= feature_harries_path %>"><%= t('views.common.navi.show_feature_btn') %></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<%= ranking_harries_path %>">ランキング</a>
+          <a class="nav-link" href="<%= ranking_harries_path %>"><%= t('views.common.navi.show_ranking_list_btn') %></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<%= tag_harries_path %>">タグ</a>
+          <a class="nav-link" href="<%= tag_harries_path %>"><%= t('views.common.navi.show_tag_list_btn') %></a>
         </li>
         <!-- ログイン -->
         <% if user_signed_in? %>
@@ -36,20 +36,19 @@
               <%= current_user.user_info.nickname %>
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-              <%= link_to '投稿する', new_post_path, class: "dropdown-item" %>
-              <!-- FIXME: ハッシュなしで編集できるようにする -->
-              <%= link_to 'プロフィール', edit_user_info_path(current_user.user_info.hash_id), class: "dropdown-item" %>
-              <%= link_to 'ハリネズミ', user_pets_user_infos_path(current_user.user_info.hash_id), class: "dropdown-item" %>
-              <%= link_to '基本情報', edit_user_registration_path, class: "dropdown-item" %>
-              <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+              <%= link_to t('views.common.navi.regist_post_btn'), new_post_path, class: "dropdown-item" %>
+              <%= link_to t('views.common.navi.eidt_user_info_btn'), edit_user_info_path(current_user.user_info.hash_id), class: "dropdown-item" %>
+              <%= link_to t('views.common.navi.show_user_pets_btn'), user_pets_user_infos_path(current_user.user_info.hash_id), class: "dropdown-item" %>
+              <%= link_to t('views.common.navi.edit_base_info_btn'), edit_user_registration_path, class: "dropdown-item" %>
+              <%= link_to t('views.common.navi.logout_btn'), destroy_user_session_path, method: :delete, class: "dropdown-item" %>
             </div>
           </li>
         <% else %>
           <li class="nav-item">
-            <%= link_to 'サインアップ', new_user_registration_path, class: "nav-link" %>
+            <%= link_to t('views.common.navi.sighup_btn'), new_user_registration_path, class: "nav-link" %>
           </li>
           <li class="nav-item">
-            <%= link_to 'ログイン', new_user_session_path, class: "nav-link" %>
+            <%= link_to t('views.common.navi.login_btn'), new_user_session_path, class: "nav-link" %>
           </li>
         <% end %>
         <!-- !ログイン -->

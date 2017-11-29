@@ -1,12 +1,11 @@
 <div class="col-mb-12">
   <div class="list-group">
     <!-- FIXME: 現在が対象パスの場合はclassに"active"を付与する -->
-    <%= link_to '投稿する', new_post_path, class: "list-group-item" %>
-    <%= link_to '投稿一覧', posts_user_infos_path(current_user.user_info.hash_id), class: "list-group-item" %>
-    <!-- FIXME: ハッシュなしで編集できるようにする -->
-    <%= link_to 'プロフィール', edit_user_info_path(current_user.user_info.hash_id), class: "list-group-item" %>
-    <%= link_to 'ペット', user_pets_user_infos_path(current_user.user_info.hash_id), class: "list-group-item" %>
-    <%= link_to '基本情報', edit_user_registration_path, class: "list-group-item" %>
+    <%= link_to t('views.common.side_bar.regist_post_btn'), new_post_path, class: "list-group-item" %>
+    <%= link_to t('views.common.side_bar.post_list_btn'), posts_user_infos_path(current_user.user_info.hash_id), class: "list-group-item" %>
+    <%= link_to t('views.common.side_bar.eidt_user_info_btn'), edit_user_info_path(current_user.user_info.hash_id), class: "list-group-item" %>
+    <%= link_to t('views.common.side_bar.show_user_pets_btn'), user_pets_user_infos_path(current_user.user_info.hash_id), class: "list-group-item" %>
+    <%= link_to t('views.common.side_bar.edit_base_info_btn'), edit_user_registration_path, class: "list-group-item" %>
   </div>
 </div>
 <!-- FIXME: bootsrapのやり方に則り空白を空ける -->

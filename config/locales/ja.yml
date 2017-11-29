@@ -68,6 +68,35 @@ ja:
       previous: "前"
       next: "次"
       truncate: "..."
+    common:
+      error_field:
+        error_title: "入力エラーがあります。エラー箇所を確認してください。"
+      footer:
+        # &copy;　が正しく変換されない
+        copyright: "Copyright Harrytube 2017"
+      navi:
+        site_title: "Harrytube"
+        first_time_btn: "はじめに"
+        post_list_btn: "投稿一覧"
+        user_pets_list_btn: "ハリネズミを探す"
+        show_information_btn: "お知らせ"
+        show_feature_btn: "特集"
+        show_ranking_list_btn: "ランキング"
+        show_tag_list_btn: "タグ"
+
+        regist_post_btn: "投稿する"
+        eidt_user_info_btn: "プロフィール"
+        show_user_pets_btn: "ペット"
+        edit_base_info_btn: "基本情報"
+        logout_btn: "ログアウト"
+        login_btn: "ログイン"
+        sighup_btn: "サインアップ"
+      side_bar:
+        regist_post_btn: "投稿する"
+        post_list_btn: "投稿一覧"
+        eidt_user_info_btn: "プロフィール"
+        show_user_pets_btn: "ペット"
+        edit_base_info_btn: "基本情報"
     harries:
       way_of_start_btn: "Harrytubeを始める"
       show_new_arrive_title: "新着"
