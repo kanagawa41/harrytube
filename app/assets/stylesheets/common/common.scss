@@ -5,7 +5,30 @@
 @import "vendor/font-awesome/font-awesome";
 @import "vendor/toastr/toastr";
 
+/* フォント */
+/* http://www.fontna.com/blog/1226/ */
+@font-face {
+    font-family: "LogoTypeGothic7";
+    src: font-url("07LogoTypeGothic7.ttf") format("truetype");
+}
+/* !フォント */
+
 /* bootstrapの上書き */
+body {
+  margin: 0;
+  font-family: "LogoTypeGothic7", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #333333;
+  background-color: #ffffff;
+}
+/* ボタン */
+/* FIXME: 適用させる*/
+@border-radius-base: 2px;
+@border-radius-large: 3px;
+@border-radius-small: 1px;
+/* !ボタン */
+
 /* ラベル */
 .col-form-label {
   word-wrap: break-word;
@@ -104,6 +127,8 @@ a.normal:hover{
 .card-body.movie-list-s{
   padding-top: 5px;
   padding-bottom: 5px;
+  max-height:300px;
+  overflow-y: scroll;
 }
 
 /* !bootstrap関連 */
@@ -158,5 +183,25 @@ hr.dot {
     border: 0;
     border-bottom: 1px dashed #ccc;
     background: #999;
+}
+
+/* http://coliss.com/articles/build-websites/operation/css/css-snippets-for-horizontal-rules.html */
+hr.style17 {
+  border-top: 1px solid #8c8b8b;
+  text-align: center;
+}
+hr.style17:after {
+  content: '§';
+  display: inline-block;
+  position: relative;
+  /* fontによって位置調整が必要 */
+  top: -10px;
+  padding: 0 10px;
+  background: #ffffff;
+  color: #8c8b8b;
+  font-size: 18px;
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  transform: rotate(60deg);
 }
 /* !線系 */

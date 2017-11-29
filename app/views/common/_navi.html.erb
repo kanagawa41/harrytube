@@ -39,7 +39,7 @@
               <%= link_to '投稿する', new_post_path, class: "dropdown-item" %>
               <!-- FIXME: ハッシュなしで編集できるようにする -->
               <%= link_to 'プロフィール', edit_user_info_path(current_user.user_info.hash_id), class: "dropdown-item" %>
-              <%= link_to 'ペット', user_pets_user_infos_path(current_user.user_info.hash_id), class: "dropdown-item" %>
+              <%= link_to 'ハリネズミ', user_pets_user_infos_path(current_user.user_info.hash_id), class: "dropdown-item" %>
               <%= link_to '基本情報', edit_user_registration_path, class: "dropdown-item" %>
               <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "dropdown-item" %>
             </div>

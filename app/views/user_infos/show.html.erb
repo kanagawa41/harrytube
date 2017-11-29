@@ -18,7 +18,7 @@
   <%== t_item_label("user_info.breed_history", concat_safe(@user_info.breed_history, 'ヶ月')) %>
 
   <h2>ペット</h2>
-  <hr>
+  <hr class="style17">
 
   <% if @user_info.user.user_pets.present? %>
     <%= link_to 'ペット詳細を見る', user_pets_user_infos_path(@user_info.hash_id), class: "btn btn-link" %>
@@ -39,7 +39,7 @@
   <% end %>
 
   <h2>メディア</h2>
-  <hr>
+  <hr class="style17">
 
   <%== t_item_label("user_info.youtube_channel_id", concat_safe("https://www.youtube.com/watch?v=", @user_info.youtube_channel_id)) %>
 

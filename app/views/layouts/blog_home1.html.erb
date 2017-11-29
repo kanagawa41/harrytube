@@ -28,9 +28,9 @@
             <!-- FIXME:新規投稿の場合は、elseに遷移してしまう。 -->
             <% if @is_org_user %>
             <%= render 'common/side_bar_for_user' %>
-            <% else %>
-            <%= render 'common/side_bar_for_guest' %>
             <% end %>
+
+            <%= render 'common/side_bar_for_movie' %>
           </div>
         </div>
       </div>
