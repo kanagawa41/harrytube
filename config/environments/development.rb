@@ -66,16 +66,4 @@ Rails.application.configure do
   # デバッグを行えるようにする。
   # https://qiita.com/osamu1203/items/c72a1b2c27ac3e02cb15
   BetterErrors::Middleware.allow_ip! "192.168.33.1"
-
-  config.action_mailer.default_url_options = { host: '192.168.33.10', port: 3000 }
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.smtp_settings = {
-    address: 'smtp.gmail.com',
-    port: 587,
-    user_name: 'g.takasu41@gmail.com',
-    password: 'G1asarou81',
-    authentication: :plain,
-    enable_starttls_auto: true
-  }
 end

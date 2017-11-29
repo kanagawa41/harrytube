@@ -94,5 +94,6 @@ Rails.application.configure do
   config.serve_static_assets = false
 
   # mailer setting
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  # FIXME: URLは適宜変更する
+  config.action_mailer.default_url_options = { host: 'http://www.test.old-lens-search.com', port: 80 }
 end
