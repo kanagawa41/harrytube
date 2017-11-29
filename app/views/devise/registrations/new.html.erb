@@ -1,7 +1,7 @@
 <div class="row">
   <!-- FIXME: http://blog.shuffleee.com/demo/bootstrap/offset.php を参考にoffsetで中央寄せできるようにする -->
   <div class="col-lg-8 mb-4">
-    <h2>サインアップ</h2>
+    <h2><%= t('views.devise.registrations.sined_up_title') %></h2>
     <br>
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
       <%= devise_error_messages! %>
@@ -17,7 +17,7 @@
         <div class="controls">
         <%= f.label :password %>
         <% if @minimum_password_length %>
-        <em>(<%= @minimum_password_length %> characters minimum)</em>
+        <em><%= t('views.devise.registrations.password_explanation', minimum_password_length: @minimum_password_length) %></em>
         <% end %><br />
         <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
         </div>
@@ -31,7 +31,7 @@
       </div>
 
       <div class="actions">
-        <%= f.submit "サインアップ", class: "btn btn-primary" %>
+        <%= f.submit t('views.devise.registrations.sined_up_btn'), class: "btn btn-primary" %>
       </div>
     <% end %>
 

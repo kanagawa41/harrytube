@@ -56,7 +56,7 @@ ja:
       signed_up_but_unconfirmed: "A message with a confirmation link has been sent to your email address. Please follow the link to activate your account."
       update_needs_confirmation: "You updated your account successfully, but we need to verify your new email address. Please check your email and follow the confirm link to confirm your new email address."
       updated: 'アカウントを更新しました。'
-      updated: "Your account has been updated successfully."
+      # updated: "Your account has been updated successfully."
     sessions:
       signed_in: 'ログインしました。'
       # signed_in: "Signed in successfully."
@@ -69,6 +69,21 @@ ja:
       send_paranoid_instructions: "If your account exists, you will receive an email with instructions for how to unlock it in a few minutes."
       unlocked: 'アカウントを凍結解除しました。'
       # unlocked: "Your account has been unlocked successfully. Please sign in to continue."
+  views:
+    devise:
+      registrations:
+        edit_comfirm_email: "現在メールの確認待ちになります: %{unconfirmed_email}"
+        edit_delete_confirm_msg: "本当に退会しますか？"
+        edit_delete_btn: "削除する"
+        edit_update_btn: "更新する"
+        edit_current_password_explanation: "(パスワードの変更には、現在のパスワードを入力して下さい。)"
+        edit_password_explanation: "(変更しない場合は空白のままにして下さい。)"
+        edit_profile_btn: "プロフィール変更"
+        edit_title: "基本情報の変更"
+        password_explanation: (最低 %{minimum_password_length}文字)
+        sined_up_title: "サインアップ"
+        sined_up_btn: "サインアップ"
+
   errors:
     messages:
       already_confirmed: "は既に登録済みです"
