@@ -20,9 +20,9 @@
 SCRIPT_DIR=$(cd $(dirname $0); pwd)
 # 実行対象
 # キー：引数、値：プロジェクト名
-declare -A TYPES=([app]="colors_diary" [manage]="m-colors_diary")
+declare -A TYPES=([app]="harrytube" [manage]="harrytube")
 # GITプロジェクト名
-GIT_PROJECT_URL=https://github.com/kanagawa41/lens-manage.git
+GIT_PROJECT_URL=https://github.com/kanagawa41/harrytube.git
 
 ####################
 # usage
