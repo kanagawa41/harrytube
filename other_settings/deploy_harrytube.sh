@@ -148,9 +148,9 @@ else
   cd $PROJECT_PATH
 
   if [ "${target_type}" = "app" ]; then
-    ./up.sh production
+    ./up.sh production -p 3003
   else
-    ./up.sh production -p 3003 --migrate
+    ./up.sh production -p 3004 --migrate
   fi
 
 fi
