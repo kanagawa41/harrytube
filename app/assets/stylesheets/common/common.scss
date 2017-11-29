@@ -22,6 +22,28 @@ body {
   color: #333333;
   background-color: #ffffff;
 }
+
+/* ナビ */
+.navbar{
+  a.navbar-brand{
+    color: #004065;
+  }
+  .nav-item{
+    a.nav-link{
+      color: #004065;
+    }
+    a.nav-link:hover{
+      color: #004065;
+      text-decoration: underline;
+    }
+  }
+}
+
+.navbar.bg-harf-white{
+    background: rgba(255,255,255,0.9) !important;
+}
+/* !ナビ */
+
 /* ボタン */
 /* FIXME: 適用させる*/
 @border-radius-base: 2px;
@@ -205,3 +227,18 @@ hr.style17:after {
   transform: rotate(60deg);
 }
 /* !線系 */
+
+/* アンカー */
+a{
+  color: #004065;
+}
+a:hover{
+  color: #004065;
+}
+/* !アンカー */
+
+/* タイトル系 */
+h1, h2, h3, h4, h5, h6 {
+  color: #004065;
+}
+/* !タイトル系 */
