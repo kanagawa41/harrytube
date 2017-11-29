@@ -26,7 +26,7 @@ class CommentsController < ApplicationController
           nickname: @comment.user.user_info.nickname,
           # FIXME: アイコンを正しく表示できるようになったら元に戻す
           # icon: @comment.user.user_info.icon,
-          icon: "http://placehold.it/50x50",
+          icon: @comment.user.user_info.image.to_s,
           comment: @comment.comment,
         }
       }, status: 200

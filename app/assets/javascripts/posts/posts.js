@@ -81,21 +81,23 @@ module._sendComment = function() {
 
     $('#comment-field').append(module._commentTemplate(response.result));
 
+    $('#comment_comment').val('');
+
     toastr.info('コメント送信しました。');
   }).fail(modules.utils.getAjaxFailedTemplate);
 }
 
 // コメント一行分を作成する
 module._commentTemplate = function(comment) {
-  return `
-  <div class="media mb-4">
-    <img class="d-flex mr-3 rounded-circle" src="${comment.icon}" alt="">
-    <div class="media-body">
-      <h5 class="mt-0">${ comment.nickname }</h5>
-      ${ comment.comment }
-    </div>
-  </div>
-  `;
+  return '' + 
+  '<div class="media mb-4">' + 
+  '  <img class="d-flex mr-3 rounded-circle img-responsive" width="50" hegiht="50" src="' + comment.icon + '" alt="">' + 
+  '  <div class="media-body">' +
+  '    <h5 class="mt-0">' + comment.nickname + '</h5>' +
+       comment.comment
+  '  </div>' +
+  '</div>'
+  ;
 }
 
 // いいねを送信する
@@ -125,7 +127,7 @@ module._sendFavorite = function(icon_obj) {
     // いいねのアイコンを変更する。
     $(icon_obj).removeClass("fa-heart-o");
     $(icon_obj).addClass("fa-heart");
-    $('#favorite_count').text(`いいね！${ response.result.favorite_count }件`)
+    $('#favorite_count').text('いいね！' + response.result.favorite_count + '件');
 
     toastr.info('いいねしました。');
   }).fail(modules.utils.getAjaxFailedTemplate);
@@ -159,7 +161,7 @@ module._sendDeFavorite = function(icon_obj) {
     $(icon_obj).removeClass("fa-heart");
     $(icon_obj).addClass("fa-heart-o");
 
-    $('#favorite_count').text(`いいね！${ response.result.favorite_count }件`)
+    $('#favorite_count').text('いいね！' + response.result.favorite_count + '件');
 
     toastr.info('いいねを解除しました。');
   }).fail(modules.utils.getAjaxFailedTemplate);
