@@ -1,5 +1,5 @@
 Takuya Kishira
-(正しい表示をみたいらな　http://marxi.co/　にコピペ)
+(正しい表示をみたいらな[ここ](http://marxi.co/)にコピペ)
 ====
 
 Overview
